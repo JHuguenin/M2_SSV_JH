@@ -1,0 +1,11 @@
+# Introduction au package proVOC
+
+## plan
+
+package proVOC  
+  - explication général  
+  - science reproductible  
+  - analyse AUC  
+  - spectre circulaire  
+  - regression linéaire  
+  - rapport automatique
