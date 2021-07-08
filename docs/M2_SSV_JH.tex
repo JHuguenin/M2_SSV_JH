@@ -5,41 +5,23 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode=true}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-$if(colorlinks)$
 \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
-$endif$
 % Right to left support
-$if(dir)$
-  $if(latex-dir-rtl)$
-\PassOptionsToPackage{RTLdocument}{bidi}
-  $endif$
-$endif$
-$if(CJKmainfont)$
-\PassOptionsToPackage{space}{xeCJK}
-$endif$
 
 
 \documentclass[
-  $if(fontsize)$$fontsize$,$endif$
-  $if(lang)$$babel-lang$,$endif$
-  $if(papersize)$$papersize$paper,$endif$
-  $for(classoption)$$classoption$$sep$,$endfor$
-  ]{$documentclass$}
+  12pt,
+  french,
+  a4paper,
+  extrafontsizes,onecolumn,openright
+  ]{memoir}
 
 % Double (or whatever) spacing
-$if(linestretch)$
-\usepackage{setspace}
-\setstretch{$linestretch$}
-$endif$
 
 % Math
 \usepackage{amssymb, amsmath}
 % mathspec: arbitrary math fonts
-$if(mathspec)$
-\usepackage{mathspec}
-$else$
 \usepackage{unicode-math}
-$endif$
 \defaultfontfeatures{Scale=MatchLowercase}
 \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 
@@ -47,75 +29,34 @@ $endif$
 \usepackage{lmodern}
 \usepackage{fontspec}
 % Main font
-$if(mainfont)$
-\setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
-$endif$
 % Specific sanserif font
-$if(sansfont)$
-\setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
-$endif$
 % Specific monotype font
-$if(monofont)$
-\setmonofont[$for(monofontoptions)$$monofontoptions$$sep$,$endfor$]{$monofont$}
-$endif$
 % Specific math font
-$if(mathfont)$
-  $if(mathspec)$
-\setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
-  $else$
-\setmathfont[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
-  $endif$
-$endif$
 % Chinese, Japanese, Corean fonts
-$if(CJKmainfont)$
-  \usepackage{xeCJK}
-  \setCJKmainfont[$for(CJKoptions)$$CJKoptions$$sep$,$endfor$]{$CJKmainfont$}
-$endif$
 
 % Use upquote for straight quotes in verbatim environments
 \usepackage{upquote}
 % Use microtype
-\usepackage[$for(microtypeoptions)$$microtypeoptions$$sep$,$endfor$]{microtype}
+\usepackage[]{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 
 % Verbatim in note
-$if(verbatim-in-note)$
-\usepackage{fancyvrb}
-\VerbatimFootnotes % allows verbatim text in footnotes
-$endif$
 
 % Color links
-$if(colorlinks)$
 \usepackage{xcolor}
-$endif$
 
 % Strikeout
-$if(strikeout)$
-\usepackage[normalem]{ulem}
-% avoid problems with \sout in headers with hyperref:
-\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
-$endif$
 
 % Necessary for code chunks
-$if(highlighting-macros)$
-$highlighting-macros$
-$endif$
 
 % Listings package
-$if(listings)$
-\usepackage{listings}
-\newcommand{\passthrough}[1]{#1}
-$endif$
 
 % Tables
-$if(tables)$
 \usepackage{longtable,booktabs,tabu}
 % Fix footnotes in tables (requires footnote package)
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
-$endif$
 
 % Graphics
-$if(graphics)$
 \usepackage{graphicx,grffile}
 \graphicspath{{images/}}
 \makeatletter
@@ -126,7 +67,6 @@ $if(graphics)$
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-$endif$
 
 % Prevent overfull lines
 \setlength{\emergencystretch}{3em}  
@@ -134,9 +74,7 @@ $endif$
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % Number sections for memoir (secnumdepth counter is ignored)
-$if(secnum-depth)$
-\setsecnumdepth{$secnum-depth$}
-$endif$
+\setsecnumdepth{section}
 
 % Set default figure placement to htbp
 \makeatletter
@@ -144,39 +82,75 @@ $endif$
 \makeatother
 
 % Include headers (preamble.tex) here
-$for(header-includes)$
-$header-includes$
-$endfor$
+% Add LaTeX code into the preamble of the document here
+\hyphenation{bio-di-ver-si-ty sap-lings}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% memoiR dalef3 chapter style 
+% https://ctan.crest.fr/tex-archive/info/latex-samples/MemoirChapStyles/MemoirChapStyles.pdf
+\usepackage{soul}
+\definecolor{nicered}{rgb}{.647,.129,.149}
+\makeatletter
+\newlength\dlf@normtxtw
+\setlength\dlf@normtxtw{\textwidth}
+\def\myhelvetfont{\def\sfdefault{mdput}}
+\newsavebox{\feline@chapter}
+\newcommand\feline@chapter@marker[1][4cm]{%
+  \sbox\feline@chapter{%
+    \resizebox{!}{#1}{\fboxsep=1pt%
+	  \colorbox{nicered}{\color{white}\bfseries\sffamily\thechapter}%
+	}}%
+  \rotatebox{90}{%
+    \resizebox{%
+	  \heightof{\usebox{\feline@chapter}}+\depthof{\usebox{\feline@chapter}}}%
+	{!}{\scshape\so\@chapapp}}\quad%
+  \raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
+ }
+\newcommand\feline@chm[1][4cm]{%
+  \sbox\feline@chapter{\feline@chapter@marker[#1]}%
+  \makebox[0pt][l]{% aka \rlap
+    \makebox[1cm][r]{\usebox\feline@chapter}%
+  }}
+\makechapterstyle{daleif1}{
+  \renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
+  \renewcommand\chaptitlefont{\normalfont\huge\bfseries\scshape\color{nicered}}
+  \renewcommand\chapternamenum{}
+  \renewcommand\printchaptername{}
+  \renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
+  \renewcommand\afterchapternum{\par\vskip\midchapskip}
+  \renewcommand\printchaptertitle[1]{\chaptitlefont\raggedleft ##1\par}
+}
+\makeatother
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
 % Spacing in lists
 \usepackage{enumitem}
 
 % Polyglossia
-$if(lang)$
 \usepackage{polyglossia}
-\setmainlanguage{$lang$}
-$for(otherlangs)$
-\setotherlanguage{$otherlangs$}
-$endfor$
-$endif$
+\setmainlanguage{fr-FR}
+\setotherlanguage{en-US}
+\setotherlanguage{it}
 
 % BibLaTeX
-$if(biblatex)$
-\usepackage[$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$]{biblatex}
-$for(bibliography)$
-\addbibresource{$bibliography$}
-$endfor$
-$endif$
+\usepackage[backend=biber,style=authoryear-ibid,isbn=false,backref=true,giveninits=true,uniquename=init,maxcitenames=2,maxbibnames=150,sorting=nyt,sortcites=false]{biblatex}
+\addbibresource{references.bib}
 
 % cslreferences environment required by pandoc > 2.7
-$if(csl-refs)$
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newenvironment{cslreferences}%
-  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
-  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
-  {\par}
-$endif$
 
 
 
@@ -186,7 +160,7 @@ $endif$
 % Chapter Summary environment 
 \usepackage[tikz]{bclogo}
 \newenvironment{Summary}
-  {\begin{bclogo}[logo=\bctrombone, noborder=true, couleur=lightgray!50]{$chaptersummary$}\parindent0pt}
+  {\begin{bclogo}[logo=\bctrombone, noborder=true, couleur=lightgray!50]{In a Nutshell}\parindent0pt}
   {\end{bclogo}}
 % Syntax:
 %
@@ -206,8 +180,8 @@ $endif$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Based on memoir, style companion
-\newcommand{\MemoirChapStyle}{$MemoirChapStyle$}
-\newcommand{\MemoirPageStyle}{$MemoirPageStyle$}
+\newcommand{\MemoirChapStyle}{daleif1}
+\newcommand{\MemoirPageStyle}{Ruled}
 
 % Space between paragraphs
 \usepackage{parskip}
@@ -239,9 +213,9 @@ $endif$
 \makeatletter
 % 1" margins for the front matter.
 \newcommand*{\SmallMargins}{
-  \setlrmarginsandblock{$spinemargin$}{$smallmargin$}{*}
+  \setlrmarginsandblock{2cm}{2cm}{*}
   \setmarginnotes{0.1in}{0.1in}{0.1in}
- \setulmarginsandblock{$uppermargin$}{$lowermargin$}{*}
+ \setulmarginsandblock{2cm}{2cm}{*}
   \checkandfixthelayout
   \ch@ngetext
   \clearpage
@@ -252,29 +226,10 @@ $endif$
 }
 
 % 3" outer margin for the main matter
-$if(largemargins)$
-\newcommand*{\LargeMargins}{
-  \setlrmarginsandblock{$spinemargin$}{$largemargin$}{*}
-  \setmarginnotes{0.2in}{$marginnote$}{0.1in}
-  \setsidecaps{0.2in}{$marginnote$}
-  \setulmarginsandblock{$uppermargin$}{$lowermargin$}{*}
-  \checkandfixthelayout
-  \ch@ngetext
-  \clearpage
-  \setlength{\widthw}{\textwidth+\marginparsep+\marginparwidth}
-  \footnotesinmargin
-  \chapterstyle{\MemoirChapStyle}	% Chapter and page styles must be recalled
-  \pagestyle{\MemoirPageStyle}
-}
-$else$
 \newcommand{\LargeMargins}{\SmallMargins}
-$endif$
 \makeatother
 
 % Figure captions and footnotes in outer margins
-$if(largemargins)$
-\usepackage[margincaption,outercaption,ragged,wide]{sidecap}
-$endif$
 
 
 % Main title page with filigrane
@@ -289,8 +244,8 @@ $endif$
 	\end{textblock}
 	\begin{textblock}{140}(50, 125)
 		\flushright
-		{\fontfamily{qtm} À travers ce rapport, je dédicace
-		cette année de M2 à Thomas M. Kyle, lauréat du prix Ignobel 1991 pour la
+		{\fontfamily{qtm} \raggedright \itshape À travers ce rapport, je dédicace
+		cette année de M2 à *Thomas M. Kyle*, lauréat du prix Ignobel 1991 pour la
 		découverte de l'élément le plus lourd de l'Univers : l’Administratium. Je
 		salue les efforts cumulés mis en oeuvre pour honorer le trentième 
 		anniversaire de ce prix et remercie ceux qui ont su faire preuves de patience.}
@@ -331,9 +286,7 @@ $endif$
 %% PDF title page to insert
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$if(pdftitlepage)$
 \usepackage{pdfpages}
-$endif$
 
 
 %% Bibliography
@@ -341,53 +294,6 @@ $endif$
 
 \usepackage[strict,autostyle]{csquotes}
 % Repeated citation as author-year-title instead of author-title (modification of footcite:note in verbose-inote.cbx)
-$if(largemargins)$
-\renewbibmacro*{footcite:note}{%
-	\ifnameundef{labelname}
-		{\printfield{label}}
-		{\printnames{labelname}}
-	\setunit*{\nameyeardelim}
-	\iffieldundef{labelyear}
-		{}
-		{\printtext[parens]{\printfield{labelyear}\printfield{userb}}.}
-	\ifsamepage{\the\value{instcount}}{\csuse{cbx@f@\thefield{entrykey}}}
-		{}
-		{\setunit*{\nametitledelim} \printfield[title]{labeltitle}}
-	\setunit*{\addcomma\space}
-	\printtext{
-		\bibstring{seenote}\addnbspace
-		\ref{cbx@\csuse{cbx@f@\thefield{entrykey}}}
-		\iftoggle{cbx:pageref}
-		{
-			\ifsamepage{\the\value{instcount}}	{\csuse{cbx@f@\thefield{entrykey}}}
-			{}
-			{\addcomma\space\bibstring{page}\addnbspace
-			\pageref{cbx@\csuse{cbx@f@\thefield{entrykey}}}
-			}
-		}
-		{}
-	}
-}
-% Normal text in citations, to allow \textcite
-\AtEveryCite{\renewcommand*{\mkbibnamefamily}[1]{\textnormal{#1}}}
-% Add url's to computer softfware and @Misc in general, delete it in other cases
-% in citations...
-\AtEveryCitekey{%
-  \ifentrytype{misc}{%
-  }{%
-  \clearfield{url}%
-  \clearfield{urldate}%
-  }%
-}
-% ... and in bibliography
-\AtEveryBibitem{%
-  \ifentrytype{misc}{%
-  }{%
-  \clearfield{url}%
-  \clearfield{urldate}%
-}%
-}
-$endif$
 
 %% Table of Contents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -399,35 +305,18 @@ $endif$
 % Fonts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$if(largemargins)$
-% Font size of side captions and side notes
-\captionnamefont{\scriptsize}
-\captiontitlefont{\scriptsize}
-\renewcommand{\footnotesize}{\tiny}
-$endif$
 
 % Hyperref comes last
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{hyperref}
 \hypersetup{
-$if(title-meta)$
-  pdftitle={$title-meta$},
-$endif$
-$if(author-meta)$
-  pdfauthor={$author-meta$},
-$endif$
-$if(keywords)$
-  pdfkeywords={$for(keywords)$$keywords$$sep$, $endfor$},
-$endif$
-$if(colorlinks)$
+  pdftitle={Développement d'outils d'analyses pour les données de PTR-ToF-MS},
+  pdfauthor={Joris Huguenin},
   colorlinks=true,
-  linkcolor=$if(linkcolor)$$linkcolor$$else$Maroon$endif$,
-  citecolor=$if(citecolor)$$citecolor$$else$Blue$endif$,
-  urlcolor=$if(urlcolor)$$urlcolor$$else$Blue$endif$,
-$else$
-  pdfborder={0 0 0},
-$endif$
+  linkcolor=Maroon,
+  citecolor=Blue,
+  urlcolor=Blue,
   breaklinks=true}
 
 % Don't use monospace font for urls
@@ -437,15 +326,11 @@ $endif$
 % Title, author, date from YAML to LaTeX
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$if(title)$
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
-$endif$
+\title{Développement d'outils d'analyses pour les données de PTR-ToF-MS}
 
-$if(author)$
-\author{$for(author)$$author$$sep$ \and $endfor$}
-$endif$
+\author{Joris Huguenin}
 
-\date{$date$}
+\date{2021-07-08}
 
 
 % End of preamble
@@ -458,22 +343,20 @@ $endif$
 % Title page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$if(pdftitlepage)$
-\includepdf[pages=1]{$pdftitlepage$}
+\includepdf[pages=1]{images/cover.pdf}
 \cleardoublepage
-$endif$
 
-$if(maintitlepage)$
-\MainTitlePage{$maintitlepage.epigraph$}{$maintitlepage.credits$}
-$endif$
+\MainTitlePage{}{\url{https://www.cefe.cnrs.fr/fr/}
+
+CEFE : Centre Écologie Fonctionnelle et Évolutive
+
+PACE : Plateforme d'Analyse Chimique en Écologie}
 
 
 % Before Body
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$for(include-before)$
-$include-before$
-$endfor$
+
 
 
 
@@ -481,22 +364,103 @@ $endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \LargeMargins
-$if(toc)$
 {
-$if(colorlinks)$
-\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$$endif$}
-$endif$
-\setcounter{tocdepth}{$toc-depth$}
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
 \tableofcontents
 }
-$endif$
 
 
 % Body
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \LargeMargins
-$body$
+\hypertarget{remerciements}{%
+\chapter*{Remerciements}\label{remerciements}}
+\addcontentsline{toc}{chapter}{Remerciements}
+
+Merci à tous
+
+\mainmatter
+
+\hypertarget{contexte}{%
+\chapter{Contexte}\label{contexte}}
+
+\hypertarget{plan}{%
+\section{plan}\label{plan}}
+
+Contexte\\
+- présentation labo\\
+- projets\\
+- stage\\
+- expériences\\
+- congrès
+
+\hypertarget{blabla-initial}{%
+\section{blabla initial}\label{blabla-initial}}
+
+\emph{RStudio} en version supérieure à 1 doit être utilisé.
+Le package \textbf{bookdown} doit être installé.
+
+\hypertarget{pruxe9sentation-de-la-ptr-tof-ms}{%
+\chapter{Présentation de la PTR-ToF-MS}\label{pruxe9sentation-de-la-ptr-tof-ms}}
+
+\hypertarget{plan-1}{%
+\section{plan}\label{plan-1}}
+
+Théorie du PTR-MS + explication des datas\\
+- instrumentation générale\\
+- présentation des spectres\\
+- tailles des matrix
+
+\hypertarget{blabla-initiale}{%
+\section{blabla initiale}\label{blabla-initiale}}
+
+La syntaxe de \emph{R Mardown} étendue par \emph{Bookdown} est rappelée ici, en Anglais.
+
+Les références bibliographiques \autocite{xie_2015} sont supportées.
+
+\hypertarget{plan-dexpuxe9rience-en-uxe9cologie-chimique}{%
+\chapter{Plan d'expérience en écologie chimique}\label{plan-dexpuxe9rience-en-uxe9cologie-chimique}}
+
+\hypertarget{plan-2}{%
+\section{plan}\label{plan-2}}
+
+Plan d'expérience\\
+- retour sur les manips (poules amandes / lavandes / figuiers)\\
+- critiques
+
+\hypertarget{introduction-au-package-provoc}{%
+\chapter{Introduction au package proVOC}\label{introduction-au-package-provoc}}
+
+\hypertarget{plan-3}{%
+\section{plan}\label{plan-3}}
+
+package proVOC\\
+- explication général\\
+- science reproductible\\
+- analyse AUC\\
+- spectre circulaire\\
+- regression linéaire\\
+- rapport automatique
+
+\hypertarget{muxe9thodes-multivariuxe9es}{%
+\chapter{Méthodes Multivariées}\label{muxe9thodes-multivariuxe9es}}
+
+\hypertarget{plan-4}{%
+\section{Plan}\label{plan-4}}
+
+Méthodes multivariées\\
+- ACP\\
+- MCR\\
+- ICA
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\hypertarget{rapport-dactivituxe9}{%
+\chapter{Rapport d'activité}\label{rapport-dactivituxe9}}
 
 
 % Bibliography
@@ -505,38 +469,23 @@ $body$
 \backmatter
 \SmallMargins
 
-$if(biblatex)$
-$if(longbibliography)$
-\twocolumn
-\renewcommand*{\bibfont}{\scriptsize}
-$endif$
-\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+\printbibliography
 \onecolumn
-$endif$
 
 
 % Tables (of tables, of figures)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$if(lot)$
-\cleardoublepage
-\LargeMargins
-\listoftables
-$endif$
 
-$if(lof)$
 \cleardoublepage
 \LargeMargins
 \listoffigures
-$endif$
 
 
 % After-body (LaTeX code inclusion)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$for(include-after)$
-$include-after$
-$endfor$
+
 
 
 % Back cover
@@ -547,28 +496,22 @@ $endfor$
 \SmallMargins
 \thispagestyle{empty}
 
-$if(backcoverfontsize)$
-\begin{$backcoverfontsize$}
-$endif$
+\begin{normalsize}
 
-$if(backcover)$
 \begin{description}
 
-$for(backcover)$
-\selectlanguage{$backcover.language$}
-\item[$backcover.abstractlabel$]
-$backcover.abstract$
-\item[$backcover.keywordlabel$]
-$for(backcover.keywords)$$backcover.keywords$$sep$, $endfor$.
+\selectlanguage{english}
+\item[Abstract]
+English abstract, on the last page.
+
+This is a bookdown template based on LaTeX memoir class.
+\item[Keywords]
+Keyword in English, As a list.
 ~\\
-$endfor$
 
 \end{description}
-$endif$
 
-$if(backcoverfontsize)$
-\end{$backcoverfontsize$}
-$endif$
+\end{normalsize}
 
 \vspace*{\fill}
 \centering\includegraphics[width=.3\textwidth]{images/logo}

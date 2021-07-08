@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.5)  8 JUL 2021 11:04
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.5)  8 JUL 2021 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**MyBook.tex
-(./MyBook.tex
+**M2_SSV_JH.tex
+(./M2_SSV_JH.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-06-18>
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/memoir.c
@@ -2169,7 +2169,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 320.
 Package hyperref Info: Option `breaklinks' set `true' on input line 320.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
-(./MyBook.aux
+(./M2_SSV_JH.aux
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 26.
@@ -2177,18 +2177,18 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 78.
-LaTeX Info: Redefining \sffamily on input line 78.
-LaTeX Info: Redefining \ttfamily on input line 78.
-Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 82.
 LaTeX Info: Redefining \sffamily on input line 82.
 LaTeX Info: Redefining \ttfamily on input line 82.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 86.
+LaTeX Info: Redefining \sffamily on input line 86.
+LaTeX Info: Redefining \ttfamily on input line 86.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
 )
-\openout1 = `MyBook.aux'.
+\openout1 = `M2_SSV_JH.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 340.
 LaTeX Font Info:    ... okay on input line 340.
@@ -2537,11 +2537,11 @@ Package biblatex Info: ... and expl3
 se-expl3.sty
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout4 = `MyBook.bcf'.
+\openout4 = `M2_SSV_JH.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'MyBook.bbl' found.
-(./MyBook.bbl)
+Package biblatex Info: ... file 'M2_SSV_JH.bbl' found.
+(./M2_SSV_JH.bbl)
 Package biblatex Info: Reference section=0 on input line 340.
 Package biblatex Info: Reference segment=0 on input line 340.
 Package hyperref Info: Link coloring ON on input line 340.
@@ -2566,9 +2566,9 @@ LaTeX Info: Redefining \nameref on input line 340.
 LaTeX Info: Redefining \ref on input line 340.
 LaTeX Info: Redefining \pageref on input line 340.
 LaTeX Info: Redefining \nameref on input line 340.
-(./MyBook.out) (./MyBook.out)
+(./M2_SSV_JH.out) (./M2_SSV_JH.out)
 \@outlinefile=\write6
-\openout6 = `MyBook.out'.
+\openout6 = `M2_SSV_JH.out'.
 
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
@@ -2602,9 +2602,9 @@ File: images/cover.pdf Graphic file (type pdf)
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 737pt by 481pt
-Spine and edge margins: 57.81621pt and 57.81621pt
-Upper and lower margins: 57.81621pt and 50.23064pt
+Text height and width: 737pt by 483pt
+Spine and edge margins: 56.9055pt and 56.9055pt
+Upper and lower margins: 56.9055pt and 51.14134pt
 Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -2692,9 +2692,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--353
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 737pt by 481pt
-Spine and edge margins: 57.81621pt and 57.81621pt
-Upper and lower margins: 57.81621pt and 50.23064pt
+Text height and width: 737pt by 483pt
+Spine and edge margins: 56.9055pt and 56.9055pt
+Upper and lower margins: 56.9055pt and 51.14134pt
 Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -2711,7 +2711,7 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
 (Font)              using `TU/lmr/bx/n' instead on input line 371.
 
-(./MyBook.toc
+(./M2_SSV_JH.toc
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 3.
@@ -2719,14 +2719,14 @@ LaTeX Info: Redefining \sffamily on input line 3.
 LaTeX Info: Redefining \ttfamily on input line 3.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 37.
-LaTeX Info: Redefining \sffamily on input line 37.
-LaTeX Info: Redefining \ttfamily on input line 37.
-Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 39.
 LaTeX Info: Redefining \sffamily on input line 39.
 LaTeX Info: Redefining \ttfamily on input line 39.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 41.
+LaTeX Info: Redefining \sffamily on input line 41.
+LaTeX Info: Redefining \ttfamily on input line 41.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 )
@@ -2735,9 +2735,9 @@ Package polyglossia Info: Option: French, variant=french.
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 737pt by 481pt
-Spine and edge margins: 57.81621pt and 57.81621pt
-Upper and lower margins: 57.81621pt and 50.23064pt
+Text height and width: 737pt by 483pt
+Spine and edge margins: 56.9055pt and 56.9055pt
+Upper and lower margins: 56.9055pt and 51.14134pt
 Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -2772,15 +2772,17 @@ ng=tex-text;!
 
 ] [9] [10
 
+] [11] [12
+
 ]
 
 ******************************************************
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 737pt by 481pt
-Spine and edge margins: 57.81621pt and 57.81621pt
-Upper and lower margins: 57.81621pt and 50.23064pt
+Text height and width: 737pt by 483pt
+Spine and edge margins: 56.9055pt and 56.9055pt
+Upper and lower margins: 56.9055pt and 51.14134pt
 Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -2795,10 +2797,10 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[11
+[13
 
 
-] [12
+] [14
 
 
 ]
@@ -2807,9 +2809,9 @@ ng=tex-text;!
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 737pt by 481pt
-Spine and edge margins: 57.81621pt and 57.81621pt
-Upper and lower margins: 57.81621pt and 50.23064pt
+Text height and width: 737pt by 483pt
+Spine and edge margins: 56.9055pt and 56.9055pt
+Upper and lower margins: 56.9055pt and 51.14134pt
 Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -2822,7 +2824,7 @@ Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-(./MyBook.lof
+(./M2_SSV_JH.lof
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 3.
@@ -2830,17 +2832,17 @@ LaTeX Info: Redefining \sffamily on input line 3.
 LaTeX Info: Redefining \ttfamily on input line 3.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 15.
-LaTeX Info: Redefining \sffamily on input line 15.
-LaTeX Info: Redefining \ttfamily on input line 15.
-Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 17.
 LaTeX Info: Redefining \sffamily on input line 17.
 LaTeX Info: Redefining \ttfamily on input line 17.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-) [13
+LaTeX Info: Redefining \rmfamily on input line 19.
+LaTeX Info: Redefining \sffamily on input line 19.
+LaTeX Info: Redefining \ttfamily on input line 19.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+) [15
 
 ]
 
@@ -2848,9 +2850,9 @@ Package polyglossia Info: Option: French, variant=french.
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 737pt by 481pt
-Spine and edge margins: 57.81621pt and 57.81621pt
-Upper and lower margins: 57.81621pt and 50.23064pt
+Text height and width: 737pt by 483pt
+Spine and edge margins: 56.9055pt and 56.9055pt
+Upper and lower margins: 56.9055pt and 51.14134pt
 Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -2863,18 +2865,18 @@ Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-LaTeX Info: Redefining \rmfamily on input line 496.
-LaTeX Info: Redefining \sffamily on input line 496.
-LaTeX Info: Redefining \ttfamily on input line 496.
+LaTeX Info: Redefining \rmfamily on input line 503.
+LaTeX Info: Redefining \sffamily on input line 503.
+LaTeX Info: Redefining \ttfamily on input line 503.
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--504
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
 
  []
 
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 505.
-LaTeX Info: Redefining \sffamily on input line 505.
-LaTeX Info: Redefining \ttfamily on input line 505.
+LaTeX Info: Redefining \rmfamily on input line 512.
+LaTeX Info: Redefining \sffamily on input line 512.
+LaTeX Info: Redefining \ttfamily on input line 512.
 Package polyglossia Info: Option: French, variant=french.
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
@@ -2944,17 +2946,17 @@ braces):
 >  {italian/babelname}  =>  {italian}
 >  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[14
+[16
 
 
 ]
 \tf@toc=\write7
-\openout7 = `MyBook.toc'.
+\openout7 = `M2_SSV_JH.toc'.
 
 \tf@lof=\write8
-\openout8 = `MyBook.lof'.
+\openout8 = `M2_SSV_JH.lof'.
 
-(./MyBook.aux
+(./M2_SSV_JH.aux
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 26.
@@ -2962,33 +2964,33 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 79.
-LaTeX Info: Redefining \sffamily on input line 79.
-LaTeX Info: Redefining \ttfamily on input line 79.
-Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 83.
 LaTeX Info: Redefining \sffamily on input line 83.
 LaTeX Info: Redefining \ttfamily on input line 83.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 87.
+LaTeX Info: Redefining \sffamily on input line 87.
+LaTeX Info: Redefining \ttfamily on input line 87.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 )
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `MyBook.out' has not changed.
-(rerunfilecheck)             Checksum: B77468E6BAB414EE13B01165A74ED6C6;2025.
-Package logreq Info: Writing requests to 'MyBook.run.xml'.
-\openout1 = `MyBook.run.xml'.
+Package rerunfilecheck Info: File `M2_SSV_JH.out' has not changed.
+(rerunfilecheck)             Checksum: 2421CD3252036BFE59A33CBFCF29A6D7;2166.
+Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
+\openout1 = `M2_SSV_JH.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44029 strings out of 478451
- 859053 string characters out of 5856875
- 1829380 words of memory out of 5000000
- 63630 multiletter control sequences out of 15000+600000
+ 44030 strings out of 478451
+ 859168 string characters out of 5856875
+ 1829491 words of memory out of 5000000
+ 63631 multiletter control sequences out of 15000+600000
  416345 words of font info for 63 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 99i,17n,120p,1151b,5632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,17n,120p,1154b,5632s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MyBook.pdf (22 pages).
+Output written on M2_SSV_JH.pdf (24 pages).

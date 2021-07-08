@@ -2,31 +2,24 @@
 title: "Développement d’outils d’analyses pour les données de PTR-ToF-MS"
 author: "Joris Huguenin"
 date: "`r Sys.Date()`"
-url: https://GitHubID.github.io/Repository/
+url: https://github.com/JHuguenin/M2_SSV_JH.git
 github-repo: GitHubID/Repository
-description: "Bookdown template based on LaTeX memoir class"
+description: "Mémoire de master mathémathique Statistique pour les Sciences de la Vie"
 cover-image: "images/logo.png"
 # Title page...
 maintitlepage:
   epigraph: |
-    This document is reproducible thanks to:
-    \begin{itemize}
-      \item \LaTeX and its class memoir (\url{http://www.ctan.org/pkg/memoir}).
-      \item R (\url{http://www.r-project.org/}) and RStudio (\url{http://www.rstudio.com/})
-      \item bookdown (\url{http://bookdown.org/}) and memoiR (\url{https://ericmarcon.github.io/memoiR/})
-    \end{itemize}
   credits: |
-    Name of the owner of the logo
+    \url{https://www.cefe.cnrs.fr/fr/}
     
-    \url{http://www.company.com}
+    CEFE : Centre Écologie Fonctionnelle et Évolutive  
     
-    An explanatory sentence.
-    Leave an empty line for line breaks.
+    PACE : Plateforme d'Analyse Chimique en Écologie
 # ... or a PDF cover
 pdftitlepage: images/cover.pdf
 # Language
-lang: en-US
-otherlangs: [fr-FR,it]
+lang: fr-FR
+otherlangs: [en-US,it]
 # LaTeX
 documentclass: memoir
 classoption:
@@ -49,12 +42,12 @@ MemoirChapStyle: daleif1           # or companion with large margins
 MemoirPageStyle: Ruled             # or companion with large margins
 # Margins
 largemargins: false                # or true for large margins
-smallmargin: 1.5in                 # outer margin (small).
-largemargin: 3in                   # outer margin (large)
-marginnote:  1.8in                 # note width in large margin
-spinemargin: 1.5in                 # spine margin. Reduce to 1.2 with large margins.
-uppermargin: 1.5in                 # upper margin
-lowermargin: 1in                   # lower margin
+smallmargin: 2cm                 # outer margin (small).
+largemargin: 2cm                   # outer margin (large)
+marginnote:  2cm                 # note width in large margin
+spinemargin: 2cm                 # spine margin. Reduce to 1.2 with large margins.
+uppermargin: 2cm                 # upper margin
+lowermargin: 2cm                   # lower margin
 # Table of contents
 toc-depth: 2
 # Section numbering
@@ -175,35 +168,10 @@ set.seed(973)
 ```
 
 
-# Introduction {-}
+# Remerciements {-}
 
-This document allows you to create a book in PDF format (and ePub format) at the same time as an HTML version to be published on the web.
-The syntax is that of **Markdown** with some extensions.
+Merci à tous
 
-The **bookdown** package must be installed from CRAN or GitHub:
-
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
-```
-
-The book is organized in chapters. 
-Each chapter is an Rmd file, whose name normally begins with its number (e.g. `01-intro.Rmd`).
-All Rmd files in the project folder are actually treated as chapters, sorted by filename.
-The index.Rmd file is special: it contains the document header and the first chapter.
-
-This first chapter is placed in the foreword of the printed book: it should not be numbered (hence the `{-}` code next to the title) in the HTML version.
-It must end with the LaTeX command `\mainmatter` which marks the beginning of the body of the book.
-
-The outline levels start with `#` for chapters (only one per file), `##` for sections, etc.
-
-Compilation in PDF format is done by XeLaTeX, which must be installed.
-
-While writing, it is strongly advised to create only the HTML file, which is much faster than a LaTeX compilation.
-Each chapter can be viewed very quickly by clicking on the _Knit_ button above the source window.
-The entire book is created by clicking on the _Build Book_ button in the RStudio _Build_ window.
-The button's drop-down list allows you to create all documents or limit yourself to one format.
 
 <!-- The \mainmatter command marks the beginning of the LaTeX document body--> 
 <!-- It must not be deleted-->
