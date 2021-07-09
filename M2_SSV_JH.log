@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.5)  8 JUL 2021 14:23
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.5)  8 JUL 2021 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2622,13 +2622,6 @@ Overfull \hbox (12.93422pt too wide) in paragraph at lines 353--353
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for TU+qtm on input line 35
-3.
-LaTeX Font Info:    No file TUqtm.fd. on input line 353.
-
-LaTeX Font Warning: Font shape `TU/qtm/m/it' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 353.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 353--353
 
@@ -2985,10 +2978,10 @@ Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44030 strings out of 478451
- 859168 string characters out of 5856875
- 1829491 words of memory out of 5000000
- 63631 multiletter control sequences out of 15000+600000
+ 44020 strings out of 478451
+ 859061 string characters out of 5856875
+ 1829487 words of memory out of 5000000
+ 63623 multiletter control sequences out of 15000+600000
  416345 words of font info for 63 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  99i,17n,120p,1154b,5632s stack positions out of 5000i,500n,10000p,200000b,80000s
