@@ -34,7 +34,11 @@ Pour une compréhension plus exhaustive, je recommande la lecture des articles d
 
 ### présentation des spectres  
  
-tailles des matrix 158points  
+tailles des matrix 158768 points  
+
+figure \@ref(3lav_MS))
+
+![spectre MS](images/3lavandes_8h.tif){#3lav_MS}
   
 ## Rival ou allié de la GC-MS ?  
 
