@@ -1,0 +1,16 @@
+# Méthodes Multivariées {#chap3}
+
+## Plan
+
+### bourgeon {#anaalm}  
+
+blabla voir le détail section \@ref(expalm)
+
+### lavande  {#analav}
+
+blabla voir le détail section \@ref(explav)
+
+Méthodes multivariées  
+  - ACP  
+  - MCR  
+  - ICA 

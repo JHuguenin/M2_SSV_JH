@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.5)  8 JUL 2021 16:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.13)  16 AUG 2021 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **M2_SSV_JH.tex
 (./M2_SSV_JH.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-06-18>
+L3 programming layer <2021-07-12>
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/memoir.c
 ls
 Document Class: memoir 2021/06/16 v3.7p configurable book, report, article docu
@@ -385,6 +385,41 @@ Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
 )
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.s
+ty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/co
+lor.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xe
+tex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsn
+am.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.d
+ef
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+)
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.d
+ef
+File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
+))
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssym
 b.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -466,11 +501,11 @@ LaTeX Info: Redefining \] on input line 2924.
 icode-math.sty
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.
 sty
-Package: expl3 2021-06-18 L3 programming layer (loader) 
+Package: expl3 2021-07-12 L3 programming layer (loader) 
 
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3bac
 kend-xetex.def
-File: l3backend-xetex.def 2021-05-07 L3 backend support: XeTeX
+File: l3backend-xetex.def 2021-08-04 L3 backend support: XeTeX
 (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count314
 \l__color_backend_stack_int=\count315
@@ -490,11 +525,11 @@ TeX
 
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xpar
 se/xparse.sty
-Package: xparse 2021-06-18 L3 Experimental document command parser
+Package: xparse 2021-08-04 L3 Experimental document command parser
 )
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3ke
 ys2e/l3keys2e.sty
-Package: l3keys2e 2021-06-18 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2021-08-04 LaTeX2e option processing using LaTeX3 keys
 )
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontsp
 ec.sty
@@ -574,41 +609,6 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/micro
 type.cfg
 File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
-))
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.s
-ty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/co
-lor.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: xetex.def on input line 225.
-
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xe
-tex.def
-File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
-)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsn
-am.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.d
-ef
-File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
-)
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.d
-ef
-File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
 ))
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable
 .sty
@@ -1287,7 +1287,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear-ibid.dbx' not found.
+Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count404
@@ -1404,18 +1404,12 @@ File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count480
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear-ibid'...
-Package biblatex Info: ... file 'authoryear-ibid.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
 
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/au
-thoryear-ibid.bbx
-File: authoryear-ibid.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
-
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/au
-thoryear.bbx
-File: authoryear.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/al
+phabetic.bbx
+File: alphabetic.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -1424,13 +1418,13 @@ andard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count481
 \c@bbx:relatedtotal=\count482
-)))
-Package biblatex Info: Trying to load citation style 'authoryear-ibid'...
-Package biblatex Info: ... file 'authoryear-ibid.cbx' found.
+))
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/au
-thoryear-ibid.cbx
-File: authoryear-ibid.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+(c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/al
+phabetic.cbx
+File: alphabetic.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1438,6 +1432,9 @@ Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -2165,8 +2162,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip366
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 320.
-Package hyperref Info: Option `breaklinks' set `true' on input line 320.
+Package hyperref Info: Option `colorlinks' set `true' on input line 345.
+Package hyperref Info: Option `breaklinks' set `true' on input line 345.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
 (./M2_SSV_JH.aux
@@ -2177,53 +2174,63 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 82.
-LaTeX Info: Redefining \sffamily on input line 82.
-LaTeX Info: Redefining \ttfamily on input line 82.
+LaTeX Info: Redefining \rmfamily on input line 210.
+LaTeX Info: Redefining \sffamily on input line 210.
+LaTeX Info: Redefining \ttfamily on input line 210.
+LaTeX Info: Redefining \rmfamily on input line 214.
+LaTeX Info: Redefining \sffamily on input line 214.
+LaTeX Info: Redefining \ttfamily on input line 214.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 86.
-LaTeX Info: Redefining \sffamily on input line 86.
-LaTeX Info: Redefining \ttfamily on input line 86.
+LaTeX Info: Redefining \rmfamily on input line 218.
+LaTeX Info: Redefining \sffamily on input line 218.
+LaTeX Info: Redefining \ttfamily on input line 218.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 222.
+LaTeX Info: Redefining \sffamily on input line 222.
+LaTeX Info: Redefining \ttfamily on input line 222.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 )
 \openout1 = `M2_SSV_JH.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 340.
-LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 340.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 365.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 340.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 365.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 340.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 365.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 340.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 365.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 340.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 365.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 340.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 365.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 340.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 365.
 
 Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
@@ -2252,7 +2259,7 @@ pt=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 340.
+(Font)              scaled to size 12.0pt on input line 365.
 
 Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
@@ -2291,18 +2298,18 @@ pt=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 340.
+(Font)              scaled to size 12.0pt on input line 365.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 340.
+(Font)              `operators' in the math version `normal' on input line 365.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 340.
+ line 365.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 340.
+(Font)              `operators' in the math version `bold' on input line 365.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 340.
+t line 365.
 
 Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
@@ -2389,15 +2396,15 @@ t=math;language=dflt;"
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 340.
+(Font)              `symbols' in the math version `normal' on input line 365.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 340.
+t line 365.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 340.
+(Font)              `symbols' in the math version `bold' on input line 365.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 340.
+t line 365.
 
 Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
@@ -2467,17 +2474,17 @@ pt=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 3
-40.
+65.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 340.
+t line 365.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 340
+(Font)              `largesymbols' in the math version `bold' on input line 365
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 340.
-LaTeX Info: Redefining \microtypecontext on input line 340.
+t line 365.
+LaTeX Info: Redefining \microtypecontext on input line 365.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -2529,7 +2536,7 @@ Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2021-06-18 L3 programming layer (loader) 
+(biblatex)             2021-07-12 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -2542,9 +2549,9 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'M2_SSV_JH.bbl' found.
 (./M2_SSV_JH.bbl)
-Package biblatex Info: Reference section=0 on input line 340.
-Package biblatex Info: Reference segment=0 on input line 340.
-Package hyperref Info: Link coloring ON on input line 340.
+Package biblatex Info: Reference section=0 on input line 365.
+Package biblatex Info: Reference segment=0 on input line 365.
+Package hyperref Info: Link coloring ON on input line 365.
 
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/namere
 f.sty
@@ -2562,19 +2569,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 340.
-LaTeX Info: Redefining \ref on input line 340.
-LaTeX Info: Redefining \pageref on input line 340.
-LaTeX Info: Redefining \nameref on input line 340.
+LaTeX Info: Redefining \nameref on input line 365.
+LaTeX Info: Redefining \ref on input line 365.
+LaTeX Info: Redefining \pageref on input line 365.
+LaTeX Info: Redefining \nameref on input line 365.
 (./M2_SSV_JH.out) (./M2_SSV_JH.out)
 \@outlinefile=\write6
 \openout6 = `M2_SSV_JH.out'.
 
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 340.
-LaTeX Info: Redefining \sffamily on input line 340.
-LaTeX Info: Redefining \ttfamily on input line 340.
+LaTeX Info: Redefining \rmfamily on input line 365.
+LaTeX Info: Redefining \sffamily on input line 365.
+LaTeX Info: Redefining \ttfamily on input line 365.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 File: images/cover.pdf Graphic file (type pdf)
@@ -2618,12 +2625,12 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
 
-Overfull \hbox (12.93422pt too wide) in paragraph at lines 353--353
+Overfull \hbox (12.93422pt too wide) in paragraph at lines 378--378
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
 
  []
 
@@ -2633,27 +2640,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--353
 File: images//logo.pdf Graphic file (type pdf)
 <use images//logo.pdf>
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 353.
+(Font)              scaled to size 8.4pt on input line 378.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 353.
+(Font)              scaled to size 6.0pt on input line 378.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-53.
+78.
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 353.
+(Font)              scaled to size 12.0011pt on input line 378.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40076pt on input line 353.
+(Font)              scaled to size 8.40076pt on input line 378.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 353.
+(Font)              scaled to size 6.00055pt on input line 378.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 353.
+(Font)              scaled to size 11.99872pt on input line 378.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 353.
+(Font)              scaled to size 8.3991pt on input line 378.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 353.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 353
+(Font)              scaled to size 5.99936pt on input line 378.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 378
 .
 
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.f
@@ -2664,7 +2671,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 a.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 353
+LaTeX Font Info:    Trying to load font information for U+msb on input line 378
 .
 
 (c:/Users/huguenin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.f
@@ -2675,7 +2682,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 b.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
 
  []
 
@@ -2702,7 +2709,7 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 
 
 LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
-(Font)              using `TU/lmr/bx/n' instead on input line 371.
+(Font)              using `TU/lmr/bx/n' instead on input line 396.
 
 (./M2_SSV_JH.toc
 Package polyglossia Info: Option: French, variant=french.
@@ -2712,14 +2719,24 @@ LaTeX Info: Redefining \sffamily on input line 3.
 LaTeX Info: Redefining \ttfamily on input line 3.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 39.
-LaTeX Info: Redefining \sffamily on input line 39.
-LaTeX Info: Redefining \ttfamily on input line 39.
+LaTeX Info: Redefining \rmfamily on input line 53.
+LaTeX Info: Redefining \sffamily on input line 53.
+LaTeX Info: Redefining \ttfamily on input line 53.
+LaTeX Info: Redefining \rmfamily on input line 55.
+LaTeX Info: Redefining \sffamily on input line 55.
+LaTeX Info: Redefining \ttfamily on input line 55.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 41.
-LaTeX Info: Redefining \sffamily on input line 41.
-LaTeX Info: Redefining \ttfamily on input line 41.
+LaTeX Info: Redefining \rmfamily on input line 57.
+LaTeX Info: Redefining \sffamily on input line 57.
+LaTeX Info: Redefining \ttfamily on input line 57.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 59.
+LaTeX Info: Redefining \sffamily on input line 59.
+LaTeX Info: Redefining \ttfamily on input line 59.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 )
@@ -2750,22 +2767,120 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 
 ] [7] [8
 
-] [1
+]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 421.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 421.
+[1
 
 ] [2
 
-]
+] [3]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[3] [4
 
-] [5] [6
+Underfull \hbox (badness 1728) in paragraph at lines 468--468
+[][] [][][]\TU/lmr/m/n/10 Découvrir l’étrangeté d’une pensée en langue étrangèr
+e constitue une expérience herméneutique
+ []
 
-] [7] [8
+[4]
+Underfull \hbox (badness 5741) in paragraph at lines 502--504
+\TU/lmr/m/n/12 l’évaluation des chercheurs et enseignants-chercheurs, des proje
+ts et des
+ []
 
-] [9] [10
+[5]
+File: images/poule1.jpg Graphic file (type bmp)
+<images/poule1.jpg>
+[6]
+File: images/poule2.jpg Graphic file (type bmp)
+<images/poule2.jpg>
+[7]
+Underfull \vbox (badness 2343) has occurred while \output is active []
 
-] [11] [12
+[8] [9] [10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 581--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--585
+
+ []
+
+[11]
+File: images/schema_vocus.PNG Graphic file (type bmp)
+<images/schema_vocus.PNG>
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+File: images/schema_TOF.jpg Graphic file (type bmp)
+<images/schema_TOF.jpg>
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+
+Underfull \hbox (badness 1527) in paragraph at lines 619--619
+[]\TU/lmr/m/sc/12 Fig. \TU/lmr/m/n/12 2.2 : []Schéma de la colonne TOF et du dé
+tecteur MS (Reproduit de l’article
+ []
+
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 638--640
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 642--644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--648
+
+ []
+
+[13] [14] [15
+
+] [16
+
+] [17] [18
 
 ]
 
@@ -2790,10 +2905,257 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[13
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+
+Underfull \hbox (badness 3179) in paragraph at lines 694--694
+[]\TU/lmr/m/n/12 M. []\TU/lmr/m/sc/12 Graus[]​\TU/lmr/m/n/12 , M. []\TU/lmr/m/s
+c/12 Müller[]​ \TU/lmr/m/n/12 et A. []\TU/lmr/m/sc/12 Hansel[]​\TU/lmr/m/n/12 .
+ «  High resolution PTR-TOF :
+ []
+
+[19
 
 
-] [14
+]
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+
+Overfull \hbox (188.58412pt too wide) in paragraph at lines 694--694
+\TU/lmr/m/it/12 Spectrometry \TU/lmr/m/n/12 20.6 (2006). _eprint : https ://ana
+lyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/rcm.2405,
+ []
+
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+
+Underfull \hbox (badness 2277) in paragraph at lines 694--694
+[]\TU/lmr/m/n/12 A. []\TU/lmr/m/sc/12 Jordan[]​\TU/lmr/m/n/12 , S. []\TU/lmr/m/
+sc/12 Haidacher[]​\TU/lmr/m/n/12 , G. []\TU/lmr/m/sc/12 Hanel[]​\TU/lmr/m/n/12 
+, E. []\TU/lmr/m/sc/12 Hartungen[]​\TU/lmr/m/n/12 , L. []\TU/lmr/m/sc/12 Märk[]
+​\TU/lmr/m/n/12 , H.
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 694--694
+\TU/lmr/m/n/12 and high sensitivity proton-transfer-reaction time-of-flight mas
+s spectrometer
+ []
+
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+[20]
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+
+Underfull \hbox (badness 2237) in paragraph at lines 694--694
+[]\TU/lmr/m/n/12 H. []\TU/lmr/m/sc/12 Tanimoto[]​\TU/lmr/m/n/12 , N. []\TU/lmr/
+m/sc/12 Aoki[]​\TU/lmr/m/n/12 , S. []\TU/lmr/m/sc/12 Inomata[]​\TU/lmr/m/n/12 ,
+ J. []\TU/lmr/m/sc/12 Hirokawa[]​ \TU/lmr/m/n/12 et Y. []\TU/lmr/m/sc/12 Sadana
+ga[]​\TU/lmr/m/n/12 .
+ []
+
+[21] [22
 
 
 ]
@@ -2825,17 +3187,31 @@ LaTeX Info: Redefining \sffamily on input line 3.
 LaTeX Info: Redefining \ttfamily on input line 3.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 17.
-LaTeX Info: Redefining \sffamily on input line 17.
-LaTeX Info: Redefining \ttfamily on input line 17.
-Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
+Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
+ng=tex-text;!
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
+LaTeX Info: Redefining \rmfamily on input line 21.
+LaTeX Info: Redefining \sffamily on input line 21.
+LaTeX Info: Redefining \ttfamily on input line 21.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-) [15
+LaTeX Info: Redefining \rmfamily on input line 23.
+LaTeX Info: Redefining \sffamily on input line 23.
+LaTeX Info: Redefining \ttfamily on input line 23.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 25.
+LaTeX Info: Redefining \sffamily on input line 25.
+LaTeX Info: Redefining \ttfamily on input line 25.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+) [23
 
 ]
 
@@ -2858,18 +3234,26 @@ Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-LaTeX Info: Redefining \rmfamily on input line 503.
-LaTeX Info: Redefining \sffamily on input line 503.
-LaTeX Info: Redefining \ttfamily on input line 503.
+LaTeX Info: Redefining \rmfamily on input line 724.
+LaTeX Info: Redefining \sffamily on input line 724.
+LaTeX Info: Redefining \ttfamily on input line 724.
+LaTeX Info: Redefining \rmfamily on input line 731.
+LaTeX Info: Redefining \sffamily on input line 731.
+LaTeX Info: Redefining \ttfamily on input line 731.
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--511
+Underfull \hbox (badness 10000) in paragraph at lines 735--737
 
  []
 
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 512.
-LaTeX Info: Redefining \sffamily on input line 512.
-LaTeX Info: Redefining \ttfamily on input line 512.
+LaTeX Info: Redefining \rmfamily on input line 738.
+LaTeX Info: Redefining \sffamily on input line 738.
+LaTeX Info: Redefining \ttfamily on input line 738.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 738.
+LaTeX Info: Redefining \sffamily on input line 738.
+LaTeX Info: Redefining \ttfamily on input line 738.
 Package polyglossia Info: Option: French, variant=french.
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
@@ -2939,7 +3323,7 @@ braces):
 >  {italian/babelname}  =>  {italian}
 >  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[16
+[24
 
 
 ]
@@ -2957,14 +3341,24 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 83.
-LaTeX Info: Redefining \sffamily on input line 83.
-LaTeX Info: Redefining \ttfamily on input line 83.
+LaTeX Info: Redefining \rmfamily on input line 210.
+LaTeX Info: Redefining \sffamily on input line 210.
+LaTeX Info: Redefining \ttfamily on input line 210.
+LaTeX Info: Redefining \rmfamily on input line 214.
+LaTeX Info: Redefining \sffamily on input line 214.
+LaTeX Info: Redefining \ttfamily on input line 214.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 87.
-LaTeX Info: Redefining \sffamily on input line 87.
-LaTeX Info: Redefining \ttfamily on input line 87.
+LaTeX Info: Redefining \rmfamily on input line 218.
+LaTeX Info: Redefining \sffamily on input line 218.
+LaTeX Info: Redefining \ttfamily on input line 218.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
+LaTeX Info: Redefining \rmfamily on input line 222.
+LaTeX Info: Redefining \sffamily on input line 222.
+LaTeX Info: Redefining \ttfamily on input line 222.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 )
@@ -2972,18 +3366,18 @@ Package polyglossia Info: Option: French, variant=french.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `M2_SSV_JH.out' has not changed.
-(rerunfilecheck)             Checksum: 2421CD3252036BFE59A33CBFCF29A6D7;2166.
+(rerunfilecheck)             Checksum: A534669C40C6D1C33891F4B4C2FDDC18;4173.
 Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 \openout1 = `M2_SSV_JH.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44020 strings out of 478451
- 859061 string characters out of 5856875
- 1829487 words of memory out of 5000000
- 63623 multiletter control sequences out of 15000+600000
- 416345 words of font info for 63 fonts, out of 8000000 for 9000
+ 44224 strings out of 478475
+ 864752 string characters out of 5857362
+ 1852743 words of memory out of 5000000
+ 63778 multiletter control sequences out of 15000+600000
+ 419303 words of font info for 88 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 99i,17n,120p,1154b,5632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,17n,120p,1882b,7084s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on M2_SSV_JH.pdf (24 pages).
+Output written on M2_SSV_JH.pdf (32 pages).

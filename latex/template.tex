@@ -8,6 +8,7 @@
 $if(colorlinks)$
 \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 $endif$
+
 % Right to left support
 $if(dir)$
   $if(latex-dir-rtl)$
@@ -26,6 +27,24 @@ $endif$
   $for(classoption)$$classoption$$sep$,$endfor$
   ]{$documentclass$}
 
+%%%% add by JH
+% REDEFINE CHAPTERS AND SECTIONS
+\usepackage{xcolor}
+% define colors
+   \definecolor{sectioncolour}{RGB}{37.6,135.4,38.1}
+   \definecolor{chaptercolour}{RGB}{37.6,135.4,38.1}
+\definecolor{subsectioncolour}{RGB}{37.6,135.4,38.1}
+
+\setsecheadstyle{\Large\bfseries\color{sectioncolour}}% Set \section style
+\setsubsecheadstyle{\large\bfseries\color{subsectioncolour}}% Set \subsection style
+
+
+\renewcommand{\chapnamefont}{\normalfont\large\scshape\raggedleft\color{chaptercolour}}
+\renewcommand{\chapnumfont}{\Huge\bfseries\color{chaptercolour}}
+\renewcommand{\chaptitlefont}{\normalfont\Huge\bfseries\sffamily\raggedleft\color{chaptercolour}}
+%%%% End ajout by JH
+
+ 
 % Double (or whatever) spacing
 $if(linestretch)$
 \usepackage{setspace}
@@ -87,6 +106,7 @@ $endif$
 % Color links
 $if(colorlinks)$
 \usepackage{xcolor}
+
 $endif$
 
 % Strikeout
@@ -204,6 +224,11 @@ $endif$
 
 % Layout
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% add by JH
+\definecolor{nicered}{rgb}{.147,.529,.149}
+\addtodef\chaptitlefont{}{\color{nicered}}
+%%%% add by JH
 
 % Based on memoir, style companion
 \newcommand{\MemoirChapStyle}{$MemoirChapStyle$}

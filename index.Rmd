@@ -38,7 +38,7 @@ mainfontoptions:
   - BoldItalicFont=*-bolditalic
 # mathfont: texgyretermes-math.otf # Times New Roman for equations
 # memoir Style
-MemoirChapStyle: daleif1           # or companion with large margins
+MemoirChapStyle: daleif1          # or companion with large margins " daleif1
 MemoirPageStyle: Ruled             # or companion with large margins
 # Margins
 largemargins: false                # or true for large margins
@@ -59,16 +59,17 @@ lof: true
 bibliography: references.bib
 biblatexoptions:
   - backend=biber
-  - style=authoryear-ibid  # or verbose-inote with large margins
+  - style=alphabetic  # or verbose-inote with large margins
 # - pageref=true           # uncomment for verbose-inotes style
   - isbn=false
   - backref=true
   - giveninits=true
   - uniquename=init
-  - maxcitenames=2
+  - maxcitenames=1
   - maxbibnames=150
   - sorting=nyt
   - sortcites=false
+csl: modern-language-association.cls
 # Chapter summary text
 chaptersummary: In a Nutshell
 # Back Cover
@@ -76,14 +77,27 @@ backcover:
   - language: english
     abstract: |
       English abstract, on the last page.
-  
       This is a bookdown template based on LaTeX memoir class.
     keywords:
-      - Keyword in English
-      - As a list
+      - Chimiometrie
+      - PTR-ToF-MS
+      - Spectroscopy
+      - Environnent
     abstractlabel: Abstract
     keywordlabel: Keywords
+  - language: french
+    abstract: |
+      Résumé en Français
+    keywords:
+      - Chimiométrie
+      - PTR-ToF-MS
+      - Spectroscopie
+      - Environnement
+    abstractlabel: Résumé
+    keywordlabel: Mots-Clés
 backcoverfontsize: normalsize
+
+
 # Figure cropping may be set to no if ghostscript is not installed
 fig_crop: true
 # Do not modify
@@ -164,7 +178,7 @@ theme_update(panel.background=element_rect(fill="transparent", colour=NA),
 knitr::opts_chunk$set(dev.args=list(bg="transparent"))
 
 # Random seed
-set.seed(973)
+set.seed(90)
 ```
 
 

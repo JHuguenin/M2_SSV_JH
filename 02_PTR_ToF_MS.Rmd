@@ -1,16 +1,48 @@
-# Présentation de la PTR-ToF-MS
+# Présentation de la PTR-ToF-MS {#chap2}
 
-## plan
+De très nombreux projets de recherches issus du CeMEB nécessitent l'analyse de **C**omposés **O**rganiques **V**olatiles (COV ou VOC en anglais) aussi communément appelés "odeurs". Les COVs sont omniprésents dans la nature et permettent, avec les autres sens, une organisation du vivant en agissant comme vecteurs d'informations de la médiation chimique. Par l’acquisition d’un PTR-ToF-MS, la communauté souhaitait lever trois verrous techniques :
 
-Théorie du PTR-MS + explication des datas   
-  - instrumentation générale  
-  - présentation des spectres  
-  - tailles des matrix  
+- l’appareil permet un fonctionnement en flux continu avec une résolution temporelle très fine (fréquence d’analyse allant jusqu’à 10 scans par seconde), permettant ainsi le suivi des cinétiques d’émissions de COV. Cet instrument simplifie drastiquement et affine les expériences cinétiques effectué par des mesures ponctuelles de GC-MS;    
+- le PTR-ToF-MS possède une excellente résolution en masse qui facilite  l’identification des molécules. Un spectre est composé de plus de 140 000 mesures de masses couvrant une large gamme des masses des COV biologiques (de 70 à 500 m/z). L’appareil possède donc une résolution environ mille fois supérieure par rapport à un simple quadripôle (PTR-MS) qui fournit des m/z à l'unité de masse atomique (uma ou Dalton Da);  
+- le seuil de détection extrêmement bas, de l’ordre du ppt (part per trillion), permet une sensibilité adaptée à la mesure de trace.
+
+## Une bréve histoire de la PTR-ToF-MS  
+
+Durant la décennie 1990, le *Institut für Ionenphysik der Leopold-Franzens-Universität* d'Innsbruck en Autriche développe un nouvel instrument pour l'analyse chimique des gaz. En travaillant avec la *Universitiitsklinik fiir Innere Medizin*, l'équipe menée par Lindinger développe un spectromètre en phase gazeuse qui ionize les molécules grâce à un gaz neutre ([@lindinger_1991] et [@lindinger_1993]). Ils comprennent rapidement l'avantage d'utiliser un proton (apporté à la réaction sous la forme H~3~O^+^) par rapport aux ions Kr^+^ et Xe^+^. Ils publient une sorte de preuve de concept en 1994 [@lagg_1994] et détaillent plus finement l'instrumentation et les réactions chimiques [@hansel_1995]^[avec des remerciements incroyables]. En 1998 sort l'article qui fait désormais référence, [@lindinger_1998a], signé par le trio Lindinger, Hansel et Jordan (et sa version courte [@lindinger_1998]).  
+
+Ionicon commercialise la même année le premier PTR-MS. Cette technique se déploie rapidement dans les sciences de l'atmosphère, médicales et biotech ([@babcock_2001]) permettant la détection de traces de COV. Rapide et sensible, la PTR-MS élimine les désavantages de la GC-MS. Cependant, la PTR-MS détecte de la masse nominale des ions. Un échantillon complexe peut contenir plusieurs ions isobares^[molécules possédant un nombre de nucléons identique.]. Il convient alors de gagner en résolution de masse et séparer ces isobares. [@jordan_2009] revient sur les tentatives les plus concluantes ([@blake_2004], [@ennis_2005], [@inomata_2006] et [@tanimoto_2007] ) avant de proposer son approche : la PTR-ToF-MS. Développé en collaboration avec la précédente équipe, le minutieux article de [@graus_2010] conclu superbement la vingtaine d'années de développement nécessaire à cette technique. Les années suivantes permmettront simplement une amélioration des différentes parties de l'instrument. 
+
+Par ailleurs, c'est au tour des mathématiciens d'apporter leur contribution et en particulier à l'équipe de Cappellin avec deux articles. Le premier, [@cappellin_2010], permet de mieux estimer la masse exacte de chaque ion détecté. Le seconde, [@cappellin_2011], offre une méthodologie détaillée de l'utilisation du PTR-TOF-MS de l'acquisition à la fin de l'analyse. Puis en 2015, [@holzinger_2015] propose un logiciel pour l'analyse des data mais cette tentative n'a pas été suivi par la communauté d'utilisateur. Il existe désormais un nombre important d'articles utilisant la PTR-TOF-MS. Bien entendu, des outils commun de chimiométries ont été utilisés pour renforcer les résultats, [@deuscher_2019]. Mais cela sera abordé dans le chapitre suivant.  
+
+Par ailleurs, je suppose que la prochaine avancée majeure viendra d'une technologie permettant de discriminer les isoméres^[molécules partageant la même formule brute mais avec une stéréochimie différente.] [@amt-14-133-2021] ^[si un mémoire de master permettait la science fiction, j'aurais évidemment développé quelques idées à propos de capteurs de champs électromagnétiques ou de spectromètres optiques à la place des capteurs MS actuels.]. Par exemple, cela permettrait de séparer les différents monoterpènes. Actuellement, ce désavantage est combler par le couplage de la PTR-TOF-MS avec une seconde technique d'analyse chimique. Ce court historique montre toutefois que la collaboration entre physiciens, chimistes, biologistes et mathématiciens est fructueuse et promis à un bel avenir.    
+
+## Instrumentation générale  
+
+Comme nous l'avons vu précédemment, le PTR-TOF-MS est conçu pour analyser finement la masse moléculaire des échantillons. Pour cela l'instrument aspire un débit d'air constant de 100 ml/min^[ou sccm, pour *standard cubic centimeters per minute*]. Cet *air in* sur la figure \@ref(schema_vocus) peut être diluée par un gaz propre (pour éviter la saturation) ou étalon (pour la calibration) puis est injecté dans le réacteur (*FIMR* pour *focusing ion-molecule reactor*). Dans cette chambre, des ions H^+^ sont également injecté à débit constant afin d'ionizer les molécules de l'échantillons (*Proton-Transfer-Reaction*).   
+
+
+![Schéma de la chambre d'ionisation (Reprinted with permission from @krechmer_2018. Copyright 2021 American Chemical Society.) ](images/schema_vocus.PNG){#schema_vocus}
+
+
+Il est important de comprendre que, contrairement à une ionization par électron^[comme c'est la cas avec la GC-MS], il n'y a quasiment pas de fragmentation moléculaire. En revanche les ions ont "une masse molaire de plus"(un proton) que les molécules initiales. Par exemple, le linalol, un COV fortement produit par la lavande, a une masse molaire de 154,249 g/mol mais sera detecté à 155,256 g/mol. Par ailleurs, le nombre d'ions MH^+^ dépend du taux de protonation de la molécule M. Sous forme d'ions, l'échantillon peut être focalisé par un champ électromagnétique généré par un quadripole et envoyé dans la partie TOF. 
+
+Une fois dans la colonne, l'énergie potentiel d'un pulse électrique à 25kHz est convertie en énergie cinétique par les ions propulsés. À énergie constante, la masse fait la différence lors de la mesure du temps de vol (TOF, figure  \@ref(schema_vocus)). Ainsi les ions les moins lourds arrivent en premiers sur le détecteur. Après calibration, une simple conversion temps de vol/ masse permet de connaître l'intensité de chaque masse d'un échantillon.
+
+![Schéma de la colonne TOF et du détecteur MS (Reproduit de l'article @graus_2010, consulatable ici : https://www.sciencedirect.com/science/article/pii/S1044030510001005#fig1](images/schema_TOF.jpg){#schema_TOF}
+
+Pour une compréhension plus exhaustive, je recommande la lecture des articles de @hansel_1995 pour la partie PTR-MS, de @graus_2010 pour la partie TOF et de @krechmer_2018 spécifique à l'instrument utilisé au CEFE. 
+
+### présentation des spectres  
+ 
+tailles des matrix 158points  
   
+## Rival ou allié de la GC-MS ?  
 
-## blabla initiale
 
-
-La syntaxe de _R Mardown_ étendue par _Bookdown_ est rappelée ici, en Anglais.
-
-Les références bibliographiques [@xie_2015] sont supportées.
+## package proVOC  
+  - explication général  
+  - science reproductible  
+  - analyse AUC  
+  - spectre circulaire  
+  - regression linéaire  
+  - rapport automatique

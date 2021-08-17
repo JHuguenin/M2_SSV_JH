@@ -1,0 +1,17 @@
+# Glossaire {-}
+
+CEFE (UMR 5175) : Centre d'Écologie Fonctionnelle et Évolutive. Laboratoire d'accueil situé sur le site de la DR13 du CNRS, route de Mende à Montpellier.  
+
+COV (ou VOC) : Composé Organique Volatile. Molécules produites par des systèmes biologique et analyse par le PTR-ToF-MS.  
+
+GC-MS : Gaz Chromatographie Mass Spectroscopy. Autre méthode d'analyse des VOC, moins sensible mais plus discriminante que la PTR-TOF-MS.  
+
+PACE : Plateforme d'Analyse Chimique en Écologie. Plateforme situé au sein de l'UMR 5175.  
+
+PTR-ToF-MS : Proton Transfert Reaction Time of Flight Mass Spectroscopy. Acronyme utilisé pour l'instrument de mesure (le PTR-ToF-MS) et pour la méthode d'analyse (la PTR-ToF-MS). Par abus de langage, l'acronyme PTR-MS est réguliérement utilisé.  
+
+
+
+
+
+`r if (knitr:::is_html_output()) '# References {-}'`

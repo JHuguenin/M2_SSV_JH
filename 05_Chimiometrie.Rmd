@@ -1,8 +1,0 @@
-# Méthodes Multivariées 
-
-## Plan
-
-Méthodes multivariées  
-  - ACP  
-  - MCR  
-  - ICA 
