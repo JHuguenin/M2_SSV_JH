@@ -24,7 +24,7 @@
 <meta name="author" content="Joris Huguenin" />
 
 
-<meta name="date" content="2021-08-10" />
+<meta name="date" content="2021-08-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,7 +55,93 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -75,24 +161,42 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Remerciements</a></li>
 <li class="chapter" data-level="" data-path="introduction-générale.html"><a href="introduction-générale.html"><i class="fa fa-check"></i>Introduction générale</a></li>
-<li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Ingénieur plateforme</a>
+<li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Le métier d’ingénieur de plateforme</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="chap1.html"><a href="chap1.html#contexte"><i class="fa fa-check"></i><b>1.1</b> Contexte</a></li>
-<li class="chapter" data-level="1.2" data-path="chap1.html"><a href="chap1.html#science-ouverte"><i class="fa fa-check"></i><b>1.2</b> Science ouverte</a>
+<li class="chapter" data-level="1.2" data-path="chap1.html"><a href="chap1.html#opensci"><i class="fa fa-check"></i><b>1.2</b> Science ouverte</a></li>
+<li class="chapter" data-level="1.3" data-path="chap1.html"><a href="chap1.html#plan-dexpérience-en-écologie-chimique"><i class="fa fa-check"></i><b>1.3</b> Plan d’expérience en écologie chimique</a>
 <ul>
-<li class="chapter" data-level="1.2.1" data-path="chap1.html"><a href="chap1.html#stage"><i class="fa fa-check"></i><b>1.2.1</b> stage</a></li>
-<li class="chapter" data-level="1.2.2" data-path="chap1.html"><a href="chap1.html#expériences"><i class="fa fa-check"></i><b>1.2.2</b> expériences</a></li>
-<li class="chapter" data-level="1.2.3" data-path="chap1.html"><a href="chap1.html#congrès"><i class="fa fa-check"></i><b>1.2.3</b> congrès</a></li>
+<li class="chapter" data-level="1.3.1" data-path="chap1.html"><a href="chap1.html#détection-des-traces-dun-complément-alimentaire"><i class="fa fa-check"></i><b>1.3.1</b> Détection des traces d’un complément alimentaire</a></li>
+<li class="chapter" data-level="1.3.2" data-path="chap1.html"><a href="chap1.html#expalm"><i class="fa fa-check"></i><b>1.3.2</b> Caractérisation de COV de l’amandier</a></li>
+<li class="chapter" data-level="1.3.3" data-path="chap1.html"><a href="chap1.html#explav"><i class="fa fa-check"></i><b>1.3.3</b> Étude de l’émission journalière des lavandes et des figuiers</a></li>
 </ul></li>
-<li class="chapter" data-level="1.3" data-path="chap1.html"><a href="chap1.html#plan-dexpérience-en-écologie-chimique"><i class="fa fa-check"></i><b>1.3</b> Plan d’expérience en écologie chimique</a></li>
+<li class="chapter" data-level="1.4" data-path="chap1.html"><a href="chap1.html#conclusion-partielle"><i class="fa fa-check"></i><b>1.4</b> Conclusion partielle</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="chap2.html"><a href="chap2.html"><i class="fa fa-check"></i><b>2</b> Présentation de la PTR-ToF-MS</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="chap2.html"><a href="chap2.html#plan"><i class="fa fa-check"></i><b>2.1</b> plan</a></li>
+<li class="chapter" data-level="2.1" data-path="chap2.html"><a href="chap2.html#une-bréve-histoire-de-la-ptr-tof-ms"><i class="fa fa-check"></i><b>2.1</b> Une bréve histoire de la PTR-ToF-MS</a></li>
+<li class="chapter" data-level="2.2" data-path="chap2.html"><a href="chap2.html#instrumentation-générale"><i class="fa fa-check"></i><b>2.2</b> Instrumentation générale</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="chap2.html"><a href="chap2.html#présentation-des-spectres"><i class="fa fa-check"></i><b>2.2.1</b> présentation des spectres</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chap2.html"><a href="chap2.html#technique-rivale-ou-alliée-de-la-gc-ms"><i class="fa fa-check"></i><b>2.3</b> Technique rivale ou alliée de la GC-MS ?</a></li>
+<li class="chapter" data-level="2.4" data-path="chap2.html"><a href="chap2.html#package-provoc"><i class="fa fa-check"></i><b>2.4</b> package proVOC</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="chap2.html"><a href="chap2.html#ExplicationGen"><i class="fa fa-check"></i><b>2.4.1</b> Explication général</a></li>
+<li class="chapter" data-level="2.4.2" data-path="chap2.html"><a href="chap2.html#analyseAUC"><i class="fa fa-check"></i><b>2.4.2</b> analyse AUC</a></li>
+<li class="chapter" data-level="2.4.3" data-path="chap2.html"><a href="chap2.html#calibration-regression-linéaire-et-rapport-automatisé"><i class="fa fa-check"></i><b>2.4.3</b> Calibration, regression linéaire et rapport automatisé</a></li>
+<li class="chapter" data-level="2.4.4" data-path="chap2.html"><a href="chap2.html#perspec"><i class="fa fa-check"></i><b>2.4.4</b> Perspective</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="chap3.html"><a href="chap3.html"><i class="fa fa-check"></i><b>3</b> Méthodes Multivariées</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="chap3.html"><a href="chap3.html#plan-1"><i class="fa fa-check"></i><b>3.1</b> Plan</a></li>
+<li class="chapter" data-level="3.1" data-path="chap3.html"><a href="chap3.html#alignmnt"><i class="fa fa-check"></i><b>3.1</b> Alignement et sélection de variable</a></li>
+<li class="chapter" data-level="3.2" data-path="chap3.html"><a href="chap3.html#méthodes-multivariées"><i class="fa fa-check"></i><b>3.2</b> Méthodes multivariées</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="chap3.html"><a href="chap3.html#anaalm"><i class="fa fa-check"></i><b>3.2.1</b> bourgeon</a></li>
+<li class="chapter" data-level="3.2.2" data-path="chap3.html"><a href="chap3.html#analav"><i class="fa fa-check"></i><b>3.2.2</b> lavande</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="glossaire.html"><a href="glossaire.html"><i class="fa fa-check"></i>Glossaire</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -118,7 +222,7 @@
             <section class="normal" id="section-">
 <div id="introduction-générale" class="section level1 unnumbered">
 <h1>Introduction générale</h1>
-<p>À l’instar de l’année 2021, ce stage de M2 a été un peu particulier. Lors de l’élaboration du sujet en janvier, nous avions opté pour résolument tourné vers l’analyse de données. Il s’est avéré que mon temps de stage s’est réparti différemment. Le sujet du stage a évolué afin de mieux couvrir l’ensemble du travail effectué durant ces mois. Le chapitre <a href="chap1.html#chap1">1</a> rend compte de ces aspects en détaillant le contexte de ce stage, l’ouverture qui a été amorcée afin de rendre compatible le travail de la plateforme avec les orientations publiques vers la science ouverte et de la relation entre les analystes et les praticiens.</p>
+<p>À l’instar de l’année 2021, ce stage de M2 a été un peu particulier. Lors de l’élaboration du sujet en janvier, nous avons proposé un sujet résolument tourné vers l’analyse de données. Il s’est avéré que mon temps de stage s’est réparti différemment. Le sujet du stage a évolué afin de mieux couvrir l’ensemble du travail effectué durant ces mois. Le chapitre <a href="chap1.html#chap1">1</a> rend compte de ces aspects en détaillant le contexte de ce stage, l’ouverture qui a été amorcée afin de rendre compatible le travail de la plateforme avec les orientations publiques vers la science ouverte et de la relation entre les analystes et les praticiens.</p>
 <p>Le chapitre <a href="chap2.html#chap2">2</a> est dédié à l’instrument de mesure principalement utilisé lors du stage. Le PTR-ToF-MS analyse les molécules volatiles. Après une présentation de cette technique et de notre appareil, je détaillerais les données récupérées ainsi que le package R que j’ai écrit pour procéder à l’analyse. Nous ferons un comparatif entre cette technique et la GC-MS qui est régulièrement utilisé en parallèle.</p>
 <p>Enfin, le chapitre <a href="chap3.html#chap3">3</a> détaille les opérations mathématiques utilisées pour l’analyse des données. Je développerais les choix fait quand aux prétraitements et à l’alignement des spectres. Je présenterais également les algorithmes implémentés dans le package, en particulier celui de la MCR-ALS.</p>
 <p>À la fin de ce rapport se trouve un glossaire des termes techniques et des acronymes. Avant celui-ci, je livre une conclusion générale sur ce stage ainsi que sur le travail qu’il reste à accomplir. Un soin particulier a été apporté à la découpe des chapitres. Bien que la mode des rapports et articles scientifiques soit au storytelling<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, les trois chapitres suivant peuvent se lire dans l’ordre d’intérêt du lecteur.</p>

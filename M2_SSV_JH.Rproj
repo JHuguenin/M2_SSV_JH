@@ -13,3 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
+WebsitePath: S:/PTR-MS/Joris/Rapport_stage/M2_SSV_JH

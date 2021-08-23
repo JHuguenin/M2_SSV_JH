@@ -1,6 +1,24 @@
 # Méthodes Multivariées {#chap3}
 
-## Plan
+Nous allons à présent nous intéresser aux algorithmes utilisés pour traiter les jeux de données générés par le PTR-TOF-MS. Ce chapitre est divisé en deux parties. Lors de l'écriture du package, j'avais travailler sur différentes méthodes d'alignement avant de m'arrêter sur l'une d'elle. Le début de ce stage m'a permis de reprendre ce travail avec des idées nouvelles que je présenterais dans une première partie. La deuxième partie présente l'utilisation de la chimiométrie pour l'analyse de donnée, d'abords avec la PCA   puis avec deux méthodes moins populaires, l'ICA et la MCR qui ont l'avantage chacune d'essayer de décomposer les données en produits pures.
+
+## Alignement et sélection de variable {#alignmnt}
+
+Actuellement, le package utilise la fonction *alignSpectra()* du package **MALDIquant**. L'alignement est fortement lié à la détection de pic. Soit le modèle utilisé n'est pas optimum et ajoute ou supprime des pics. Soit il crée un décalage trop important en alignant mal les pics se qui créer de la confusion lors de l'étape d'identification. 
+
+![Alignement des pics](images/lav_align.png){#lav_align}
+*alignSpectra()* est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure \@ref(lav_align). Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.  
+
+J'ai trouvé un article très intéressant de @picaud_2018 qui propose un algorithme pour supprimer la ligne de base, aligner les pics et les détecter. L'article explique les problèmes de faire ces trois étapes successivement et propose donc une alternative. Nous avons discuté avec l'auteur de sa solution. Malheureusement, le script est écrit en C++. Il est possible d'utiliser ce langage sous R, via Rcpp par exemple, mais cela aurait demandé un peu trop de temps. Pour l'instant, cette solution a été mise de côté mais pourra être exploré plus tard.  
+
+De plus, Jean-Michel Roger m'a proposé une approche basé sur l'algorithme COVSEL [@roger_2011] pour résoudre notre problème.   
+
+
+
+## Méthodes multivariées  
+  ### ACP  
+  ### MCR  
+  ### ICA  
 
 ### bourgeon {#anaalm}  
 
@@ -10,7 +28,3 @@ blabla voir le détail section \@ref(expalm)
 
 blabla voir le détail section \@ref(explav)
 
-Méthodes multivariées  
-  - ACP  
-  - MCR  
-  - ICA 

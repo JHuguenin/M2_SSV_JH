@@ -29,7 +29,7 @@ Il était prévu que le point 2 soit particulièrement mis en avant lors de ce s
 
 De mon coté, j'ai participé à la mise en place d'autres expériences sur lesquelles nous reviendront dans ce rapport. J'ai également pu prendre du recul sur mon activité et la repenser afin qu'elle cadre avec la politique actuellement de science ouverte. Ce stage m'a ainsi permit d'orienter les outils numériques que je met à dispositions des chercheurs vers une science reproductible.
 
-## Science ouverte
+## Science ouverte {#opensci}
 
 Durant cette période de stage, le gouvernement français a mis en place le Deuxième Plan pour la science ouverte qui définit les actions mises en place sur la période 2021-2024. Le plan est détaillé dans ce [document](https://www.ouvrirlascience.fr/wp-content/uploads/2021/06/Deuxieme-Plan-National-Science-Ouverte_2021-2024.pdf) dont je recommande vivement la lecture. Ce guide de route possède les défauts propres à l'époque[^introduction-2]. Ceci étant, à l'échelle de la communauté scientifique française, ce plan permettra une large diffusion du savoir et de la culture scientifique grâce à des actions regroupés dans quatre axes :
 
@@ -79,7 +79,7 @@ Dans la théorie d'une expérience totalement randomisée, il aurait fallut déf
 
 Il aurait été juste de tirer au hasard l'ordre de passage des sites. Pour autant, nous avons opté pour une hypothèse forte de commencer par la site le plus éloigné de la mangeoire (s4, s3, s2, s1) afin que les potentielles traces ne soient pas contaminées par une odeur plus forte. Dans les faits, nous laissions assez de temps entre deux mesures pour renouveler plusieurs fois le volume d'analyse à l'intérieur de l'instrument ce qui permettait d'isoler les mesures. Après coup, je pense qu'il aurait été bon de procédé malgré tout à une randomisation de l'ordre des sites au sein d'un mésocosme.
 
-![Sonde à proximité de la mangeoire](images/poule2.jpg)
+![Sonde à proximité de la mangeoire](images/poule2.jpg){#poule2}
 
 Nous avions également une seule journée pour effectuer l'ensemble des acquistions, ce qui a été juste suffisant. Nous n'avons pas pu effectuer de répétition sur un même échantillon. L'analyse des data a été effectué par le post-doc en charge de l'expérience. Je n'ai pas de retour sur des potentiels contaminations intra et inter échantillons.  
 

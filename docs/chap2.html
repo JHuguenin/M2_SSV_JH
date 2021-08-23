@@ -24,7 +24,7 @@
 <meta name="author" content="Joris Huguenin" />
 
 
-<meta name="date" content="2021-08-10" />
+<meta name="date" content="2021-08-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,7 +55,93 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -75,24 +161,42 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Remerciements</a></li>
 <li class="chapter" data-level="" data-path="introduction-générale.html"><a href="introduction-générale.html"><i class="fa fa-check"></i>Introduction générale</a></li>
-<li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Ingénieur plateforme</a>
+<li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Le métier d’ingénieur de plateforme</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="chap1.html"><a href="chap1.html#contexte"><i class="fa fa-check"></i><b>1.1</b> Contexte</a></li>
-<li class="chapter" data-level="1.2" data-path="chap1.html"><a href="chap1.html#science-ouverte"><i class="fa fa-check"></i><b>1.2</b> Science ouverte</a>
+<li class="chapter" data-level="1.2" data-path="chap1.html"><a href="chap1.html#opensci"><i class="fa fa-check"></i><b>1.2</b> Science ouverte</a></li>
+<li class="chapter" data-level="1.3" data-path="chap1.html"><a href="chap1.html#plan-dexpérience-en-écologie-chimique"><i class="fa fa-check"></i><b>1.3</b> Plan d’expérience en écologie chimique</a>
 <ul>
-<li class="chapter" data-level="1.2.1" data-path="chap1.html"><a href="chap1.html#stage"><i class="fa fa-check"></i><b>1.2.1</b> stage</a></li>
-<li class="chapter" data-level="1.2.2" data-path="chap1.html"><a href="chap1.html#expériences"><i class="fa fa-check"></i><b>1.2.2</b> expériences</a></li>
-<li class="chapter" data-level="1.2.3" data-path="chap1.html"><a href="chap1.html#congrès"><i class="fa fa-check"></i><b>1.2.3</b> congrès</a></li>
+<li class="chapter" data-level="1.3.1" data-path="chap1.html"><a href="chap1.html#détection-des-traces-dun-complément-alimentaire"><i class="fa fa-check"></i><b>1.3.1</b> Détection des traces d’un complément alimentaire</a></li>
+<li class="chapter" data-level="1.3.2" data-path="chap1.html"><a href="chap1.html#expalm"><i class="fa fa-check"></i><b>1.3.2</b> Caractérisation de COV de l’amandier</a></li>
+<li class="chapter" data-level="1.3.3" data-path="chap1.html"><a href="chap1.html#explav"><i class="fa fa-check"></i><b>1.3.3</b> Étude de l’émission journalière des lavandes et des figuiers</a></li>
 </ul></li>
-<li class="chapter" data-level="1.3" data-path="chap1.html"><a href="chap1.html#plan-dexpérience-en-écologie-chimique"><i class="fa fa-check"></i><b>1.3</b> Plan d’expérience en écologie chimique</a></li>
+<li class="chapter" data-level="1.4" data-path="chap1.html"><a href="chap1.html#conclusion-partielle"><i class="fa fa-check"></i><b>1.4</b> Conclusion partielle</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="chap2.html"><a href="chap2.html"><i class="fa fa-check"></i><b>2</b> Présentation de la PTR-ToF-MS</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="chap2.html"><a href="chap2.html#plan"><i class="fa fa-check"></i><b>2.1</b> plan</a></li>
+<li class="chapter" data-level="2.1" data-path="chap2.html"><a href="chap2.html#une-bréve-histoire-de-la-ptr-tof-ms"><i class="fa fa-check"></i><b>2.1</b> Une bréve histoire de la PTR-ToF-MS</a></li>
+<li class="chapter" data-level="2.2" data-path="chap2.html"><a href="chap2.html#instrumentation-générale"><i class="fa fa-check"></i><b>2.2</b> Instrumentation générale</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="chap2.html"><a href="chap2.html#présentation-des-spectres"><i class="fa fa-check"></i><b>2.2.1</b> présentation des spectres</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chap2.html"><a href="chap2.html#technique-rivale-ou-alliée-de-la-gc-ms"><i class="fa fa-check"></i><b>2.3</b> Technique rivale ou alliée de la GC-MS ?</a></li>
+<li class="chapter" data-level="2.4" data-path="chap2.html"><a href="chap2.html#package-provoc"><i class="fa fa-check"></i><b>2.4</b> package proVOC</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="chap2.html"><a href="chap2.html#ExplicationGen"><i class="fa fa-check"></i><b>2.4.1</b> Explication général</a></li>
+<li class="chapter" data-level="2.4.2" data-path="chap2.html"><a href="chap2.html#analyseAUC"><i class="fa fa-check"></i><b>2.4.2</b> analyse AUC</a></li>
+<li class="chapter" data-level="2.4.3" data-path="chap2.html"><a href="chap2.html#calibration-regression-linéaire-et-rapport-automatisé"><i class="fa fa-check"></i><b>2.4.3</b> Calibration, regression linéaire et rapport automatisé</a></li>
+<li class="chapter" data-level="2.4.4" data-path="chap2.html"><a href="chap2.html#perspec"><i class="fa fa-check"></i><b>2.4.4</b> Perspective</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="chap3.html"><a href="chap3.html"><i class="fa fa-check"></i><b>3</b> Méthodes Multivariées</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="chap3.html"><a href="chap3.html#plan-1"><i class="fa fa-check"></i><b>3.1</b> Plan</a></li>
+<li class="chapter" data-level="3.1" data-path="chap3.html"><a href="chap3.html#alignmnt"><i class="fa fa-check"></i><b>3.1</b> Alignement et sélection de variable</a></li>
+<li class="chapter" data-level="3.2" data-path="chap3.html"><a href="chap3.html#méthodes-multivariées"><i class="fa fa-check"></i><b>3.2</b> Méthodes multivariées</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="chap3.html"><a href="chap3.html#anaalm"><i class="fa fa-check"></i><b>3.2.1</b> bourgeon</a></li>
+<li class="chapter" data-level="3.2.2" data-path="chap3.html"><a href="chap3.html#analav"><i class="fa fa-check"></i><b>3.2.2</b> lavande</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="glossaire.html"><a href="glossaire.html"><i class="fa fa-check"></i>Glossaire</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -118,30 +222,268 @@
             <section class="normal" id="section-">
 <div id="chap2" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Présentation de la PTR-ToF-MS</h1>
-<div id="plan" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> plan</h2>
-<p>Théorie du PTR-MS + explication des datas<br />
-## instrumentation générale</p>
-<p>De très nombreux projets de recherches issus du CeMEB nécessitent l’analyse de composés organiques volatils (COV) aussi communément appelés “odeurs”. Les COVs sont omniprésents dans la nature et permettent, avec les autres sens, une organisation du vivant en agissant comme vecteurs d’informations de la médiation chimique. Par l’acquisition d’un PTR-ToF-MS, la communauté souhaitait lever trois verrous techniques :</p>
+<p>De très nombreux projets de recherches issus du CeMEB nécessitent l’analyse de <strong>C</strong>omposés <strong>O</strong>rganiques <strong>V</strong>olatiles (COV ou VOC en anglais) aussi communément appelés “odeurs”. Les COVs sont omniprésents dans la nature et permettent, avec les autres sens, une organisation du vivant en agissant comme vecteurs d’informations de la médiation chimique. Par l’acquisition d’un PTR-ToF-MS, la communauté souhaitait lever trois verrous techniques :</p>
 <ul>
-<li>l’appareil permet un fonctionnement en flux continu avec une résolution temporelle très fine (fréquence d’analyse allant jusqu’à 10 scans par seconde), permettant ainsi le suivi des cinétiques d’émissions de COV. Cet instrument simplifie drastiquement et affine les expériences cinétiques effectué par des mesures ponctuelles de GC-MS ;<br />
+<li>l’appareil permet un fonctionnement en flux continu avec une résolution temporelle très fine (fréquence d’analyse allant jusqu’à 10 scans par seconde), permettant ainsi le suivi des cinétiques d’émissions de COV. Cet instrument simplifie drastiquement et affine les expériences cinétiques effectué par des mesures ponctuelles de GC-MS;<br />
 </li>
-<li>le PTR-ToF-MS possède une excellente résolution en masse qui facilite l’identification des molécules. Un spectre est composé de plus de 140 000 mesures de masses couvrant une large gamme des masses des COV biologiques (de 70 à 500 m/z). L’appareil possède donc une résolution environ mille fois supérieure par rapport à un simple quadripôle qui fournit des m/z à l’unité de masse atomique (uma ou Dalton Da).<br />
+<li>le PTR-ToF-MS possède une excellente résolution en masse qui facilite l’identification des molécules. Un spectre est composé de plus de 140 000 mesures de masses couvrant une large gamme des masses des COV biologiques (de 70 à 500 m/z). L’appareil possède donc une résolution environ mille fois supérieure par rapport à un simple quadripôle (PTR-MS) qui fournit des m/z à l’unité de masse atomique (uma ou Dalton Da);<br />
 </li>
 <li>le seuil de détection extrêmement bas, de l’ordre du ppt (part per trillion), permet une sensibilité adaptée à la mesure de trace.</li>
 </ul>
-<p>Une journée d’analyse peut générer entre une dizaine de Mo et quelques Go de données, représentant plusieurs centaines de spectres. Ma principale mission est d’accompagner et d’orienter les équipes vers des protocoles adaptés ainsi que de créer des outils de traitement de données issues du PTR-ToF-MS.</p>
-<p>## présentation des spectres</p>
-<p>## tailles des matrix</p>
-<p>## package proVOC<br />
-- explication général<br />
-- science reproductible<br />
-- analyse AUC<br />
-- spectre circulaire<br />
-- regression linéaire<br />
-- rapport automatique</p>
+<div id="une-bréve-histoire-de-la-ptr-tof-ms" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Une bréve histoire de la PTR-ToF-MS</h2>
+<p>Durant la décennie 1990, le <em>Institut für Ionenphysik der Leopold-Franzens-Universität</em> d’Innsbruck en Autriche développe un nouvel instrument pour l’analyse chimique des gaz. En travaillant avec la <em>Universitiitsklinik fiir Innere Medizin</em>, l’équipe menée par Lindinger développe un spectromètre en phase gazeuse qui ionize les molécules grâce à un gaz neutre (<span class="citation">(<a href="#ref-lindinger_1991" role="doc-biblioref">W. Lindinger, Leiter, et Andriollo 1991</a>)</span> et <span class="citation">(<a href="#ref-lindinger_1993" role="doc-biblioref">W. Lindinger, Hirber, et Paretzke 1993</a>)</span>). Ils comprennent rapidement l’avantage d’utiliser un proton (apporté à la réaction sous la forme H<sub>3</sub>O<sup>+</sup>) par rapport aux ions Kr<sup>+</sup> et Xe<sup>+</sup>. Ils publient une sorte de preuve de concept en 1994 <span class="citation">(<a href="#ref-lagg_1994" role="doc-biblioref">Lagg et al. 1994</a>)</span> et détaillent plus finement l’instrumentation et les réactions chimiques <span class="citation">(<a href="#ref-hansel_1995" role="doc-biblioref">Hansel et al. 1995</a>)</span><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. En 1998 sort l’article qui fait désormais référence, <span class="citation">(<a href="#ref-lindinger_1998a" role="doc-biblioref">W. Lindinger, Hansel, et Jordan 1998</a>)</span>, signé par le trio Lindinger, Hansel et Jordan (et sa version courte <span class="citation">(<a href="#ref-lindinger_1998" role="doc-biblioref">W. Lindinger et Jordan 1998</a>)</span>).</p>
+<p>Ionicon commercialise la même année le premier PTR-MS. Cette technique se déploie rapidement dans les sciences de l’atmosphère, médicales et biotech (<span class="citation">(<a href="#ref-babcock_2001" role="doc-biblioref">Babcock et Adams 2001</a>)</span>) permettant la détection de traces de COV. Rapide et sensible, la PTR-MS élimine les désavantages de la GC-MS. Cependant, la PTR-MS détecte de la masse nominale des ions. Un échantillon complexe peut contenir plusieurs ions isobares<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>. Il convient alors de gagner en résolution de masse et séparer ces isobares. <span class="citation">(<a href="#ref-jordan_2009" role="doc-biblioref">Jordan et al. 2009</a>)</span> revient sur les tentatives les plus concluantes (<span class="citation">(<a href="#ref-blake_2004" role="doc-biblioref">Blake et al. 2004</a>)</span>, <span class="citation">(<a href="#ref-ennis_2005" role="doc-biblioref">Ennis et al. 2005</a>)</span>, <span class="citation">(<a href="#ref-inomata_2006" role="doc-biblioref">Inomata et al. 2006</a>)</span> et <span class="citation">(<a href="#ref-tanimoto_2007" role="doc-biblioref">Tanimoto et al. 2007</a>)</span> ) avant de proposer son approche : la PTR-ToF-MS. Développé en collaboration avec la précédente équipe, le minutieux article de <span class="citation">(<a href="#ref-graus_2010" role="doc-biblioref">Graus, Müller, et Hansel 2010</a>)</span> conclu superbement la vingtaine d’années de développement nécessaire à cette technique. Les années suivantes permmettront simplement une amélioration des différentes parties de l’instrument.</p>
+<p>Par ailleurs, c’est au tour des mathématiciens d’apporter leur contribution et en particulier à l’équipe de Cappellin avec deux articles. Le premier, <span class="citation">(<a href="#ref-cappellin_2010" role="doc-biblioref">Cappellin et al. 2010</a>)</span>, permet de mieux estimer la masse exacte de chaque ion détecté. Le seconde, <span class="citation">(<a href="#ref-cappellin_2011" role="doc-biblioref">Cappellin et al. 2011</a>)</span>, offre une méthodologie détaillée de l’utilisation du PTR-TOF-MS de l’acquisition à la fin de l’analyse. Puis en 2015, <span class="citation">(<a href="#ref-holzinger_2015" role="doc-biblioref">Holzinger 2015</a>)</span> propose un logiciel pour l’analyse des data mais cette tentative n’a pas été suivi par la communauté d’utilisateur. Il existe désormais un nombre important d’articles utilisant la PTR-TOF-MS. Bien entendu, des outils commun de chimiométries ont été utilisés pour renforcer les résultats, <span class="citation">(<a href="#ref-deuscher_2019" role="doc-biblioref">Deuscher et al. 2019</a>)</span>. Mais cela sera abordé dans le chapitre suivant.</p>
+<p>Par ailleurs, je suppose que la prochaine avancée majeure viendra d’une technologie permettant de discriminer les isoméres<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> <span class="citation">(<a href="#ref-amt-14-133-2021" role="doc-biblioref">Claflin et al. 2021</a>)</span>.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> Par exemple, cela permettrait de séparer les différents monoterpènes. Actuellement, ce désavantage est combler par le couplage de la PTR-TOF-MS avec une seconde technique d’analyse chimique. Ce court historique montre toutefois que la collaboration entre physiciens, chimistes, biologistes et mathématiciens est fructueuse et promis à un bel avenir.</p>
+</div>
+<div id="instrumentation-générale" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Instrumentation générale</h2>
+<p>Comme nous l’avons vu précédemment, le PTR-TOF-MS est conçu pour analyser finement la masse moléculaire des échantillons. Pour cela l’instrument aspire un débit d’air constant de 100 ml/min<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a>. Cet <em>air in</em> sur la figure <a href="chap2.html#schemavocus"><strong>??</strong></a> peut être diluée par un gaz propre (pour éviter la saturation) ou étalon (pour la calibration) puis est injecté dans le réacteur (<em>FIMR</em> pour <em>focusing ion-molecule reactor</em>). Dans cette chambre, des ions H<sup>+</sup> sont également injecté à débit constant afin d’ionizer les molécules de l’échantillons (<em>Proton-Transfer-Reaction</em>).</p>
+<div class="figure">
+<img src="images/schema_vocus.PNG" id="schemavocus" alt="" />
+<p class="caption">Schéma de la chambre d’ionisation (Reprinted with permission from <span class="citation"><a href="#ref-krechmer_2018" role="doc-biblioref">Krechmer et al.</a> (<a href="#ref-krechmer_2018" role="doc-biblioref">2018</a>)</span>. Copyright 2021 American Chemical Society.)</p>
+</div>
+<p>Il est important de comprendre que, contrairement à une ionization par électron<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a>, il n’y a quasiment pas de fragmentation moléculaire. En revanche les ions ont “une masse molaire de plus”(un proton) que les molécules initiales. Par exemple, le linalol, un COV fortement produit par la lavande, a une masse molaire de 154,249 g/mol mais sera detecté à 155,256 g/mol. Par ailleurs, le nombre d’ions MH<sup>+</sup> dépend du taux de protonation de la molécule M. Sous forme d’ions, l’échantillon peut être focalisé par un champ électromagnétique généré par un quadripole et envoyé dans la partie TOF.</p>
+<p>Une fois dans la colonne, l’énergie potentiel d’un pulse électrique à 25kHz est convertie en énergie cinétique par les ions propulsés. À énergie constante, la masse fait la différence lors de la mesure du temps de vol (TOF, figure <a href="chap2.html#schemaTOF"><strong>??</strong></a>). Ainsi les ions les moins lourds arrivent en premiers sur le détecteur. Après calibration, une simple conversion temps de vol/ masse permet de connaître l’intensité de chaque masse d’un échantillon.</p>
+<div class="figure">
+<img src="images/schema_TOF.jpg" id="schemaTOF" alt="" />
+<p class="caption">Schéma de la colonne TOF et du détecteur MS (Reproduit de l’article <span class="citation"><a href="#ref-graus_2010" role="doc-biblioref">Graus, Müller, et Hansel</a> (<a href="#ref-graus_2010" role="doc-biblioref">2010</a>)</span>, consulatable ici : <a href="https://www.sciencedirect.com/science/article/pii/S1044030510001005#fig1" class="uri">https://www.sciencedirect.com/science/article/pii/S1044030510001005#fig1</a></p>
+</div>
+<p>Pour une compréhension plus exhaustive, je recommande la lecture des articles de <span class="citation"><a href="#ref-hansel_1995" role="doc-biblioref">Hansel et al.</a> (<a href="#ref-hansel_1995" role="doc-biblioref">1995</a>)</span> pour la partie PTR-MS, de <span class="citation"><a href="#ref-graus_2010" role="doc-biblioref">Graus, Müller, et Hansel</a> (<a href="#ref-graus_2010" role="doc-biblioref">2010</a>)</span> pour la partie TOF et de <span class="citation"><a href="#ref-krechmer_2018" role="doc-biblioref">Krechmer et al.</a> (<a href="#ref-krechmer_2018" role="doc-biblioref">2018</a>)</span> spécifique à l’instrument utilisé au CEFE.</p>
+<div id="présentation-des-spectres" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> présentation des spectres</h3>
+<div class="figure">
+<img src="images/3lavandes_8h.png" id="lavMS" alt="" />
+<p class="caption">spectre MS</p>
+</div>
+<p>Nous pouvons à présent nous intéresser aux spectres à analyser. J’ai représenté sur la figure <a href="chap2.html#lavMS"><strong>??</strong></a> un spectre de trois plants de lavandes acquis autour de 8h du matin fin juin. Une figure identique mais dynamique peut se télécharger <a href="https://mycore.core-cloud.net/index.php/s/qBZ4IkVWguXQiDB">ici</a><a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a>. Cette figure dynamique permet d’effectuer des zoom afin d’avoir une compréhension plus précise qu’avec la simple figure <a href="chap2.html#lavMS"><strong>??</strong></a>.</p>
+<p>Les pics sont extrêmement fins et centrés autour des masses unitaires. Cela s’explique facilement au regard de la masse des atomes composants les VOC (H, C, O pour l’essentiel) sur le <a href="https://fr.wikipedia.org/wiki/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments#/media/Fichier:Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg">tableau de Mendeleiev</a><a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a>. Il y a un plusieurs ordres de grandeur<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a> entre les pics très intenses et ceux faibles. Cette intensité ne présage rien quand à l’importance de ce pic dans l’analyse.</p>
+<p>La plage spectral de l’instrument est de 70 à 500 g/mol. Cela est fixé par le constructeur pour des raisons techniques alors qu’il y a de nombreuses molécules d’intérêts de masses inférieurs à 70g/mol et peu de molécules naturelles dépassant les 250 g/mol. Ces considérations prises en compte, nous obtenons pour chaque spectre un vecteur brute de 158 768 points. Ces spectres sont réduits, après alignement (voir section <a href="chap2.html#ExplicationGen">2.4.1</a> et <a href="chap3.html#alignmnt">3.1</a> ) à une taille inférieur à 50 000 points tout en gardant une résolution de 10<sup>-3</sup> g/mol. De plus, la PTR-TOF-MS a été développée afin d’analyser des cinétiques d’émissions. Dans nos cas, nous enregistrons des spectres de quelques secondes consécutivement durant plusieurs minutes à plusieurs jours. Pour une expériences, nous générons ainsi des dizaines, voir des milliers, de spectres. Ceci étant, nous pouvons dés à présent percevoir les problèmes liés aux temps de calculs que nous allons rencontrer et la nécessité de développer des outils optimisés pour analyser de tels objets.</p>
+</div>
+</div>
+<div id="technique-rivale-ou-alliée-de-la-gc-ms" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Technique rivale ou alliée de la GC-MS ?</h2>
+<p>La métabolomique est dernier maillon de la chaîne -omic. Il se concentre sur l’analyse des petites molécules produites par un système biologique. Les deux domaines d’analyses sont la résonance magnétique nucléaire (NMR) et la spectroscopie de masse (MS). Pour l’analyse des VOC en spectroscopie de masse, la technique de GC-MS est clairement la plus utilisée à l’heure actuelle. La GC-MS, utilisé depuis des décennies, est largement implanté dans le paysage scientifique international. De plus, de nombreux logiciels performant<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a> existent. Il est légitime de se poser la question de la nécessité d’utilisation des deux techniques<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a>.</p>
+<p>Premièrement, la GC-MS accumule les VOC dans des pièges chimiques<a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a> puis les analyses dans un second temps La durée d’accumulation dans le piège est de l’ordre de la dizaine de minute. La PTR-TOF-MS a une sensibilité accru permettant l’acquisition de spectres à une cadence de 25kHz. Afin d’augmenter le ratio signal sur bruit et de drastiquement réduire la quantité de data généré, ces spectres sont additionnés les uns aux autres sur des durées d’acquisitions plus longues<a href="#fn18" class="footnote-ref" id="fnref18"><sup>18</sup></a>. En répétant ces acquisitions, la PTR-TOF-MS permet l’analyse cinétique d’un phénomène. Analyse statique contre analyse dynamique. Le prix de cette sensibilité est comme bien souvent une sélectivité dégradée. Ainsi la GC-MS, <em>a contrario</em> de la PTR-TOF-MS, peut discriminer les isomères. Cela est permis grâce à la fragmentation des molécules lors de l’étape d’ionisation par un électron qui intervient après la phase de chromatographie.</p>
+<p>Bien que les molécules analysées soient les même, les approches et résultats sont donc bien différents. De plus, il est souvent intelligent de croiser ces deux techniques <span class="citation">(<a href="#ref-majchrzak_2018" role="doc-biblioref">Majchrzak et al. 2018</a>)</span>. De façon empirique, le PTR-TOF-MS analyse séquentiellement plusieurs échantillons. Il est aisé de collecté les VOC pour le GC-MS juste avant ou après une séquence dédiée au PTR-TOF-MS. Nous pouvons ainsi, par exemple, obtenir deux ou trois analyses ponctuelles de GC-MS lors d’une journée entière d’analyse PTR-TOF-MS. Nous combinons la sensibilité et la spécificité des deux techniques.</p>
+<p>Les données obtenues en GC-MS sont donc plus complexes qu’en PTR-TOF-MS. Chaque échantillon est représenté par une matrice ayant une dimension pour le temps de rétention et une dimension pour le spectre de masse. Il n’est donc pas possible de réutiliser tels quels les outils numériques de la GC-MS. Cependant, il serait dommage de ne pas piquer les idées déjà existantes. J’ai donc créer un package R spécifique à l’analyse des données du PTR-TOF-MS mais en m’inspirant largement de ce qui se fait sur d’autres techniques : workflow (idée piquée à MZmine), bucketing (pratique courante dans la RMN), chimiomètrie (largement utilisée pour l’analyse des spectres optiques) ; ou en utilisant des packages destinés à d’autres méthodes (MALDIquant dont la transparence du nom laisse peu de doute sur la méthode ciblée par ce package)</p>
+</div>
+<div id="package-provoc" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> package proVOC</h2>
+<p>Comme expliqué dans la section sur la science ouverte ( <a href="chap1.html#opensci">1.2</a>), ce package peut se retrouver <a href="https://github.com/JHuguenin/provoc">sur ce dépôt Git</a>.</p>
+<div id="ExplicationGen" class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Explication général</h3>
+<p>L’objectif de proVOC est de permettre une vue d’ensemble rapide<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a> pour les utilisateurs pressés d’analyser <em>leurs</em> données sous R sans avoir besoin d’avoir une grande connaissance de ce langage. La fonction <em>import_sp()</em> constitue la première étape de l’analyse. Les données contenues dans des fichiers <em>.h5</em> générés par notre instrument sont importées dans l’espace de travail <span class="citation">(<a href="#ref-fischer_2021" role="doc-biblioref">Fischer et al. 2021</a>)</span>. Après cette étape, les spectres sont automatiquement alignés puis réduit. Les détails à propos de l’alignement des spectres sont données dans la section <a href="chap3.html#alignmnt">3.1</a>. Pour l’étape de réduction, j’ai défini empiriquement de supprimer chaque colonne (masse) qui ne possédait aucune ligne (intensité) supérieur à un seuil. Ce seuil est calculé pour chaque jeu de donnée comme égale à 20 fois l’écart-type médian de chaque masse<a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a>. Il est probable que cette étape de réduction peut être optimisé d’avantage mais je reviens sur les perspectives d’améliorations du package dans la section dédiée, <a href="chap2.html#perspec">2.4.4</a>.</p>
+<p>Passé ces étapes, la fonction met en forme les données dans un objet <em>list</em>, récupère les metadata (date et heure d’acquisition) puis détecte les pics grâce à la fonction <em>detectPeaks()</em> du package <strong>MALDIquant</strong> et calcule les AUC grâce à la function <em>AUC()</em> du package <strong>DescTools</strong>. Enfin, cet liste nommé “sp” est sauvegardé en .Rdata. Ce travail préliminaire peut être long.</p>
+<p>Une fois effectué, l’import permet à l’utilisateur de lancer facilement une série d’analyse pour explorer rapidement son jeu de donnée. Pour cela, il lui suffit de modifier des options dans un workflow :</p>
+<p></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="chap2.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Workflow pour l&#39;analyse :</span></span>
+<span id="cb1-2"><a href="chap2.html#cb1-2" aria-hidden="true" tabindex="-1"></a>mt <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">&quot;h5&quot;</span> <span class="ot">=</span> mt_h5,                                <span class="co"># Don&#39;t touch</span></span>
+<span id="cb1-3"><a href="chap2.html#cb1-3" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;acq&quot;</span> <span class="ot">=</span> <span class="fu">which</span>(mt_h5<span class="sc">$</span>use4analysis <span class="sc">==</span> <span class="cn">TRUE</span>),   <span class="co"># Don&#39;t touch</span></span>
+<span id="cb1-4"><a href="chap2.html#cb1-4" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;wd&quot;</span> <span class="ot">=</span> sp<span class="sc">$</span>h5<span class="sc">$</span>wd,                             <span class="co"># Don&#39;t touch</span></span>
+<span id="cb1-5"><a href="chap2.html#cb1-5" aria-hidden="true" tabindex="-1"></a>           <span class="co">#__________________________________#</span></span></code></pre></div>
+<p>
+[…]</p>
+<p></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="chap2.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># graphe pour visualiser les spectres de masses de chaque acquisition :</span></span>
+<span id="cb2-2"><a href="chap2.html#cb2-2" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;view_plot&quot;</span> <span class="ot">=</span> <span class="cn">FALSE</span>,   <span class="co"># Si TRUE, graphe moyen de chaque acquisition,</span></span>
+<span id="cb2-3"><a href="chap2.html#cb2-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="co"># sinon precisez le numero d&#39;une ou plusieurs</span></span>
+<span id="cb2-4"><a href="chap2.html#cb2-4" aria-hidden="true" tabindex="-1"></a>                                              <span class="co"># acquistion(s). (ex :</span></span>
+<span id="cb2-5"><a href="chap2.html#cb2-5" aria-hidden="true" tabindex="-1"></a>                                              <span class="co"># c(200,300,400)</span></span>
+<span id="cb2-6"><a href="chap2.html#cb2-6" aria-hidden="true" tabindex="-1"></a>                                              <span class="co"># mt_h5$end</span></span>
+<span id="cb2-7"><a href="chap2.html#cb2-7" aria-hidden="true" tabindex="-1"></a>                                              <span class="co"># c(mt_h5$start, mt_h5$end)</span></span>
+<span id="cb2-8"><a href="chap2.html#cb2-8" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;view_each.group&quot;</span> <span class="ot">=</span> <span class="cn">FALSE</span>,   <span class="co"># FALSE ou le nom d&#39;une meta colonne </span></span>
+<span id="cb2-9"><a href="chap2.html#cb2-9" aria-hidden="true" tabindex="-1"></a>                                        <span class="co"># (&quot;XXX&quot; de mt_h5$XXX) pour les graphes</span></span>
+<span id="cb2-10"><a href="chap2.html#cb2-10" aria-hidden="true" tabindex="-1"></a>                                        <span class="co"># larges ou centres sur un seul pic.</span></span>
+<span id="cb2-11"><a href="chap2.html#cb2-11" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;view_plot_xmin&quot;</span> <span class="ot">=</span> <span class="dv">70</span>,</span>
+<span id="cb2-12"><a href="chap2.html#cb2-12" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;view_plot_xmax&quot;</span> <span class="ot">=</span> <span class="dv">250</span>,</span>
+<span id="cb2-13"><a href="chap2.html#cb2-13" aria-hidden="true" tabindex="-1"></a>           <span class="co"># ou ...</span></span>
+<span id="cb2-14"><a href="chap2.html#cb2-14" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;view_plot_peak&quot;</span> <span class="ot">=</span> <span class="cn">FALSE</span>, <span class="co"># c(59,73,81,93,109,127,137,143,153) ou</span></span>
+<span id="cb2-15"><a href="chap2.html#cb2-15" aria-hidden="true" tabindex="-1"></a>                                     <span class="co"># False ou c(61,...) Permet de ne regarder</span></span>
+<span id="cb2-16"><a href="chap2.html#cb2-16" aria-hidden="true" tabindex="-1"></a>                                     <span class="co"># qu&#39;un seul pic</span></span>
+<span id="cb2-17"><a href="chap2.html#cb2-17" aria-hidden="true" tabindex="-1"></a>           <span class="co">#__________________________________#</span></span></code></pre></div>
+<p>
+[…]</p>
+<p></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="chap2.html#cb3-1" aria-hidden="true" tabindex="-1"></a>           <span class="co"># ICA</span></span>
+<span id="cb3-2"><a href="chap2.html#cb3-2" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;ICA&quot;</span> <span class="ot">=</span> <span class="cn">FALSE</span>,</span>
+<span id="cb3-3"><a href="chap2.html#cb3-3" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;ICA_AUC&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-4"><a href="chap2.html#cb3-4" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;nc&quot;</span> <span class="ot">=</span> <span class="dv">6</span></span>
+<span id="cb3-5"><a href="chap2.html#cb3-5" aria-hidden="true" tabindex="-1"></a>           <span class="co">#__________________________________#</span></span>
+<span id="cb3-6"><a href="chap2.html#cb3-6" aria-hidden="true" tabindex="-1"></a>           <span class="er">)</span></span>
+<span id="cb3-7"><a href="chap2.html#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="chap2.html#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">PTR_MS_analysis</span>(sp, mt)       <span class="co"># debute les analyses</span></span></code></pre></div>
+<p></p>
+<p>L’objet <em>mt</em> peut être sauvegardé pour se souvenir des paramètres utilisés lors de l’analyse. Nous pouvons détailler ci-dessous quelques options.</p>
+</div>
+<div id="analyseAUC" class="section level3" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> analyse AUC</h3>
+<p></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="chap2.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#__________________________________#</span></span>
+<span id="cb4-2"><a href="chap2.html#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="chap2.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Aire sous la courbe (AUC) :</span></span>
+<span id="cb4-4"><a href="chap2.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;AUC&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>,</span>
+<span id="cb4-5"><a href="chap2.html#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;AUC_plot_exp&quot;</span> <span class="ot">=</span> <span class="cn">FALSE</span>,     <span class="co"># Si TRUE, l&#39;axe &#39;y&#39; est exponentionnelle.</span></span>
+<span id="cb4-6"><a href="chap2.html#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;AUC_each.group&quot;</span> <span class="ot">=</span> <span class="cn">FALSE</span>,  <span class="co"># Si l&#39;argument est le nom d&#39;une meta colonne</span></span>
+<span id="cb4-7"><a href="chap2.html#cb4-7" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># ( &quot;XXX&quot; de mt_h5$XXX) chaque groupe de cette</span></span>
+<span id="cb4-8"><a href="chap2.html#cb4-8" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># colonne aura son graphe. Sinon FALSE.</span></span>
+<span id="cb4-9"><a href="chap2.html#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;AUC_each.Mass&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>,     <span class="co"># Si TRUE, un graphe pour chaque masse</span></span>
+<span id="cb4-10"><a href="chap2.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;M.num&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">81</span>, <span class="dv">137</span>, <span class="dv">153</span>),  <span class="co"># Les masses analysees (utilise pour AUC)</span></span>
+<span id="cb4-11"><a href="chap2.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;AUC_plot_dy&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>,       <span class="co"># Si FALSE, plot exporter en .tiff. Si TRUE, plot</span></span>
+<span id="cb4-12"><a href="chap2.html#cb4-12" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># exporter en .html (dynamique)</span></span>
+<span id="cb4-13"><a href="chap2.html#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;AUC_format&quot;</span> <span class="ot">=</span> <span class="st">&quot;date&quot;</span>,      <span class="co"># L&#39;axe du graphe est base sur une duree (&quot;time&quot;)</span></span>
+<span id="cb4-14"><a href="chap2.html#cb4-14" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># ou sur la date et heure d&#39;acquisition (&quot;date&quot;)</span></span>
+<span id="cb4-15"><a href="chap2.html#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">#__________________________________#</span></span></code></pre></div>
+<p></p>
+<div class="figure">
+<img src="images/fig_AUC.PNG" id="AUCplot" alt="" />
+<p class="caption">spaghettis plot</p>
+</div>
+<p>La figure <a href="chap2.html#AUCplot"><strong>??</strong></a> montre l’évolution quotidienne de l’émission des molécules de masse 137 (de 136.5 à 137.5) de trois plants de figuiers dont le cadre expérimentale est décrit section <a href="chap1.html#explav">1.3.3</a>. Chaque plante est analysée par cycle de 384 secondes composé de 24 acquisitions de 16 secondes (regroupées en trois parties pour des raisons techniques). Vous pouvez télécharger cette figure <a href="https://mycore.core-cloud.net/index.php/s/9DMytdUSXYtYJ4U">ici</a> afin de zoomer plus facilement.</p>
+<p>Nous pouvons observer que le début de chaque cycle d’enregistrement est systématiquement impacté par la mesure précédente et le volume mort des lignes de mesures. Nous pouvons justifier ce biais expérimentale et donc le supprimer en ne prenant pas les 8 premières acquisitions de chaque cycle.</p>
+<p>Ce bloc d’options est vraiment très simple d’utilisation. En jouant sur les masses et les modalités incluses dans le graphe, les utilisateur arrivent facilement à appréhender l’évolution des VOC de leur système. Pour autant, nous reviendrons en <a href="chap2.html#perspec">2.4.4</a> sur l’utilisation de l’AUC et sa méthode de calcule qui impact grandement ce module.</p>
+</div>
+<div id="calibration-regression-linéaire-et-rapport-automatisé" class="section level3" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> Calibration, regression linéaire et rapport automatisé</h3>
+<p></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="chap2.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#__________________________________#</span></span>
+<span id="cb5-2"><a href="chap2.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Calibration</span></span>
+<span id="cb5-3"><a href="chap2.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;calibration&quot;</span> <span class="ot">=</span> <span class="cn">FALSE</span>,</span>
+<span id="cb5-4"><a href="chap2.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;cal_rapport&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>,     <span class="co"># Redige un rapport automatise pour evaluer la qualite de la calibration</span></span>
+<span id="cb5-5"><a href="chap2.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;cal_plot_exp&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>,    <span class="co"># Les axes x et y sont exponentielles ?</span></span>
+<span id="cb5-6"><a href="chap2.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;M.conc&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">1.008</span>, <span class="fl">1.018</span>, <span class="fl">1.013</span>, <span class="fl">1.014</span>, <span class="fl">1.013</span>, <span class="fl">1.013</span>, <span class="fl">1.015</span>, <span class="fl">1.006</span>, <span class="fl">1.007</span>,</span>
+<span id="cb5-7"><a href="chap2.html#cb5-7" aria-hidden="true" tabindex="-1"></a>             <span class="fl">0.994</span>, <span class="fl">1.013</span>),      <span class="co"># La concentration, en ppm, de chaque masse,</span></span>
+<span id="cb5-8"><a href="chap2.html#cb5-8" aria-hidden="true" tabindex="-1"></a>                                 <span class="co"># par defaut C = 1.000 ppm. (1 ou FALSE)</span></span>
+<span id="cb5-9"><a href="chap2.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">#__________________________________#</span></span></code></pre></div>
+<p></p>
+<p>Afin de vérifier la calibration de l’appareil, j’utilise un gaz étalon que je dilue avec un gaz pure lors des mesures de calibration. J’ai développé un script pour analyser cette calibration. La sortie de ce script se fait sous forme de <a href="https://mycore.core-cloud.net/index.php/s/ztNMJqgnfvQG44Z">rapports automatisés</a> basé sur des régressions linéaires simples. J’ai eu pour projet de développer cela en combinant les différentes masses et en proposant des tests de validation. La base de ce script peut également être reprise pour mesurer la concentration de différentes molécules. Ceci étant, le manque de temps et le côté monovariable ont largement freiné ce projet. D’autant que nous allons le voir, le travail ne manque pas.</p>
+</div>
+<div id="perspec" class="section level3" number="2.4.4">
+<h3><span class="header-section-number">2.4.4</span> Perspective</h3>
+<p>Dans cette partie, je n’ai pas développé les analyses plus poussés (alignement et chimiométrie) qui sont expliqués dans le chapitre suivant. Nous avons simplement vu le principe de base de la PTR-TOF-MS ainsi que les modules de base de l’analyse : obtenir le graphe des spectres de masses, le suivi des AUC et le calcul de concentration. Le package proVOC permet d’effectuer ces opérations de façon simple et sans rien coder. De plus, il met à disposition les jeux de données pour que les utilisateurs puissent soit appliquer leur propre traitement soit utiliser des modules avancés.</p>
+<p>Le package a été conçu pour assurer une reproductibilité des analyses. Lors de la conception de la structure du package, nous avions peu de recule sur l’utilisation du PTR-TOF-MS. Désormais, je suis convaincu qu’il me faut développer la version 2 très prochainement. Trois grosses modifications vont être effectuées.</p>
+<p>La première est assez technique et concerne l’importation de donnée :</p>
+<p></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="chap2.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data importation and reduction ####</span></span>
+<span id="cb6-2"><a href="chap2.html#cb6-2" aria-hidden="true" tabindex="-1"></a>f_h5 <span class="ot">&lt;-</span> <span class="fu">dir</span>(<span class="st">&quot;h5&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="chap2.html#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">grep</span>(<span class="st">&quot;.h5&quot;</span>, .)  <span class="co"># localise h5 files</span></span>
+<span id="cb6-4"><a href="chap2.html#cb6-4" aria-hidden="true" tabindex="-1"></a>ls_h5 <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">&quot;list&quot;</span>, <span class="fu">length</span>(f_h5))  <span class="co"># the acquisitions listes</span></span>
+<span id="cb6-5"><a href="chap2.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ls_h5) <span class="ot">&lt;-</span> <span class="fu">nm_ls</span>(f_h5)  <span class="co"># and the name</span></span>
+<span id="cb6-6"><a href="chap2.html#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(ls_h5)) {</span>
+<span id="cb6-7"><a href="chap2.html#cb6-7" aria-hidden="true" tabindex="-1"></a>    ls_h5[[i]] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;h5/&quot;</span>, <span class="fu">dir</span>(<span class="st">&quot;h5&quot;</span>)[f_h5[i]]) <span class="sc">%&gt;%</span></span>
+<span id="cb6-8"><a href="chap2.html#cb6-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">H5Fopen</span>()  <span class="co"># files import</span></span>
+<span id="cb6-9"><a href="chap2.html#cb6-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-10"><a href="chap2.html#cb6-10" aria-hidden="true" tabindex="-1"></a>mt_h5 <span class="ot">&lt;-</span> <span class="fu">meta_h5</span>(ls_h5)  <span class="co"># make the meta file</span></span>
+<span id="cb6-11"><a href="chap2.html#cb6-11" aria-hidden="true" tabindex="-1"></a>sp <span class="ot">&lt;-</span> <span class="fu">sp_red</span>(ls_h5, mt_h5)  <span class="co"># spectra reduction</span></span>
+<span id="cb6-12"><a href="chap2.html#cb6-12" aria-hidden="true" tabindex="-1"></a>sp<span class="sc">$</span>h5 <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">f_h5 =</span> f_h5, <span class="at">ls_h5 =</span> ls_h5, <span class="at">mt_h5 =</span> mt_h5, <span class="at">wd =</span> <span class="fu">getwd</span>())</span>
+<span id="cb6-13"><a href="chap2.html#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">h5closeAll</span>()  <span class="co"># close the connexion with the h5 files.</span></span>
+<span id="cb6-14"><a href="chap2.html#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># ls_h5 become NULL</span></span></code></pre></div>
+<p></p>
+<p>Les fonctions <em>H5open()</em> et <em>H5close()</em> du package <strong>rhdf5</strong> permettent d’ouvrir les fichiers h5 afin de les importer puis de les fermer. La fonction <em>sp_red()</em>, que j’ai écrite, est une meta fonction qui permet d’importer les spectres, les meta data, d’aligner les spectres, de supprimer les données inutiles et des détecter les peaks. Comme nous pouvons le voir, elle se trouve en sandwitch entre l’ouverture de toutes les datas et la fermeture des données. Cette maladresse occupe de la RAM inutilement et ralentie beaucoup cette étape. Pour autant, toucher à la fonction qui importe les données et les mets en forme est une opération risquée qui met en péril la fonctionnalité des fonctions ultérieures.</p>
+<p>La seconde modification sera sur le calcul de l’AUC. Initialement, je voulais trouver un moyen simple d’exprimer les 50 000 points des spectres en une valeur plus acceptable pour de l’analyse chimiométrique. J’avais donc piqué l’idée du bucketing des communautés de RMN en calculant l’AUC par masse unitaire (de M-0.5 à M+0.5). Cela permet d’obtenir une matrice de seulement 400 colonnes environ. En réalité, cela masque les cinétiques des molécules isobares. De plus, j’ai découvert après coup une fonction très performante pour détecter les pics (<a href="chap2.html#ExplicationGen">2.4.1</a>). Je peux donc remplacer les AUC unitaires par l’intensité des pics. Il n’y aura alors plus qu’une confusion sur les isomères mais qui correspond aux limites techniques de l’instrument. J’aimerais également travailler sur l’AUC des pics et leur déconvolution afin de savoir si de l’information y est cachée.</p>
+<p>La dernière modification se fera sur la structure :</p>
+<p></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="chap2.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">PTR_MS_analysis</span>(sp, mt)  <span class="co"># debute les analyses</span></span></code></pre></div>
+<p>
+Une seule fonction permet de lancer la série d’analyses précisé dans le workflow <em>mt</em> sur les data de l’élément <em>sp</em>. La fonction <em>PTR_MS_analysis()</em> ne retourne rien, si ce n’est des graphiques, des fichiers <em>.csv</em> ou des rapports automatiques. J’aimerais inclure le workflow à l’intérieur de l’objet <em>sp</em> et le compléter au fur et à mesure. Ainsi l’utilisateur pourrait lancer des opérations à la volée, par exemple (en reprenant le block AUC de la section <a href="chap2.html#analyseAUC">2.4.2</a>) :</p>
+<p></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="chap2.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aire sous la courbe (AUC) :</span></span>
+<span id="cb8-2"><a href="chap2.html#cb8-2" aria-hidden="true" tabindex="-1"></a>sp <span class="ot">&lt;-</span> <span class="fu">sp_AUC</span>(sp, <span class="at">AUC_plot_exp =</span> <span class="cn">FALSE</span>, <span class="at">AUC_each.group =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb8-3"><a href="chap2.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">AUC_each.Mass =</span> <span class="cn">TRUE</span>, <span class="at">M.num =</span> <span class="fu">c</span>(<span class="dv">81</span>, <span class="dv">137</span>, <span class="dv">153</span>), <span class="at">AUC_plot_dy =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb8-4"><a href="chap2.html#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">AUC_format =</span> <span class="st">&quot;date&quot;</span>)</span></code></pre></div>
+<p></p>
+<p>Cette forme franchement plus digeste permettra d’inclure plus simplement une analyse PTR-TOF-MS dans un script ou un rapport Rmarkdown.</p>
+<p>J’espère avec ces modifications importantes rendre l’analyse plus optimisée en temps et répondre mieux aux attentes des utilisateurs. Ce package est sur GitHub depuis septembre 2020. J’ai fait peu de pub car je connais ses limites et je souhaiterais corriger ses principales défauts avant de le proposer aux collègues des autres centres de recherche avec qui nous avons des contacts. Les retours sur les quelques démonstrations effectuées sont très positives et proVOC permettra (je l’espère) de répondre positivement à un réel besoin. De plus proVOC est complètement cohérent avec les principes de l’open science développés au chapitre <a href="chap1.html#chap1">1</a> et intègre des analyses chimiométriques qui sont détaillées au chapitre <a href="chap3.html#chap3">3</a>.</p>
 
 </div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-babcock_2001" class="csl-entry">
+Babcock, L. M., et N. G. Adams. 2001. <em>Advances in <span>Gas</span> <span>Phase</span> <span>Ion</span> <span>Chemistry</span>, <span>Volume</span> 4 - 1st <span>Edition</span></em>. 1ʳᵉ éd. Vol. 4. <a href="https://www-elsevier-com.inee.bib.cnrs.fr/books/advances-in-gas-phase-ion-chemistry/babcock/978-0-444-50929-1">https://www-elsevier-com.inee.bib.cnrs.fr/books/advances-in-gas-phase-ion-chemistry/babcock/978-0-444-50929-1</a>.
+</div>
+<div id="ref-blake_2004" class="csl-entry">
+Blake, Robert S., Christopher Whyte, Ceri O. Hughes, Andrew M. Ellis, et Paul S. Monks. 2004. <span>« Demonstration of proton-transfer reaction time-of-flight mass spectrometry for real-time analysis of trace volatile organic compounds »</span>. <em>Anal Chem</em> 76 (13): 3841‑45. <a href="https://doi.org/10.1021/ac0498260">https://doi.org/10.1021/ac0498260</a>.
+</div>
+<div id="ref-cappellin_2010" class="csl-entry">
+Cappellin, Luca, Franco Biasioli, Alessandra Fabris, Erna Schuhfried, Christos Soukoulis, Tilmann D. Märk, et Flavia Gasperi. 2010. <span>« Improved mass accuracy in <span>PTR</span>-<span>TOF</span>-<span>MS</span>: <span>Another</span> step towards better compound identification in <span>PTR</span>-<span>MS</span> »</span>. <em>International Journal of Mass Spectrometry</em> 290 (1): 60‑63. <a href="https://doi.org/10.1016/j.ijms.2009.11.007">https://doi.org/10.1016/j.ijms.2009.11.007</a>.
+</div>
+<div id="ref-cappellin_2011" class="csl-entry">
+Cappellin, Luca, Franco Biasioli, Pablo M. Granitto, Erna Schuhfried, Christos Soukoulis, Fabrizio Costa, Tilmann D. Märk, et Flavia Gasperi. 2011. <span>« On data analysis in <span>PTR</span>-<span>TOF</span>-<span>MS</span>: <span>From</span> raw spectra to data mining »</span>. <em>Sensors and Actuators B: Chemical</em> 155 (1): 183‑90. <a href="https://doi.org/10.1016/j.snb.2010.11.044">https://doi.org/10.1016/j.snb.2010.11.044</a>.
+</div>
+<div id="ref-amt-14-133-2021" class="csl-entry">
+Claflin, M. S., D. Pagonis, Z. Finewax, A. V. Handschy, D. A. Day, W. L. Brown, J. T. Jayne, et al. 2021. <span>« An in situ gas chromatograph with automatic detector switching between <span>PTR</span>- and <span>EI</span>-<span>TOF</span>-<span>MS</span>: isomer-resolved measurements of indoor air »</span>. <em>Atmospheric Measurement Techniques</em> 14 (1): 133‑52. <a href="https://doi.org/10.5194/amt-14-133-2021">https://doi.org/10.5194/amt-14-133-2021</a>.
+</div>
+<div id="ref-deuscher_2019" class="csl-entry">
+Deuscher, Zoé, Isabelle Andriot, Etienne Sémon, Marie Repoux, Sébastien Preys, Jean-Michel Roger, Renaud Boulanger, Hélène Labouré, et Jean-Luc Le Quéré. 2019. <span>« Volatile compounds profiling by using proton transfer reaction-time of flight-mass spectrometry (<span>PTR</span>-<span>ToF</span>-<span>MS</span>). <span>The</span> case study of dark chocolates organoleptic differences »</span>. <em>J Mass Spectrom</em> 54 (1): 92‑119. <a href="https://doi.org/10.1002/jms.4317">https://doi.org/10.1002/jms.4317</a>.
+</div>
+<div id="ref-ennis_2005" class="csl-entry">
+Ennis, C. J., J. C. Reynolds, B. J. Keely, et L. J. Carpenter. 2005. <span>« A hollow cathode proton transfer reaction time of flight mass spectrometer »</span>. <em>International Journal of Mass Spectrometry</em> 247 (1): 72‑80. <a href="https://doi.org/10.1016/j.ijms.2005.09.008">https://doi.org/10.1016/j.ijms.2005.09.008</a>.
+</div>
+<div id="ref-fischer_2021" class="csl-entry">
+Fischer, Bernd, Mike Smith, Gregoire Pau, Martin Morgan, et Daniel van Twisk. 2021. <span>« rhdf5: <span>R</span> <span>Interface</span> to <span>HDF5</span> »</span>. Bioconductor version: Release (3.13). <a href="https://doi.org/10.18129/B9.bioc.rhdf5">https://doi.org/10.18129/B9.bioc.rhdf5</a>.
+</div>
+<div id="ref-graus_2010" class="csl-entry">
+Graus, Martin, Markus Müller, et Armin Hansel. 2010. <span>« High resolution <span>PTR</span>-<span>TOF</span>: <span>Quantification</span> and formula confirmation of <span>VOC</span> in real time »</span>. <em>J Am Soc Mass Spectrom</em> 21 (6): 1037‑44. <a href="https://doi.org/10.1016/j.jasms.2010.02.006">https://doi.org/10.1016/j.jasms.2010.02.006</a>.
+</div>
+<div id="ref-hansel_1995" class="csl-entry">
+Hansel, A., A. Jordan, R. Holzinger, P. Prazeller, W. Vogel, et W. Lindinger. 1995. <span>« Proton transfer reaction mass spectrometry: on-line trace gas analysis at the ppb level »</span>. <em>International Journal of Mass Spectrometry and Ion Processes</em>, Honour <span>Biography</span> <span>David</span> <span>Smith</span>, 149-150 (novembre): 609‑19. <a href="https://doi.org/10.1016/0168-1176(95)04294-U">https://doi.org/10.1016/0168-1176(95)04294-U</a>.
+</div>
+<div id="ref-holzinger_2015" class="csl-entry">
+Holzinger, R. 2015. <span>« <span>PTRwid</span>: <span>A</span> new widget tool for processing <span>PTR</span>-<span>TOF</span>-<span>MS</span> data »</span>. <em>Atmos. Meas. Tech.</em> 8 (9): 3903‑22. <a href="https://doi.org/10.5194/amt-8-3903-2015">https://doi.org/10.5194/amt-8-3903-2015</a>.
+</div>
+<div id="ref-inomata_2006" class="csl-entry">
+Inomata, Satoshi, Hiroshi Tanimoto, Nobuyuki Aoki, Jun Hirokawa, et Yasuhiro Sadanaga. 2006. <span>« A novel discharge source of hydronium ions for proton transfer reaction ionization: design, characterization, and performance »</span>. <em>Rapid Communications in Mass Spectrometry</em> 20 (6): 1025‑29. <a href="https://doi.org/10.1002/rcm.2405">https://doi.org/10.1002/rcm.2405</a>.
+</div>
+<div id="ref-jordan_2009" class="csl-entry">
+Jordan, A., S. Haidacher, G. Hanel, E. Hartungen, L. Märk, H. Seehauser, R. Schottkowsky, P. Sulzer, et T. D. Märk. 2009. <span>« A high resolution and high sensitivity proton-transfer-reaction time-of-flight mass spectrometer (<span>PTR</span>-<span>TOF</span>-<span>MS</span>) »</span>. <em>International Journal of Mass Spectrometry</em> 286 (2-3): 122‑28. <a href="https://doi.org/10.1016/j.ijms.2009.07.005">https://doi.org/10.1016/j.ijms.2009.07.005</a>.
+</div>
+<div id="ref-krechmer_2018" class="csl-entry">
+Krechmer, Jordan, Felipe Lopez-Hilfiker, Abigail Koss, Manuel Hutterli, Carsten Stoermer, Benjamin Deming, Joel Kimmel, et al. 2018. <span>« Evaluation of a <span>New</span> <span>Reagent</span>-<span>Ion</span> <span>Source</span> and <span>Focusing</span> <span>Ion</span>–<span>Molecule</span> <span>Reactor</span> for <span>Use</span> in <span>Proton</span>-<span>Transfer</span>-<span>Reaction</span> <span>Mass</span> <span>Spectrometry</span> »</span>. <em>Anal. Chem.</em> 90 (20): 12011‑18. <a href="https://doi.org/10.1021/acs.analchem.8b02641">https://doi.org/10.1021/acs.analchem.8b02641</a>.
+</div>
+<div id="ref-lagg_1994" class="csl-entry">
+Lagg, A., J. Taucher, A. Hansel, et W. Lindinger. 1994. <span>« Applications of proton transfer reactions to gas analysis »</span>. <em>International Journal of Mass Spectrometry and Ion Processes</em> 134 (1): 55‑66. <a href="https://doi.org/10.1016/0168-1176(94)03965-8">https://doi.org/10.1016/0168-1176(94)03965-8</a>.
+</div>
+<div id="ref-lindinger_1998a" class="csl-entry">
+Lindinger, W., A. Hansel, et A. Jordan. 1998. <span>« On-line monitoring of volatile organic compounds at pptv levels by means of proton-transfer-reaction mass spectrometry (<span>PTR</span>-<span>MS</span>) medical applications, food control and environmental research »</span>. <em>International Journal of Mass Spectrometry and Ion Processes</em> 173 (3): 191‑241. <a href="https://doi.org/10.1016/S0168-1176(97)00281-4">https://doi.org/10.1016/S0168-1176(97)00281-4</a>.
+</div>
+<div id="ref-lindinger_1993" class="csl-entry">
+Lindinger, W., J. Hirber, et H. Paretzke. 1993. <span>« An ion/molecule-reaction mass spectrometer used for on-line trace gas analysis »</span>. <em>International Journal of Mass Spectrometry and Ion Processes</em> 129 (novembre): 79‑88. <a href="https://doi.org/10.1016/0168-1176(93)87031-M">https://doi.org/10.1016/0168-1176(93)87031-M</a>.
+</div>
+<div id="ref-lindinger_1998" class="csl-entry">
+Lindinger, W., et A. Jordan. 1998. <span>« Proton-transfer-reaction mass spectrometry (<span>PTR</span>–<span>MS</span>): on-line monitoring of volatile organic compounds at pptv levels »</span>. <em>Chem. Soc. Rev.</em> 27 (5): 347‑75. <a href="https://doi.org/10.1039/A827347Z">https://doi.org/10.1039/A827347Z</a>.
+</div>
+<div id="ref-lindinger_1991" class="csl-entry">
+Lindinger, W, K Leiter, et M Andriollo. 1991. <span>« Industrial <span>Multicomponent</span> <span>Gas</span> <span>Analysis</span> »</span>. <em>Ionen-Technik GmbH</em> 20 (7): 24‑25.
+</div>
+<div id="ref-majchrzak_2018" class="csl-entry">
+Majchrzak, Tomasz, Wojciech Wojnowski, Martyna Lubinska-Szczygeł, Anna Różańska, Jacek Namieśnik, et Tomasz Dymerski. 2018. <span>« <span>PTR</span>-<span>MS</span> and <span>GC</span>-<span>MS</span> as complementary techniques for analysis of volatiles: <span>A</span> tutorial review »</span>. <em>Analytica Chimica Acta</em> 1035 (décembre): 1‑13. <a href="https://doi.org/10.1016/j.aca.2018.06.056">https://doi.org/10.1016/j.aca.2018.06.056</a>.
+</div>
+<div id="ref-tanimoto_2007" class="csl-entry">
+Tanimoto, Hiroshi, Nobuyuki Aoki, Satoshi Inomata, Jun Hirokawa, et Yasuhiro Sadanaga. 2007. <span>« Development of a <span>PTR</span>-<span>TOFMS</span> instrument for real-time measurements of volatile organic compounds in air »</span>. <em>International Journal of Mass Spectrometry</em> 263 (1): 1‑11. <a href="https://doi.org/10.1016/j.ijms.2007.01.009">https://doi.org/10.1016/j.ijms.2007.01.009</a>.
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="6">
+<li id="fn6"><p>avec des remerciements incroyables<a href="chap2.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>molécules possédant un nombre de nucléons identique.<a href="chap2.html#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>molécules partageant la même formule brute mais avec une stéréochimie différente.<a href="chap2.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>si un mémoire de master permettait la science fiction, j’aurais évidemment développé quelques idées à propos de capteurs de champs électromagnétiques ou de spectromètres optiques à la place des capteurs MS actuels.<a href="chap2.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>ou sccm, pour <em>standard cubic centimeters per minute</em><a href="chap2.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p>comme c’est la cas avec la GC-MS<a href="chap2.html#fnref11" class="footnote-back">↩︎</a></p></li>
+<li id="fn12"><p>il faut télécharger le fichier puis l’ouvrir, par exemple avec un explorateur internet.<a href="chap2.html#fnref12" class="footnote-back">↩︎</a></p></li>
+<li id="fn13"><p><a href="https://www.youtube.com/watch?v=0lNuTSz6KVM" class="uri">https://www.youtube.com/watch?v=0lNuTSz6KVM</a><a href="chap2.html#fnref13" class="footnote-back">↩︎</a></p></li>
+<li id="fn14"><p>entre 10 et 10<sup>6</sup><a href="chap2.html#fnref14" class="footnote-back">↩︎</a></p></li>
+<li id="fn15"><p>MZmine pour n’en citer qu’un<a href="chap2.html#fnref15" class="footnote-back">↩︎</a></p></li>
+<li id="fn16"><p>ou de façon moins prosaïque : pourquoi diable les physiciens ne restent pas sagement avec leurs bosons et viennent régulièrement embêter leurs collègues avec des idées nouvelles ?<a href="chap2.html#fnref16" class="footnote-back">↩︎</a></p></li>
+<li id="fn17"><p>qui se présentent sous différentes formes en fonction des utilisation<a href="chap2.html#fnref17" class="footnote-back">↩︎</a></p></li>
+<li id="fn18"><p>typiquement de l’ordre d’une à trente secondes<a href="chap2.html#fnref18" class="footnote-back">↩︎</a></p></li>
+<li id="fn19"><p>proVOC : <strong>P</strong>erform a <strong>R</strong>apid <strong>O</strong>verview of the <strong>V</strong>olatil <strong>O</strong>rganic <strong>C</strong>ompound<a href="chap2.html#fnref19" class="footnote-back">↩︎</a></p></li>
+<li id="fn20"><p><em>cf.</em> “calculation of threshold” dans la fonction <em>reduction2()</em><a href="chap2.html#fnref20" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 

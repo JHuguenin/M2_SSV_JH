@@ -69,7 +69,6 @@ biblatexoptions:
   - maxbibnames=150
   - sorting=nyt
   - sortcites=false
-csl: modern-language-association.cls
 # Chapter summary text
 chaptersummary: In a Nutshell
 # Back Cover
