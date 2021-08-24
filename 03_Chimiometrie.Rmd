@@ -6,19 +6,67 @@ Nous allons à présent nous intéresser aux algorithmes utilisés pour traiter 
 
 Actuellement, le package utilise la fonction *alignSpectra()* du package **MALDIquant**. L'alignement est fortement lié à la détection de pic. Soit le modèle utilisé n'est pas optimum et ajoute ou supprime des pics. Soit il crée un décalage trop important en alignant mal les pics se qui créer de la confusion lors de l'étape d'identification. 
 
-![Alignement des pics](images/lav_align.png){#lav_align}
-*alignSpectra()* est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure \@ref(lav_align). Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.  
+![Alignement des pics](images/lav_align.png){#lavAlign}
+*alignSpectra()* est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure \@ref(lavAlign). Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.  
 
 J'ai trouvé un article très intéressant de @picaud_2018 qui propose un algorithme pour supprimer la ligne de base, aligner les pics et les détecter. L'article explique les problèmes de faire ces trois étapes successivement et propose donc une alternative. Nous avons discuté avec l'auteur de sa solution. Malheureusement, le script est écrit en C++. Il est possible d'utiliser ce langage sous R, via Rcpp par exemple, mais cela aurait demandé un peu trop de temps. Pour l'instant, cette solution a été mise de côté mais pourra être exploré plus tard.  
 
-De plus, Jean-Michel Roger m'a proposé une approche basé sur l'algorithme COVSEL [@roger_2011] pour résoudre notre problème.   
+De plus, Jean-Michel Roger m'a proposé une approche basé sur l'algorithme COVSEL [@roger_2011] pour résoudre notre problème.  Cette méthode permet de recaler les masses en recalculant l'abscisse pour chaque spectre. On observe cependant dans la théorie (équations 4 et 5) que l'on va devoir diagonaliser une matrice d'environ 150000x150000 points, essentiellement composée de zéro. Cette opération est impossible a effectué avec un ordinateur de bureau. Pour autant, la solution que j'ai trouvé est d'utiliser l'algorithme COVSEL sur une toute petite partie du spectre et de le faire glisser sur toute la longueur. Cette technique fonctionne mais n'est pas du tout optimisée et prend un temps non acceptable (environ une minute par spectre).  
+
+Finalement, nous avons fait le choix de garder la fonction *alignSpectra()* de **MALDIquant**. De plus, ce package nous permet d'avoir une liste de tous les pics détectés. Ainsi, nous avons pour un même jeu de donnée, trois matrices à utiliser pour les analyses chimiométriques :  
+
+-   la matrice alignée (composée d'environ 50 000 masses) ; *(Mi)*
+-   les AUC (~340 masses unitaires non nulles) ; *(Mj)*
+-   les pics (~300 pics, qui peuvent être des isobares). *(Mj)*  
+
+Pour une étude chimiométrique, nous pouvons discuter de la pertinence des jeux de données. Avec une matrice alignée *Mi*, on peut estimé que les algorithmes puissants des chimiomètriciens vont détecter de petites variations négligées par les méthodes de détection de pics. Les *Mi* peuvent donc détecter les traces de VOC. Cependant les matrices *Mj* (AUC ou pics) possèdent un nombre de colonnes réduit de presque deux ordres de grandeur. De plus, le grand avantage du PTR-TOF-MS est d'obtenir des spectres ayant une excellente résolution de masse (10^-3^Dalton). Nous pouvons donc utiliser une matrice *Mj* pour les analyses chimiométriques.  
+
+Maintenant que les outils pour détecter les pics et les outils d'analyses sont fonctionnelles pour les jeu de données du PTR-TOF-MS, il serait très intéressant d'analyser (via une MCR par exemple) comment la modification des paramètres de la fonction *detectPeaks()* (de **MALDIquant**) influe sur les résultats de chimiométrie.  
 
 
+##  Analyses Chimiométriques  
 
-## Méthodes multivariées  
-  ### ACP  
-  ### MCR  
-  ### ICA  
+### Analyse en Composante Principale (ACP)  
+
+L'[ACP](https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales)^[Wikipédia est un haut lieu de la science ouverte] est une méthode bien connue et enseigné dans toutes les bonnes formations d'analyses. Elle permet d'obtenir rapidement une vision de la variance des données. ProVOC permet d'effectuer une ACP sur le jeu de donnée de l'utilisateur. Un exemplaire peut être consulté ici. Il décrit le jeu de donnée utilisé dans la section \@ref(explav) et y sera commenté dans cette même section. L'ACP peut être appliqué à la matrice alignée avec un temps de calcul acceptable.
+
+Cependant, le résultat de l'ACP est un pur objet mathématique qui est souvent très compliqué à interpréter correctement. Je me suis donc intéressé à deux algorithmes que je souhaitais utilisé depuis [longtemps](https://www.gfsv.net/gfsv-2014-paris/pr%C3%A9sentations/chimiom%C3%A9trie-analyse-en-ligne/)^[très probablement depuis le GFSV 2014]. 
+
+### Multivariate Curve Resolution (MCR)  
+
+![Bilinear model obtained from MCR for an HPLC-DAD data set. Expressed as (a) sum of pure signal contributions; (b) sum of the dyads of pure concentration profile and spectra; and (c) product of matrices of pure concentration profiles and spectra. (Image reproduit de @dejuan_2014 avec l'autorisation de l'éditeur.)](images/mcr.jpg){#schMCR}
+
+La MCR est une famille de méthodes qui cherche à décomposer l'ensemble des spectres en plusieurs sous-ensembles de produits pures. La figure \@ref(schMCR) issue de l'article de @dejuan_2014 permet de bien comprendre l'objectif d'une MCR. La matrice D, obtenue par l'expérience, est l'expression de de deux produits pures S~A~^T^ et S~B~^T^ (deux bouquets de VOC pour notre PTR-TOF-MS) de concentration C~A~ et C~B~, qui sont les quatre vecteurs que nous cherchons à connaître^[et dont nous ne connaissons rien.]. Les étapes de l'équation sont décrites dans l'article précédemment citée.  
+
+De plus, la MCR permet l'ajout de contraintes telles que la "non-négativité" qui permet de ne pas avoir de composantes négatives dans les S~i~^T^ (fréquent en ACP) ou la contrainte "d'égalité" qui permet par exemple de renseigner un spectre pure de référence.  
+
+Un autre aspect très important de la MCR est de comprendre les trois "ambigüités" liées à l'algorithme :  
+
+- l'ambigüité de **permutation**. Il n'y a pas d'ordre dans spectres pures et leur concentration associée. Le spectre S~i~^T^ ne représente pas plus ou moins l'ensemble du jeu de donnée que le spectre S~j~^T^.  
+- l'ambigüité d'**intensité**. L'intensité du spectre pur S~i~ et sa concentration C~i~ peuvent être multipliées conjointement par les facteurs k~i~ et k~i~^-1^. La MCR ne peut donner qu'une concentration relative.  
+- l'ambigüité de **rotation**. Il est possible d'introduire une matrice inversible **R** dans les équations :  
+$$D = CS^T + E$$
+$$D = (CR)(R^{-1} S^T) + E$$
+Puisque l'algorithme de la MCR cherche à minimiser l'erreur **E**, la matrice **R** ne fais pas varier **E** mais change la composition des résultats.  
+
+Les contraintes permettent de lever en partie ces ambigüités.  
+
+La MCR permet donc d'initier les matrices **C** et **S^T^**. Cette opération est utilisé dans un ensemble itératif MCR-ALS (alternating least squares) qui permet d'optimiser les résultats en fonction des contraintes utilisées. Par ailleurs, le nombres de composantes est un paramètre essentiel qui correspond véritablement à un nombre de phénomènes naturels. Il ne peut pas être déterminé arbitrairement à l'inverse du nombre de CP dans une ACP. Théoriquement, une MCR peut être effectué avec le jeu de donnée de la matrice alignée. Cependant, avec un ordinateur de bureau, les calcules sont assez long. 
+
+Un excellent complément d'information se trouve dans le livre 
+@ruckebusch_2016 et en particulier les chapitres 2 [@dejuan_2016], 3 [@kucheryavskiy_2016] et 14 [@hugelier_2016]. De plus, le chapitre 7 [@rutledge_2016] présente l'algorithme de l'ICA. Ces deux algorithmes cherchent tous deux à extraire des spectres pures. Pour autant, les deux approches sont différentes et génèrent parfois des incompréhensions entre les communautés.   
+
+### Independent Components Analysis (ICA)
+
+L'objectif principale de l'ICA est de retrouver les *signal sources* mélangés à l'intérieur du jeu de données et la proportion de chacun d'eux. Pour cela, l'ICA s'interresse à la distribution de l'intensité du signal sur un histogramme (*cf.* Fig2 de @rutledge_2016). Selon la loi central limite, plus l'histogramme tend vers une répartition gaussienne, plus il y a de chances que ce signal soit du bruit. Inversement, moins la répartition est gaussienne, plus le signal correspond à un signal source. De plus, comme pour une ACP, l'ICA cherche à obtenir des signals sources indépendant, et donc orthogonaux. Contrairement à la MCR, L'ICA n'impose pas de contrainte. La phrase de [@rutledge_2016] permet de bien comprendre la différence entre les deux méthodes : *This is because while MCR aims to extract the signals of pure compounds, ICA extracts signals reflecting underlying **independent phenomena**, which may in fact be combinations of the signals of several pure compounds*.^[En effet, alors que la MCR vise à extraire les composés purs, l'ICA extrait les signaux reflétant des **phénomènes indépendants** sous-jacents, qui peuvent en fait être des combinaisons des signaux de plusieurs composés purs.]  
+Il existe plusieurs algorithmes qui utilise l'ICA, [@wang_2008] et [@al-saegh_2015]. Cependant, l'agorithme JADE [@cardoso_1993] est probablement le plus utilisé pour l'ICA, [@rutledge_2013] et [@rutledge_2015]. Un package [JADE](https://cran.r-project.org/web/packages/JADE/JADE.pdf) pour R est déposé et maintenu sur le CRAN. Le principe de JADE est de décomposé la matrice **X** (le jeu de donnée expérimentale) en utilisant les loadings d'une ACP. Ces loadings sont centrés et normés puis arrangés pour former un tenseur d'ordre 4. De façon itérative, JADE va ensuite optimiser ces loadings pour les rendre indépendants.  
+
+Cette description succincte permet très vite de comprendre que réaliser un tenseur d'ordre 4 à base de vecteur de 55000 points risque d'être problématique. L'ICA ne peut se faire que sur une matrice réduite comme l'AUC ou les pics détectés.  
+
+## Applications
+
+...
+
 
 ### bourgeon {#anaalm}  
 

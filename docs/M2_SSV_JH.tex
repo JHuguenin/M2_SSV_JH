@@ -395,7 +395,7 @@
 
 \author{Joris Huguenin}
 
-\date{2021-08-23}
+\date{2021-08-24}
 
 
 % End of preamble
@@ -547,7 +547,7 @@ Durant cette période de stage, le gouvernement français a mis en place le Deux
 
 Les axes concernant le code et les données me concerne directement. Par mon travail, je produit des données ainsi que le code permettant l'analyse de celle-ci par mes collaborateurs. Le code est écrit en langage R sous la forme d'un package, \emph{proVOC}, déposé sur \href{https://github.com/JHuguenin/provoc}{gitHub}. Il génère un workflow qui sauvegarde les paramètres et les données utilisés lors de l'analyse. Le dépôt sur un git permet l'ouverture de ce code. Il est toutefois prévu d'effectué une migration sur gitLab afin de favoriser l'utilisation des logiciels libres.
 
-Par ailleurs, je souhaite développer un module permettant de convertir les data machines dans un format adapté à la futur plateforme Recherche Data Gouv. Ce module facilitera la production de \emph{data paper} dont j'ai découvert l'existence au cours des \href{https://casuhal2021.sciencesconf.org/}{journées casuHAL 2021}. Grâce à deux demi-journées de formation sur Rmardown et sur la création de package, j'ai pu intégrer la génération de rapport automatisé dans le package\footnote{\url{https://daranzolin.github.io/2021-03-03-automated-rmarkdown/}} qui est un premier pas vers l'écriture automatisé des data paper.
+Par ailleurs, je souhaite développer un module permettant de convertir les data machines dans un format adapté à la futur plateforme Recherche Data Gouv. Ce module facilitera la production de \emph{data paper} dont j'ai découvert l'existence au cours des \href{https://casuhal2021.sciencesconf.org/}{journées casuHAL 2021}. Grâce à deux demi-journées de formation sur Rmardown et sur la création de package, j'ai pu intégrer la génération de rapport automatisé dans le package\footnote{\url{https://daranzolin.github.io/2021-03-03-automated-rmarkdown/}} qui est un premier pas vers l'écriture automatisé des data paper.\footnote{voir également \textcite{boettiger_2015}}
 
 J'ai également découvert et testé les packages et templates permettant de créer sous R un document découpé en chapitre. J'utilisais déjà Rmarkdown depuis un certains temps mais le passage à \href{https://bookdown.org/}{Bookdown} et \href{https://ericmarcon.github.io/memoiR/}{memoiR} a demandé un temps d'adaptation plus long que prévu. Ceci étant, ça n'a pas été en vain puisque j'ai eu plusieurs retours enthousiastes de collègues en vu d'une formation sur ces packages. J'envisage, une fois ce rapport terminé, de développer un clone de memoiR (avec l'accord de l'auteur) sur le style de \href{https://ecofog.github.io/EcoFoG/}{EcoFoG} afin de mettre à disposition aux membres du CEFE un templates clé en main. Ceci permettra de favoriser l'écriture de rapport par des logiciels libres et d'améliorer la reproductibilité de la science.
 
@@ -608,7 +608,7 @@ Quelques jours après l'expérience avec les lavandes, nous avons réutilisé le
 \hypertarget{conclusion-partielle}{%
 \section{Conclusion partielle}\label{conclusion-partielle}}
 
-J'ai commencé ce métier en novembre 2019. En raison des conditions sanitaires et de la formation continue en M2 SSV, j'ai une vision légèrement biaisée d'une année ``standard'' sur ce poste. Pour autant, je pense avoir trouvé le bon équilibre entre d'un côté le développement d'outils numériques résolument orienté utilisateurs et qui entre dans le Deuxième Plan national pour la science ouverte et de l'autre côté l'accompagnement des utilisateurs de la conception de leurs expériences à l'acquisition.
+J'ai commencé ce métier en novembre 2019. En raison des conditions sanitaires et de la formation continue en M2 SSV, j'ai une vision légèrement biaisée d'une année ``standard'' sur ce poste. Pour autant, je pense avoir trouvé le bon équilibre entre d'un côté le développement d'outils numériques résolument orienté utilisateurs et qui entre dans le Deuxième Plan national pour la science ouverte et de l'autre côté l'accompagnement des utilisateurs de la conception de leurs expériences à l'acquisition\autocite{artho_2020}.
 
 Le temps annuel consacré à chacune de ces facettes est plutôt équilibré bien que les saisons chaudes soient bien évidemment plutôt dédiées au terrain. Après ces quelques descriptions d'expériences, je propose une description plus détaillée de l'instrument PTR-ToF-MS et de son environnement dans le champs de la spectroscopie de masse, chapitre \ref{chap2}, mais un lecteur pressé de connaître les conclusions de ces expériences peut sauter au chapitre \ref{chap3}.
 
@@ -909,18 +909,87 @@ Nous allons à présent nous intéresser aux algorithmes utilisés pour traiter 
 Actuellement, le package utilise la fonction \emph{alignSpectra()} du package \textbf{MALDIquant}. L'alignement est fortement lié à la détection de pic. Soit le modèle utilisé n'est pas optimum et ajoute ou supprime des pics. Soit il crée un décalage trop important en alignant mal les pics se qui créer de la confusion lors de l'étape d'identification.
 
 \includegraphics{images/lav_align.png}
-\emph{alignSpectra()} est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure @ref(lav\_align). Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.
+\emph{alignSpectra()} est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure \ref{lavAlign}. Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.
 
 J'ai trouvé un article très intéressant de \textcite{picaud_2018} qui propose un algorithme pour supprimer la ligne de base, aligner les pics et les détecter. L'article explique les problèmes de faire ces trois étapes successivement et propose donc une alternative. Nous avons discuté avec l'auteur de sa solution. Malheureusement, le script est écrit en C++. Il est possible d'utiliser ce langage sous R, via Rcpp par exemple, mais cela aurait demandé un peu trop de temps. Pour l'instant, cette solution a été mise de côté mais pourra être exploré plus tard.
 
-De plus, Jean-Michel Roger m'a proposé une approche basé sur l'algorithme COVSEL \autocite{roger_2011} pour résoudre notre problème.
+De plus, Jean-Michel Roger m'a proposé une approche basé sur l'algorithme COVSEL \autocite{roger_2011} pour résoudre notre problème. Cette méthode permet de recaler les masses en recalculant l'abscisse pour chaque spectre. On observe cependant dans la théorie (équations 4 et 5) que l'on va devoir diagonaliser une matrice d'environ 150000x150000 points, essentiellement composée de zéro. Cette opération est impossible a effectué avec un ordinateur de bureau. Pour autant, la solution que j'ai trouvé est d'utiliser l'algorithme COVSEL sur une toute petite partie du spectre et de le faire glisser sur toute la longueur. Cette technique fonctionne mais n'est pas du tout optimisée et prend un temps non acceptable (environ une minute par spectre).
 
-\hypertarget{muxe9thodes-multivariuxe9es}{%
-\section{Méthodes multivariées}\label{muxe9thodes-multivariuxe9es}}
+Finalement, nous avons fait le choix de garder la fonction \emph{alignSpectra()} de \textbf{MALDIquant}. De plus, ce package nous permet d'avoir une liste de tous les pics détectés. Ainsi, nous avons pour un même jeu de donnée, trois matrices à utiliser pour les analyses chimiométriques :
 
-\#\#\# ACP\\
-\#\#\# MCR\\
-\#\#\# ICA
+\begin{itemize}
+\tightlist
+\item
+  la matrice alignée (composée d'environ 50 000 masses) ; \emph{(Mi)}
+\item
+  les AUC (\textasciitilde340 masses unitaires non nulles) ; \emph{(Mj)}
+\item
+  les pics (\textasciitilde300 pics, qui peuvent être des isobares). \emph{(Mj)}
+\end{itemize}
+
+Pour une étude chimiométrique, nous pouvons discuter de la pertinence des jeux de données. Avec une matrice alignée \emph{Mi}, on peut estimé que les algorithmes puissants des chimiomètriciens vont détecter de petites variations négligées par les méthodes de détection de pics. Les \emph{Mi} peuvent donc détecter les traces de VOC. Cependant les matrices \emph{Mj} (AUC ou pics) possèdent un nombre de colonnes réduit de presque deux ordres de grandeur. De plus, le grand avantage du PTR-TOF-MS est d'obtenir des spectres ayant une excellente résolution de masse (10\textsuperscript{-3}Dalton). Nous pouvons donc utiliser une matrice \emph{Mj} pour les analyses chimiométriques.
+
+Maintenant que les outils pour détecter les pics et les outils d'analyses sont fonctionnelles pour les jeu de données du PTR-TOF-MS, il serait très intéressant d'analyser (via une MCR par exemple) comment la modification des paramètres de la fonction \emph{detectPeaks()} (de MALDIquant) influe sur les résultats de chimiométrie.
+
+\hypertarget{analyses-chimiomuxe9triques}{%
+\section{Analyses Chimiométriques}\label{analyses-chimiomuxe9triques}}
+
+\hypertarget{analyse-en-composante-principale-acp}{%
+\subsection{Analyse en Composante Principale (ACP)}\label{analyse-en-composante-principale-acp}}
+
+L'\href{https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales}{ACP}\footnote{Wikipédia est un haut lieu de la science ouverte} est une méthode bien connue et enseigné dans toutes les bonnes formations d'analyses. Elle permet d'obtenir rapidement une vision de la variance des données. ProVOC permet d'effectuer une ACP sur le jeu de donnée de l'utilisateur. Un exemplaire peut être consulté ici. Il décrit le jeu de donnée utilisé dans la section \ref{explav} et y sera commenté dans cette même section. L'ACP peut être appliqué à la matrice alignée avec un temps de calcul acceptable.
+
+Cependant, le résultat de l'ACP est un pur objet mathématique qui est souvent très compliqué à interpréter correctement. Je me suis donc intéressé à deux algorithmes que je souhaitais utilisé depuis \href{https://www.gfsv.net/gfsv-2014-paris/pr\%C3\%A9sentations/chimiom\%C3\%A9trie-analyse-en-ligne/}{longtemps}\footnote{très probablement depuis le GFSV 2014}.
+
+\hypertarget{multivariate-curve-resolution-mcr}{%
+\subsection{Multivariate Curve Resolution (MCR)}\label{multivariate-curve-resolution-mcr}}
+
+\begin{figure}
+\hypertarget{schMCR}{%
+\centering
+\includegraphics{images/mcr.jpg}
+\caption{Bilinear model obtained from MCR for an HPLC-DAD data set. Expressed as (a) sum of pure signal contributions; (b) sum of the dyads of pure concentration profile and spectra; and (c) product of matrices of pure concentration profiles and spectra. (Image reproduit de \textcite{dejuan_2014} avec l'autorisation de l'éditeur.)}\label{schMCR}
+}
+\end{figure}
+
+La MCR est une famille de méthodes qui cherche à décomposer l'ensemble des spectres en plusieurs sous-ensembles de produits pures. La figure \ref{schMCR} issue de l'article de \textcite{dejuan_2014} permet de bien comprendre l'objectif d'une MCR. La matrice D, obtenue par l'expérience, est l'expression de de deux produits pures S\textsubscript{A}\textsuperscript{T} et S\textsubscript{B}\textsuperscript{T} (deux bouquets de VOC pour notre PTR-TOF-MS) de concentration C\textsubscript{A} et C\textsubscript{B}, qui sont les quatre vecteurs que nous cherchons à connaître\footnote{et dont nous ne connaissons rien.}. Les étapes de l'équation sont décrites dans l'article précédemment citée.
+
+De plus, la MCR permet l'ajout de contraintes telles que la ``non-négativité'' qui permet de ne pas avoir de composantes négatives dans les S\textsubscript{i}\textsuperscript{T} (fréquent en ACP) ou la contrainte ``d'égalité'' qui permet par exemple de renseigner un spectre pure de référence.
+
+Un autre aspect très important de la MCR est de comprendre les trois ``ambigüités'' liées à l'algorithme :
+
+\begin{itemize}
+\tightlist
+\item
+  l'ambigüité de \textbf{permutation}. Il n'y a pas d'ordre dans spectres pures et leur concentration associée. Le spectre S\textsubscript{i}\textsuperscript{T} ne représente pas plus ou moins l'ensemble du jeu de donnée que le spectre S\textsubscript{j}\textsuperscript{T}.\\
+\item
+  l'ambigüité d'\textbf{intensité}. L'intensité du spectre pur S\textsubscript{i} et sa concentration C\textsubscript{i} peuvent être multipliées conjointement par les facteurs k\textsubscript{i} et k\textsubscript{i}\textsuperscript{-1}. La MCR ne peut donner qu'une concentration relative.\\
+\item
+  l'ambigüité de \textbf{rotation}. Il est possible d'introduire une matrice inversible \textbf{R} dans les équations :\\
+  \[D = CS^T + E\]
+  \[D = (CR)(R^{-1} S^T) + E\]
+  Puisque l'algorithme de la MCR cherche à minimiser l'erreur \textbf{E}, la matrice \textbf{R} ne fais pas varier \textbf{E} mais change la composition des résultats.
+\end{itemize}
+
+Les contraintes permettent de lever en partie ces ambigüités.
+
+La MCR permet donc d'initier les matrices \textbf{C} et \textbf{S\textsuperscript{T}}. Cette opération est utilisé dans un ensemble itératif MCR-ALS (alternating least squares) qui permet d'optimiser les résultats en fonction des contraintes utilisées. Par ailleurs, le nombres de composantes est un paramètre essentiel qui correspond véritablement à un nombre de phénomènes naturels. Il ne peut pas être déterminé arbitrairement à l'inverse du nombre de CP dans une ACP. Théoriquement, une MCR peut être effectué avec le jeu de donnée de la matrice alignée. Cependant, avec un ordinateur de bureau, les calcules sont assez long.
+
+Un excellent complément d'information se trouve dans le livre
+\textcite{ruckebusch_2016} et en particulier les chapitres 2 \autocite{dejuan_2016}, 3 \autocite{kucheryavskiy_2016} et 14 \autocite{hugelier_2016}. De plus, le chapitre 7 \autocite{rutledge_2016} présente l'algorithme de l'ICA. Ces deux algorithmes cherchent tous deux à extraire des spectres pures. Pour autant, les deux approches sont différentes et génèrent parfois des incompréhensions entre les communautés.
+
+\hypertarget{independent-components-analysis-ica}{%
+\subsection{Independent Components Analysis (ICA)}\label{independent-components-analysis-ica}}
+
+L'objectif principale de l'ICA est de retrouver les \emph{signal sources} mélangés à l'intérieur du jeu de données et la proportion de chacun d'eux. Pour cela, l'ICA s'interresse à la distribution de l'intensité du signal sur un histogramme (\emph{cf.} Fig2 de \textcite{rutledge_2016}). Selon la loi central limite, plus l'histogramme tend vers une répartition gaussienne, plus il y a de chances que ce signal soit du bruit. Inversement, moins la répartition est gaussienne, plus le signal correspond à un signal source. De plus, comme pour une ACP, l'ICA cherche à obtenir des signals sources indépendant, et donc orthogonaux. Contrairement à la MCR, L'ICA n'impose pas de contrainte. La phrase de \autocite{rutledge_2016} permet de bien comprendre la différence entre les deux méthodes : \emph{This is because while MCR aims to extract the signals of pure compounds, ICA extracts signals reflecting underlying \textbf{independent phenomena}, which may in fact be combinations of the signals of several pure compounds}.\footnote{En effet, alors que la MCR vise à extraire les composés purs, l'ICA extrait les signaux reflétant des \textbf{phénomènes indépendants} sous-jacents, qui peuvent en fait être des combinaisons des signaux de plusieurs composés purs.}\\
+Il existe plusieurs algorithmes qui utilise l'ICA, \autocite{wang_2008} et \autocite{al-saegh_2015}. Cependant, l'agorithme JADE \autocite{cardoso_1993} est probablement le plus utilisé pour l'ICA, \autocite{rutledge_2013} et \autocite{rutledge_2015}. Un package \href{https://cran.r-project.org/web/packages/JADE/JADE.pdf}{JADE} pour R est déposé et maintenu sur le CRAN. Le principe de JADE est de décomposé la matrice \textbf{X} (le jeu de donnée expérimentale) en utilisant les loadings d'une ACP. Ces loadings sont centrés et normés puis arrangés pour former un tenseur d'ordre 4. De façon itérative, JADE va ensuite optimiser ces loadings pour les rendre indépendants.
+
+Cette description succincte permet très vite de comprendre que réaliser un tenseur d'ordre 4 à base de vecteur de 55000 points risque d'être problématique. L'ICA ne peut se faire que sur une matrice réduite comme l'AUC ou les pics détectés.
+
+\hypertarget{applications}{%
+\section{Applications}\label{applications}}
+
+\ldots{}
 
 \hypertarget{anaalm}{%
 \subsection{bourgeon}\label{anaalm}}
@@ -931,6 +1000,11 @@ blabla voir le détail section \ref{expalm}
 \subsection{lavande}\label{analav}}
 
 blabla voir le détail section \ref{explav}
+
+\hypertarget{conclusion}{%
+\chapter{Conclusion}\label{conclusion}}
+
+c'était chouette
 
 \hypertarget{glossaire}{%
 \chapter*{Glossaire}\label{glossaire}}
