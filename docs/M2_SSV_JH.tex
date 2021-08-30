@@ -395,7 +395,7 @@
 
 \author{Joris Huguenin}
 
-\date{2021-08-24}
+\date{2021-08-30}
 
 
 % End of preamble
@@ -411,11 +411,7 @@
 \includepdf[pages=1]{images/cover.pdf}
 \cleardoublepage
 
-\MainTitlePage{}{\url{https://www.cefe.cnrs.fr/fr/}
-
-CEFE : Centre Écologie Fonctionnelle et Évolutive
-
-PACE : Plateforme d'Analyse Chimique en Écologie}
+\MainTitlePage{}{\url{https://www.cefe.cnrs.fr/fr/}}
 
 
 % Before Body
@@ -444,7 +440,45 @@ PACE : Plateforme d'Analyse Chimique en Écologie}
 \chapter*{Remerciements}\label{remerciements}}
 \addcontentsline{toc}{chapter}{Remerciements}
 
-Merci à tous
+Je tenais à remercier Jean-Michel Roger et Nicolas Barthes qui ont bien voulu accepter d'encadrer ce stage. Une chose me dit qu'on a pas fini de faire de la chimiométrie avec tous nos machin-MS.
+
+Pour continuer sur la chimiométrie, je remercie la team de Chemhouse et en particulier Silvia Mas-Garcia et Douglas Rutledge (et leur très léger accent respectif) pour leurs aide et conseils.
+
+Je salue également les autres membres de la PACE : Anne-Genevieve, Raphaelle, Bruno, Patrick et Benoit ; pour le sympathie au quotidien. Il en va de même pour tous les membres du CEFE\footnote{et de Boris qui doit se contenter d'une note de bas de page.} avec qui je travaille régulièrement ou avec qui je partage des moments chaleureux. Mes pensées vont plus précisément vers Magalie, Candice, Cao Li, Anjelica.
+
+Ce rapport conclu un semestre de stage mais également une année de formation continue. Avant septembre 2020, mes dernières heures de cours en tant qu'étudiant dataient de décembre 2011. Depuis cette date, j'ai moi-même enseigné en tant que vacataire à l'IUT durant mes années de thèses. Puis après d'autres contrats, j'ai été embauché à l'Université de Montpellier comme ingénieur. Ainsi en septembre 2020, j'étais tout à la fois néo et ancien étudiant, camarade et collègue. Pour moi qui n'était que de passage, la difficulté des cours à distance m'ont affecté mais ne remettait pas en cause ni mon métier principal ni mon cursus universitaire. Pour autant je félicite l'effort des professeurs qui ont su s'adapter avec le peu de moyen mis à leur disposition. Je salue tout autant les étudiants en formation initiale qui jouent leur avenir professionnel.
+
+Enfin, je remercie les copains qui m'ont soutenu pendant l'année. Je déconseille vivement d'accumuler reprise d'étude + travail + confinement/couvre feu + concours de la fonction publique + travaux de rénovation. C'est trop. En particuliers, merci à Ryad, Jean-Michel et Nicolas (encore) pour leur aide lors des concours et à Bruce Dickinson, Steve Harris et les autres pour m'avoir accompagné durant l'écriture des multiples rapports.
+
+Merci aussi à ceux qui m'ont ajouter du travail durant cette année : Ngoc qui fut une brillante élève de conduite supervisée et qui n'a failli nous tuer que deux fois, à Batro pour avoir eu la brillante idée de synchronisé la date de sortie de notre jeu\autocite{artho_2020} avec la date du deuxième confinement, et aux créatures de la nuit qu'il faut nourrir d'idées nouvelles chaque semaine.
+
+Enfin merci à Hélène pour me supporter depuis tout ce temps, pour son soutient et pour son aide.
+
+\hypertarget{glossaire}{%
+\chapter*{Glossaire}\label{glossaire}}
+\addcontentsline{toc}{chapter}{Glossaire}
+
+AUC : Area Under the Curve.
+
+CEFE (UMR 5175) : Centre d'Écologie Fonctionnelle et Évolutive. Laboratoire d'accueil situé sur le site de la DR13 du CNRS, route de Mende à Montpellier.
+
+COV (ou VOC) : Composé Organique Volatile. Molécules produites par des systèmes biologique et analyse par le PTR-ToF-MS.
+
+Gaz zéro : gaz purifié grâce à un filtre à charbon.
+
+GC-MS : Gaz Chromatographie Mass Spectroscopy. Autre méthode d'analyse des VOC, moins sensible mais plus discriminante que la PTR-ToF-MS.
+
+ICA : Independent Component Analysis. Méthode de calcul permettant de séparer les sources indépendantes.
+
+JADE : Joint Approximation Diagonalization of Eigen-matrices. Algorithme itératif utilisant le principe de l'ICA
+
+MCR-ALS : Multivariate Curve Resolution - Alternating Least Squares. Méthode de calcul permettant de retrouver les spectres pures.
+
+PACE : Plateforme d'Analyse Chimique en Écologie. Plateforme situé au sein de l'UMR 5175.
+
+PCA : Principal Component Analysis (ou ACP). Algorithme utilisé pour faire resortir la variabilité entre les échantillons.
+
+PTR-ToF-MS : Proton Transfert Reaction Time of Flight Mass Spectroscopy. Acronyme utilisé pour l'instrument de mesure (l\textbf{e} PTR-ToF-M\textbf{Spectrometer}) et pour la méthode d'analyse (l\textbf{a} PTR-ToF-M\textbf{Spectroscopy}). Par abus de langage, l'acronyme PTR-MS est régulièrement utilisé à l'oral.
 
 \mainmatter
 
@@ -458,7 +492,7 @@ Le chapitre \ref{chap2} est dédié à l'instrument de mesure principalement uti
 
 Enfin, le chapitre \ref{chap3} détaille les opérations mathématiques utilisées pour l'analyse des données. Je développerais les choix fait quand aux prétraitements et à l'alignement des spectres. Je présenterais également les algorithmes implémentés dans le package, en particulier celui de la MCR-ALS.
 
-À la fin de ce rapport se trouve un glossaire des termes techniques et des acronymes. Avant celui-ci, je livre une conclusion générale sur ce stage ainsi que sur le travail qu'il reste à accomplir. Un soin particulier a été apporté à la découpe des chapitres. Bien que la mode des rapports et articles scientifiques soit au storytelling\footnote{mode que j'ai toutefois essayé de respecter.}, les trois chapitres suivant peuvent se lire dans l'ordre d'intérêt du lecteur.
+À la fin de ce rapport se trouve un glossaire des termes techniques et des acronymes. Avant celui-ci, je livre une conclusion générale sur ce stage ainsi que sur le travail qu'il reste à accomplir. Un soin particulier a été apporté à la découpe des chapitres. Bien que la mode des rapports et articles scientifiques soit au storytelling, les trois chapitres suivant peuvent se lire dans l'ordre d'intérêt du lecteur.
 
 \hypertarget{chap1}{%
 \chapter{Le métier d'ingénieur de plateforme}\label{chap1}}
@@ -468,7 +502,7 @@ Enfin, le chapitre \ref{chap3} détaille les opérations mathématiques utilisé
 
 Depuis le 04 novembre 2019, j'occupe un poste d'ingénieur affecté à la Plateforme d'Analyses Chimiques en Écologie (PACE). La PACE, créée en 2000, est spécialisée dans l'analyse chimique pour la communauté de recherche liée à l'écologie, l'environnement et la biodiversité. La PACE comporte six permanents et un CDD. Cette plateforme est un service mutualisé du LabEx CeMEB depuis 2011. L'unité de rattachement est le Centre d'Ecologie Fonctionnelle et Evolutive de Montpellier (CEFE UMR5175 du CNRS). Cette unité mixte possède quatre tutelles ; le CNRS, l'Université de Montpellier (UM), l'École Pratique des Hautes Etudes (EPHE) et l'Institut de Recherche pour le Développement (IRD), ainsi que trois partenaires ; l'Université Paul Valéry Montpellier 3 (UPVM3), SupAgro Montpellier et l'INRAE. À ce titre, bien que rattachée au CEFE, la PACE accueille des projets de recherche issus des 12 unités du CeMEB (850 personnels permanents) mais aussi de toute la communauté académique nationale ou internationale.
 
-L'Université de Montpellier a été porteuse d'un projet GEPETOs dont l'objet était de financer un projet CPER (Contrat Plan Etat Région) mobilisant des financements FEDER pour l'achat d'un spectromètre de masse en temps réel permettant d'atteindre des mesures de cinétique fine, abrégé en PTR-ToF-MS (Proton Transfert Reaction Time of Flight Mass Spectrometry) pour la PACE. Le chapitre \ref{chap2} revient en détail sur cet instrument. Ce projet GEPETOs comporte une part dédiée au recrutement d'un ingénieur d'étude devant bénéficier d'une formation en double compétence de niveau Master 2. Avec mes responsables hiérarchiques nous avons choisi le M2 SSV qui me permettait de renforcer mes connaissances statistiques. Le stage du second semestre c'est donc effectué sur la plateforme PACE.
+La PACE, à travers sa tutelle Université de Montpellier, a obtenu un financement GEPETOs dans le cadre du Contrat de Plan Etat-Région (CPER) 2015-2020 pour l'achat d'un spectromètre de masse en temps réel permettant d'atteindre des mesures de cinétique fine,même à l'état de trace, abrégé en PTR-ToF-MS (Proton Transfert Reaction Time of Flight Mass Spectrometer) pour la PACE. Le chapitre \ref{chap2} revient en détail sur cet instrument. Ce projet GEPETOs comporte une part dédiée au recrutement d'un ingénieur d'étude devant bénéficier d'une formation en double compétence de niveau Master 2. Avec mes responsables hiérarchiques nous avons choisi le M2 SSV qui me permettait de renforcer mes connaissances statistiques. Le stage du second semestre c'est donc effectué sur la plateforme PACE.
 
 Plusieurs étapes ont été définies pour l'ensemble du contrat :
 
@@ -484,28 +518,27 @@ Plusieurs étapes ont été définies pour l'ensemble du contrat :
   assurer la maintenance des bases de données contenant les data produites par l'instrument et les résultats des analyses.
 \end{itemize}
 
-Il était prévu que le point 2 soit particulièrement mis en avant lors de ce stage. En réalité l'ensemble des points ci-dessus a été mobilisé. Cette introduction du contexte me permet de décrire l'état d'esprit général lié à ce stage. Effectué sur mon lieu de travail, il y avait une dualité entre la nécessité d'encadrer les utilisateurs de la platerforme et la possibilité offerte d'un temps de réflexion et d'exploration. La première modalité imposait le tempo, du pragmatisme et un calendrier à respecter. Ce printemps-été 2021 était particulièrement attendu pour deux raisons. Il fallait en quelque sorte rattraper le travail qui n'avait pu être effectué lors du confinement général du printemps 2020. De plus, les possibilités de l'appareil commence à être connues et celui est beaucoup demandé. De plus, l'intitulé initiale de ce stage était \emph{"Analyse descriptive des données PTR-TOF-MS des COV émis lors du cycle larvaire de la guêpe de l'amande (}Eurytoma amygdali\emph{)}. Je devais accompagné une doctorante dans son travail d'analyse. Nous avons commencé les expériences dés février lors de la période de fleuraison des amandiers. Après deux mois d'expériences, la quantité de données recueillies était particuliérement importante. La doctorante, ayant commencé sa thèse en janvier et après avoir les expériences avec le timing imposé par la nature, a pu reprendre un rythme normale de thèse et se plonger dans la bibliographie.
+Il était prévu que le point 2 soit particulièrement mis en avant lors de ce stage. En réalité l'ensemble des points ci-dessus a été mobilisé. Cette introduction du contexte me permet de décrire l'état d'esprit général lié à ce stage. Effectué sur mon lieu de travail, il y avait une dualité entre la nécessité d'encadrer les utilisateurs de la platerforme et la possibilité offerte d'un temps de réflexion et d'exploration. La première modalité imposait le tempo, du pragmatisme et un calendrier à respecter. Ce printemps-été 2021 était particulièrement attendu pour deux raisons. Il fallait en quelque sorte rattraper le travail qui n'avait pu être effectué lors du confinement général du printemps 2020. De plus, les possibilités de l'appareil commence à être connues et celui-ci est beaucoup demandé. De plus, l'intitulé initiale de ce stage était \emph{"Analyse descriptive des données PTR-ToF-MS des COV émis lors du cycle larvaire de la guêpe de l'amande (}Eurytoma amygdali\emph{)}. Je devais accompagné une doctorante dans son travail d'analyse. Nous avons commencé les expériences dés février lors de la période de floraison des amandiers. Après deux mois d'expériences, la quantité de données recueillies était particulièrement importante. La doctorante avait débuté sa thèse en janvier mais le timing expérimental est imposé par la nature. Après le travail de terrain, elle a pu reprendre un rythme normale de thèse et effectuer le travail bibliographique nécessaire à tout projet scientifique.
 
-De mon coté, j'ai participé à la mise en place d'autres expériences sur lesquelles nous reviendront dans ce rapport. J'ai également pu prendre du recul sur mon activité et la repenser afin qu'elle cadre avec la politique actuellement de science ouverte. Ce stage m'a ainsi permit d'orienter les outils numériques que je met à dispositions des chercheurs vers une science reproductible.
+De mon coté, j'ai participé à la mise en place d'autres expériences sur lesquelles nous reviendront dans ce rapport. J'ai également pu prendre du recul sur mon activité et la repenser afin qu'elle cadre avec la politique actuelle de science ouverte. Ce stage m'a ainsi permit de renforcer la partie de science reproductible des outils numériques que je conçois pour mes collègues chercheurs.
 
 \hypertarget{opensci}{%
 \section{Science ouverte}\label{opensci}}
 
-Durant cette période de stage, le gouvernement français a mis en place le Deuxième Plan pour la science ouverte qui définit les actions mises en place sur la période 2021-2024. Le plan est détaillé dans ce \href{https://www.ouvrirlascience.fr/wp-content/uploads/2021/06/Deuxieme-Plan-National-Science-Ouverte_2021-2024.pdf}{document} dont je recommande vivement la lecture. Ce guide de route possède les défauts propres à l'époque\footnote{pêle-mêle l'utilisation abondante de mots valises, la volonté de récompenser les bons élèves par des badges et des prix ou encore permettre la libre exploitation de la recherche publique à des entreprises qui ne respectent pas leur devoir fiscal}. Ceci étant, à l'échelle de la communauté scientifique française, ce plan permettra une large diffusion du savoir et de la culture scientifique grâce à des actions regroupés dans quatre axes :
+Durant cette période de stage, le gouvernement français a mis en place le Deuxième Plan pour la science ouverte qui définit les actions mises en place sur la période 2021-2024. Le plan est détaillé dans ce \href{https://www.ouvrirlascience.fr/wp-content/uploads/2021/06/Deuxieme-Plan-National-Science-Ouverte_2021-2024.pdf}{document} dont je recommande vivement la lecture. Ce guide de route possède les défauts propres à l'époque\footnote{pêle-mêle l'utilisation abondante de mots valises ou la volonté de récompenser les bons élèves par des badges et des prix.}. Ceci étant, à l'échelle de la communauté scientifique française, ce plan permettra une large diffusion du savoir et de la culture scientifique grâce à des actions regroupés dans quatre axes :
 
 \begin{itemize}
-\tightlist
 \item
   généraliser l'accès ouvert aux publications;
 
   \begin{itemize}
   \tightlist
   \item
-    généraliser l'obligation de publication en accès ouvert des articles et livres issus de recherches financées par appel à projets sur fonds publics;
+    généraliser l'obligation de publication en accès ouvert des articles et livres issus de recherches financées par des fonds publics;
   \item
     soutenir des modèles économiques d'édition en accès ouvert sans frais de publication pour les auteurs;
   \item
-    favoriser le \href{https://youtu.be/7Gp4e5YnQa8?t=147}{multilinguisme}\footnote{Découvrir l'étrangeté d'une pensée en langue étrangère constitue une expérience herméneutique fondamentale, étant donné qu'une telle rencontre peut déclencher un processus qui contribue à augmenter l'incertitude positive et à remettre en cause les convictions propres pour construire ainsi une barrière contre l'ethnocentrisme dans la pensée scientifique. \textcite{hamel_2013}} et la circulation des savoirs scientifiques par la traduction des publications des chercheurs français;
+    favoriser le \href{https://youtu.be/7Gp4e5YnQa8?t=147}{multilinguisme}\footnote{\emph{\textless\textless Découvrir l'étrangeté d'une pensée en langue étrangère constitue une expérience herméneutique fondamentale, étant donné qu'une telle rencontre peut déclencher un processus qui contribue à augmenter l'incertitude positive et à remettre en cause les convictions propres pour construire ainsi une barrière contre l'ethnocentrisme dans la pensée scientifique.\textgreater\textgreater{}} \textcite{hamel_2013}} et la circulation des savoirs scientifiques par la traduction des publications des chercheurs français;
   \end{itemize}
 \item
   structurer, partager et ouvrir les données de la recherche;
@@ -545,7 +578,7 @@ Durant cette période de stage, le gouvernement français a mis en place le Deux
   \end{itemize}
 \end{itemize}
 
-Les axes concernant le code et les données me concerne directement. Par mon travail, je produit des données ainsi que le code permettant l'analyse de celle-ci par mes collaborateurs. Le code est écrit en langage R sous la forme d'un package, \emph{proVOC}, déposé sur \href{https://github.com/JHuguenin/provoc}{gitHub}. Il génère un workflow qui sauvegarde les paramètres et les données utilisés lors de l'analyse. Le dépôt sur un git permet l'ouverture de ce code. Il est toutefois prévu d'effectué une migration sur gitLab afin de favoriser l'utilisation des logiciels libres.
+Les axes concernant le code et les données me concerne directement. Par mon travail, je produit des données ainsi que le code permettant l'analyse de celle-ci par mes collaborateurs. Le code est écrit en langage R sous la forme d'un package, \emph{proVOC}, déposé sur \href{https://github.com/JHuguenin/provoc}{gitHub}\(\circledR\) \footnote{GitHub a été acheté par Microsoft en juin 2018. Le glissement vers des plateformes libres comme GitLab est fortement envisagé.} . Il génère un workflow qui sauvegarde les paramètres et les données utilisés lors de l'analyse. Le dépôt sur un git permet l'ouverture de ce code. Il est toutefois prévu d'effectué une migration sur gitLab afin de favoriser l'utilisation des logiciels libres.
 
 Par ailleurs, je souhaite développer un module permettant de convertir les data machines dans un format adapté à la futur plateforme Recherche Data Gouv. Ce module facilitera la production de \emph{data paper} dont j'ai découvert l'existence au cours des \href{https://casuhal2021.sciencesconf.org/}{journées casuHAL 2021}. Grâce à deux demi-journées de formation sur Rmardown et sur la création de package, j'ai pu intégrer la génération de rapport automatisé dans le package\footnote{\url{https://daranzolin.github.io/2021-03-03-automated-rmarkdown/}} qui est un premier pas vers l'écriture automatisé des data paper.\footnote{voir également \textcite{boettiger_2015}}
 
@@ -554,7 +587,7 @@ J'ai également découvert et testé les packages et templates permettant de cr�
 \hypertarget{plan-dexpuxe9rience-en-uxe9cologie-chimique}{%
 \section{Plan d'expérience en écologie chimique}\label{plan-dexpuxe9rience-en-uxe9cologie-chimique}}
 
-Le chapitre suivant décrit la technique de la PTR-ToF-MS. Nous avons ici juste besoin de savoir que cette technique analyse en continue les molécules volatiles émises par l'échantillon. L'instrument ne peut analyse que un échantillon à la fois mais plusieurs peuvent se succéder au sein de séquence.
+Le chapitre suivant décrit la technique de la PTR-ToF-MS. Pour ce chapitre, nous avons juste besoin de savoir que cette technique analyse la cinétique d'émission des composées organiques volatiles, COV, produit par l'échantillon. L'instrument peut analyser séquentiellement plusieurs échantillons.
 
 Durant la période de stage, j'ai accompagné plusieurs séries d'expériences. Les modèles biologiques analysés varient à chaque expérience. Les plans d'expériences ont été conçu en dialoguant avec les utilisateurs. Bien souvent, ils avaient en tête l'expérience qui répondait le mieux possible à leur question biologique. J'anticipais les incohérences techniques et j'optimisais les paramètres de l'instrument. Avec le recul, je me suis rendu compte que mes connaissances acquissent en cours de recueil planifié de données n'étaient pas pleinement exploité.
 
@@ -575,7 +608,7 @@ Cette expérience avait pour objectif de mesurer la diffusion de l'odeur de nour
 
 Dans la théorie d'une expérience totalement randomisée, il aurait fallut définir l'ordre aléatoire de chacune des 60 acquisitions\footnote{5 (mésocosmes) x 3 (modalité) x 4 (site d'acquisition) = 60}. Dans la pratique, cette expérience nécessitait de déplacer l'instrument d'un mésocosme à l'autre entre chaque acquisition. Cette manipulation aurait drastiquement augmenté la durée de l'expérience. Nous avons donc tiré au hasard l'ordre de passage de chaque mésocosme, effectué un blanc et les acquisitions sur les quatre sites de mesures puis terminé par un nouveau blanc.
 
-Il aurait été juste de tirer au hasard l'ordre de passage des sites. Pour autant, nous avons opté pour une hypothèse forte de commencer par la site le plus éloigné de la mangeoire (s4, s3, s2, s1) afin que les potentielles traces ne soient pas contaminées par une odeur plus forte. Dans les faits, nous laissions assez de temps entre deux mesures pour renouveler plusieurs fois le volume d'analyse à l'intérieur de l'instrument ce qui permettait d'isoler les mesures. Après coup, je pense qu'il aurait été bon de procédé malgré tout à une randomisation de l'ordre des sites au sein d'un mésocosme.
+Il aurait été juste de tirer au hasard l'ordre de passage des sites. Pour autant, nous avons opté pour une hypothèse forte de commencer par la site le plus éloigné de la mangeoire (s4, s3, s2, s1) et de remonter le gradient de diffusion. Dans les faits, nous laissions assez de temps entre deux mesures pour renouveler plusieurs fois le volume d'analyse à l'intérieur de l'instrument ce qui permettait d'isoler les mesures. Après coup, je pense qu'il aurait été bon de procédé malgré tout à une randomisation de l'ordre des sites au sein d'un mésocosme.
 
 \begin{figure}
 \hypertarget{poule2}{%
@@ -587,40 +620,44 @@ Il aurait été juste de tirer au hasard l'ordre de passage des sites. Pour auta
 
 Nous avions également une seule journée pour effectuer l'ensemble des acquistions, ce qui a été juste suffisant. Nous n'avons pas pu effectuer de répétition sur un même échantillon. L'analyse des data a été effectué par le post-doc en charge de l'expérience. Je n'ai pas de retour sur des potentiels contaminations intra et inter échantillons.
 
-Bien que la réalisation de cette expérience est statistiquement discutable, elle a été réalisé en tout début de la période de stage et m'a permit la réflexion sur comment intégrer mieux la planification d'expérience.
+Bien que la réalisation de cette expérience est statistiquement discutable, elle a été réalisé en tout début de la période de stage et m'a permit la réflexion sur comment intégrer mieux la planification d'expériences.
 
 \hypertarget{expalm}{%
 \subsection{Caractérisation de COV de l'amandier}\label{expalm}}
 
-Ce travail s'inscrit dans la première année d'un projet de thèse et consistait à analyser les COV émis par les différents organes (bourgeon, fleur, feuille, fruit) des amandiers. Pour des raisons de calendrier, j'ai aidé à la mise en place des expériences début février puis à la formation de la doctorante. Une fois cette dernière autonome avec l'instrument, j'ai peu assisté au suivi de l'expérience. J'ai toutefois soumis l'idée de suivre le débourrement d'une fleure avec le PTR-ToF-MS.
+Ce travail, qui s'inscrit dans la première année d'un projet de thèse, effectue une analyse temporelle des COV émis par les différents organes (bourgeon, fleur, feuille, fruit) des amandiers. Cette thèse a pour cadre un projet de lutte biologique contre un insecte ravageur des vergers d'amandiers. Les expériences ont durée trois mois à partir de dédébut février. J'ai aidé à la mise en place des expériences, puis j'ai formé la doctorante à l'utilisation de l'instrument. Une fois cette dernière autonome avec l'instrument, j'ai peu assisté au suivi de l'expérience. J'ai toutefois soumis l'idée de suivre le moment spécifique de la floraison avec le PTR-ToF-MS.
 
 Nous avons suivi durant un week-end les COVs émis par un bourgeon que nous avons isolé du reste de la plante. Ce bourgeons avait été sélectionné car il était proche de la floraison. Ainsi, nous avons pu recueillir les odeurs émises avant, pendant et après le débourrage. Cependant, nous n'avons pu obtenir qu'une seule unité expérimentale pour cette expérience. Par ailleurs, nous avions filmé le bourgeons durant l'expérience mais la caméra s'est éteinte après quelques heures. Ainsi, nous n'avons pas de témoin validant l'heure de phénomène. Les données techniques et les résultats de l'analyse sont détaillés à la section \ref{anaalm}. Nous retenterons probablement cette expérience en février 2022 sur plusieurs unités expérimentales, en privilégiant une série de photo plutôt qu'un film.
 
-Cette expérience a permis de mettre en avant les capacités de l'appareil et a fait germer plusieurs idées. Nous avons fait plusieurs réunions préparatoires pour mettre en œuvre l'une d'elles. Nous souhaitons analyser la réponse chimique d'une fleure après la diffusion du bruit de son pollinisateur.
+Cette expérience de suivi cinétique a permis de mettre en avant les capacités de l'appareil et a fait germer plusieurs idées. Par exemple, nous avons fait des réunions préparatoires pour mettre en œuvre l'une d'elles que nous allons réaliser à l'automne. Nous souhaitons analyser la réponse chimique d'une fleure après la diffusion du son de bourdon, qui est un pollinisateur de cette plante. Une plante ne possède pas d'organe auditif au sens anthropologique du terme mais un son est une vibration caractérisée par des fréquences qui peuvent activer leurs sensilles mecanosensibles.
 
 \hypertarget{explav}{%
 \subsection{Étude de l'émission journalière des lavandes et des figuiers}\label{explav}}
 
-L'expérience sur les lavandes présentée ici s'inscrit dans un cadre expérimentale plus vaste s'intéressant aux phénomènes liées à l'ozonation. Je ne reviendrais pas dans ce rapport sur la partie ozonée. Cependant, nous nous sommes intéressé aux variations journalières dans des conditions non ozonée (plantes témoins). Nous avons mis en place quatre chambres de mesure permettant chacune soit d'isoler un plant de lavande soit d'être un blanc. Ces chambre de mesure sont des cylindres en plastiques, ventilé, de volume équivalent et relié chacun à un flux d'air propre d'un débit de 5 litres/min. La longueur et le volume des lignes reliant les chambres à l'instrument de mesure n'étaient pas identique. Nous avons lancé des acquisitions sur les quatre chambres en série durant 48h. Nous avons répété ce processus deux fois, pour obtenir neuf plants au total dans notre plan d'expérience. Pour les lavandes, il n'y avait qu'une modalité (plante témoin). Toutefois, un des quatre moteurs permettant la ventilation à l'intérieur de la chambre ne fonctionnait pas. Nous avons décidé que cette chambre serait le blanc. Là encore, cette décision est critiquable. D'un côté, il fallait que le moteur HS soit celui de la chambre ``blanc'' afin de ne pas créer artificiellement les modalités ``plante témoin ventilée'' et ``plante témoin non-ventilée''. D'un autre côté, nous comparons un blanc non-ventilé à des plantes ventilées. Au regard de débit d'air pure de 5L/min, nous avons jugé ce biais négligeable. En revanche, nous aurions pu, au prix de quelques branchements et rebranchements supplémentaires, déplacer le moteur défectueux d'une chambre à l'autre entre les répétitions. Ceci aurait permis de mieux répartir l'erreur expérimentale due aux lignes de mesure. Ceci étant, les résultats présentés dans la section \ref{analav} sont satisfaisant.
+L'expérience sur les lavandes présentée ici s'inscrit dans un cadre plus vaste s'intéressant aux phénomènes de pollution à l'Ozone O3 liés au changement climatique global. Je ne reviendrais pas dans ce rapport sur la partie ozonée. Cependant, nous nous sommes intéressé aux variations journalières dans des conditions non ozonée (plantes témoins).
 
-Quelques jours après l'expérience avec les lavandes, nous avons réutilisé le même dispositif avec des figuiers. Le temps d'analyse a été augmenté pour passer à 5 jours. La chambre ``blanc'' est resté la même (non ventilée). Cette fois, les plantes étaient soit ``polinisées'' soit ``non-polinisées'' (témoin). Nous avons décalé la plante témoin d'une chambre à chaque répétition malgré qu'un statisticien puriste aurait probablement tiré au sort à chaque répétition, au risque de tomber trois fois sur la même chambre. Je n'ai pas aidé à l'analyse de cette expérience et ne peut pas me prononcer sur la pertinence des choix effectués.
+Nous avons mis en place quatre chambres de mesure permettant chacune soit d'isoler un plant de lavande soit d'être un blanc. Ces chambre de mesure sont des cylindres en plastiques, ventilé, de volume équivalent et relié chacun à un flux d'air propre d'un débit de 5 litres/min. La longueur et le volume des lignes reliant les chambres à l'instrument de mesure n'étaient pas identique. Nous avons lancé des acquisitions sur les quatre chambres séquentiellement durant 48h. Nous avons répété ce processus deux fois, pour obtenir neuf plants au total dans notre plan d'expérience. Pour les lavandes, il n'y avait qu'une modalité (plante témoin). Toutefois, un des quatre moteurs permettant la ventilation à l'intérieur de la chambre ne fonctionnait pas. Nous avons décidé que cette chambre serait le blanc. Là encore, cette décision est critiquable. D'un côté, il fallait que le moteur HS soit celui de la chambre ``blanc'' afin de ne pas créer artificiellement les modalités ``plante témoin ventilée'' et ``plante témoin non-ventilée''. D'un autre côté, nous comparons un blanc non-ventilé à des plantes ventilées. Au regard de débit d'air pure de 5L/min, nous avons jugé ce biais négligeable. En revanche, nous aurions pu, au prix de quelques branchements et rebranchements supplémentaires, déplacer le moteur défectueux d'une chambre à l'autre entre les répétitions. Ceci aurait permis de mieux répartir l'erreur expérimentale due aux lignes de mesure. Ceci étant, les résultats présentés dans la section \ref{analav} montre que le souci technique n'a pas engendré de biais notable/significatif.
+
+Quelques jours après l'expérience avec les lavandes, nous avons réutilisé le même dispositif avec des figuiers. Le temps d'analyse a été augmenté pour passer à 5 jours. La chambre ``blanc'' est resté la même (non ventilée). Cette fois, les plantes étaient soit ``polinisées'' soit ``non-polinisées'' (témoin). Nous avons décalé la plante témoin d'une chambre à l'autre à chaque répétition. Théorique, la réalisation d'un plan d'expérience en randomisation total aurait nécessité un tirage au sort à chaque répétition, au risque de tomber trois fois sur la même chambre. Je n'ai encore pas aidé à l'analyse de cette expérience et ne peut pas me prononcer sur la pertinence des choix effectués.
+
+Deux des quatre expériences présentés ici ne seront pas analysés plus en détail dans ce rapport. Pour autant, leur présentation me semblait pertinentes pour mettre en avant les difficultés à coller à la théorie des plans d'expériences d'une part et pour mieux comprendre les multiples capacités de l'instrument PTR-ToF-MS.
 
 \hypertarget{conclusion-partielle}{%
 \section{Conclusion partielle}\label{conclusion-partielle}}
 
-J'ai commencé ce métier en novembre 2019. En raison des conditions sanitaires et de la formation continue en M2 SSV, j'ai une vision légèrement biaisée d'une année ``standard'' sur ce poste. Pour autant, je pense avoir trouvé le bon équilibre entre d'un côté le développement d'outils numériques résolument orienté utilisateurs et qui entre dans le Deuxième Plan national pour la science ouverte et de l'autre côté l'accompagnement des utilisateurs de la conception de leurs expériences à l'acquisition\autocite{artho_2020}.
+J'ai commencé ce métier en novembre 2019. En raison des conditions sanitaires et de la formation continue en M2 SSV, j'ai une vision légèrement biaisée d'une année ``standard'' sur ce poste. Pour autant, je pense avoir trouvé le bon équilibre entre d'un côté le développement d'outils numériques résolument orienté utilisateurs et qui entre dans le Deuxième Plan national pour la science ouverte et de l'autre côté l'accompagnement des utilisateurs de la conception de leurs expériences à l'acquisition.
 
 Le temps annuel consacré à chacune de ces facettes est plutôt équilibré bien que les saisons chaudes soient bien évidemment plutôt dédiées au terrain. Après ces quelques descriptions d'expériences, je propose une description plus détaillée de l'instrument PTR-ToF-MS et de son environnement dans le champs de la spectroscopie de masse, chapitre \ref{chap2}, mais un lecteur pressé de connaître les conclusions de ces expériences peut sauter au chapitre \ref{chap3}.
 
 \hypertarget{chap2}{%
 \chapter{Présentation de la PTR-ToF-MS}\label{chap2}}
 
-De très nombreux projets de recherches issus du CeMEB nécessitent l'analyse de \textbf{C}omposés \textbf{O}rganiques \textbf{V}olatiles (COV ou VOC en anglais) aussi communément appelés ``odeurs''. Les COVs sont omniprésents dans la nature et permettent, avec les autres sens, une organisation du vivant en agissant comme vecteurs d'informations de la médiation chimique. Par l'acquisition d'un PTR-ToF-MS, la communauté souhaitait lever trois verrous techniques :
+De très nombreux projets de recherches issus du CeMEB nécessitent l'analyse de \textbf{C}omposés \textbf{O}rganiques \textbf{V}olatils (COV ou VOC en anglais) aussi communément appelés ``odeurs''. Les COVs sont omniprésents dans la nature et permettent, avec les autres sens, une organisation du vivant en agissant comme vecteurs d'informations de la médiation chimique. Par l'acquisition d'un PTR-ToF-MS, la communauté souhaitait lever trois verrous techniques :
 
 \begin{itemize}
 \tightlist
 \item
-  l'appareil permet un fonctionnement en flux continu avec une résolution temporelle très fine (fréquence d'analyse allant jusqu'à 10 scans par seconde), permettant ainsi le suivi des cinétiques d'émissions de COV. Cet instrument simplifie drastiquement et affine les expériences cinétiques effectué par des mesures ponctuelles de GC-MS;\\
+  l'appareil permet un fonctionnement en flux continu avec une résolution temporelle très fine (fréquence d'analyse allant jusqu'à 10 scans par seconde), permettant ainsi le suivi des cinétiques d'émissions de COV. Cet instrument simplifie drastiquement et affine les expériences cinétiques effectué par des mesures moyennées de GC-MS;\\
 \item
   le PTR-ToF-MS possède une excellente résolution en masse qui facilite l'identification des molécules. Un spectre est composé de plus de 140 000 mesures de masses couvrant une large gamme des masses des COV biologiques (de 70 à 500 m/z). L'appareil possède donc une résolution environ mille fois supérieure par rapport à un simple quadripôle (PTR-MS) qui fournit des m/z à l'unité de masse atomique (uma ou Dalton Da);\\
 \item
@@ -630,18 +667,18 @@ De très nombreux projets de recherches issus du CeMEB nécessitent l'analyse de
 \hypertarget{une-bruxe9ve-histoire-de-la-ptr-tof-ms}{%
 \section{Une bréve histoire de la PTR-ToF-MS}\label{une-bruxe9ve-histoire-de-la-ptr-tof-ms}}
 
-Durant la décennie 1990, le \emph{Institut für Ionenphysik der Leopold-Franzens-Universität} d'Innsbruck en Autriche développe un nouvel instrument pour l'analyse chimique des gaz. En travaillant avec la \emph{Universitiitsklinik fiir Innere Medizin}, l'équipe menée par Lindinger développe un spectromètre en phase gazeuse qui ionize les molécules grâce à un gaz neutre (\autocite{lindinger_1991} et \autocite{lindinger_1993}). Ils comprennent rapidement l'avantage d'utiliser un proton (apporté à la réaction sous la forme H\textsubscript{3}O\textsuperscript{+}) par rapport aux ions Kr\textsuperscript{+} et Xe\textsuperscript{+}. Ils publient une sorte de preuve de concept en 1994 \autocite{lagg_1994} et détaillent plus finement l'instrumentation et les réactions chimiques \autocite{hansel_1995}\footnote{avec des remerciements incroyables}. En 1998 sort l'article qui fait désormais référence, \autocite{lindinger_1998a}, signé par le trio Lindinger, Hansel et Jordan (et sa version courte \autocite{lindinger_1998}).
+Durant la décennie 1990, le \emph{Institut für Ionenphysik der Leopold-Franzens-Universität} d'Innsbruck en Autriche développe un nouvel instrument pour l'analyse chimique des gaz. En travaillant avec la \emph{Universitiitsklinik fiir Innere Medizin}, l'équipe menée par Lindinger développe un spectromètre en phase gazeuse qui ionise les molécules grâce à un gaz neutre (\autocite{lindinger_1991} et \autocite{lindinger_1993}). Ils comprennent rapidement l'avantage d'utiliser un proton (apporté à la réaction sous la forme H\textsubscript{3}O\textsuperscript{+}) par rapport aux ions Kr\textsuperscript{+} et Xe\textsuperscript{+}. Ils publient une sorte de preuve de concept en 1994 \autocite{lagg_1994} et détaillent plus finement l'instrumentation et les réactions chimiques \autocite{hansel_1995}\footnote{avec des remerciements incroyables}. En 1998 sort l'article qui fait désormais référence, \autocite{lindinger_1998a}, signé par le trio Lindinger, Hansel et Jordan (et sa version courte \autocite{lindinger_1998}).
 
-Ionicon commercialise la même année le premier PTR-MS. Cette technique se déploie rapidement dans les sciences de l'atmosphère, médicales et biotech (\autocite{babcock_2001}) permettant la détection de traces de COV. Rapide et sensible, la PTR-MS élimine les désavantages de la GC-MS. Cependant, la PTR-MS détecte de la masse nominale des ions. Un échantillon complexe peut contenir plusieurs ions isobares\footnote{molécules possédant un nombre de nucléons identique.}. Il convient alors de gagner en résolution de masse et séparer ces isobares. \autocite{jordan_2009} revient sur les tentatives les plus concluantes (\autocite{blake_2004}, \autocite{ennis_2005}, \autocite{inomata_2006} et \autocite{tanimoto_2007} ) avant de proposer son approche : la PTR-ToF-MS. Développé en collaboration avec la précédente équipe, le minutieux article de \autocite{graus_2010} conclu superbement la vingtaine d'années de développement nécessaire à cette technique. Les années suivantes permmettront simplement une amélioration des différentes parties de l'instrument.
+Ionicon commercialise la même année le premier PTR-MS. Cette technique se déploie rapidement dans les sciences de l'atmosphère, médicales et biotech (\autocite{babcock_2001}) permettant la détection de traces de COV. Rapide et sensible, la PTR-MS élimine certains désavantages de la GC-MS. Cependant, la PTR-MS détecte de la masse nominale des ions. Un échantillon complexe peut contenir plusieurs ions isobares\footnote{molécules possédant un nombre de nucléons identique.}. Il convient alors de gagner en résolution de masse et séparer ces isobares. \autocite{jordan_2009} revient sur les tentatives les plus concluantes (\autocite{blake_2004}, \autocite{ennis_2005}, \autocite{inomata_2006} et \autocite{tanimoto_2007} ) avant de proposer son approche : la PTR-ToF-MS. Développé en collaboration avec la précédente équipe, le minutieux article de \autocite{graus_2010} conclu superbement la vingtaine d'années de développement nécessaire à cette technique. Les années suivantes permmettront simplement une amélioration des différentes parties de l'instrument.
 
-Par ailleurs, c'est au tour des mathématiciens d'apporter leur contribution et en particulier à l'équipe de Cappellin avec deux articles. Le premier, \autocite{cappellin_2010}, permet de mieux estimer la masse exacte de chaque ion détecté. Le seconde, \autocite{cappellin_2011}, offre une méthodologie détaillée de l'utilisation du PTR-TOF-MS de l'acquisition à la fin de l'analyse. Puis en 2015, \autocite{holzinger_2015} propose un logiciel pour l'analyse des data mais cette tentative n'a pas été suivi par la communauté d'utilisateur. Il existe désormais un nombre important d'articles utilisant la PTR-TOF-MS. Bien entendu, des outils commun de chimiométries ont été utilisés pour renforcer les résultats, \autocite{deuscher_2019}. Mais cela sera abordé dans le chapitre suivant.
+Par ailleurs, c'est au tour des mathématiciens d'apporter leur contribution et en particulier à l'équipe de Cappellin avec deux articles. Le premier, \autocite{cappellin_2010}, permet de mieux estimer la masse exacte de chaque ion détecté. Le seconde, \autocite{cappellin_2011}, offre une méthodologie détaillée de l'utilisation du PTR-ToF-MS de l'acquisition à la fin de l'analyse. Puis en 2015, \autocite{holzinger_2015} propose un logiciel pour l'analyse des data mais cette tentative n'a pas été suivi par la communauté d'utilisateur. Il existe désormais un nombre important d'articles utilisant la PTR-ToF-MS. Bien entendu, des outils commun de chimiométries ont été utilisés pour renforcer les résultats, \autocite{deuscher_2019}. Mais cela sera abordé dans le chapitre suivant.
 
-Par ailleurs, je suppose que la prochaine avancée majeure viendra d'une technologie permettant de discriminer les isoméres\footnote{molécules partageant la même formule brute mais avec une stéréochimie différente.} \autocite{amt-14-133-2021} \footnote{si un mémoire de master permettait la science fiction, j'aurais évidemment développé quelques idées à propos de capteurs de champs électromagnétiques ou de spectromètres optiques à la place des capteurs MS actuels.}. Par exemple, cela permettrait de séparer les différents monoterpènes. Actuellement, ce désavantage est combler par le couplage de la PTR-TOF-MS avec une seconde technique d'analyse chimique. Ce court historique montre toutefois que la collaboration entre physiciens, chimistes, biologistes et mathématiciens est fructueuse et promis à un bel avenir.
+Par ailleurs, je suppose que la prochaine avancée majeure viendra d'une technologie permettant de discriminer les isoméres\footnote{molécules partageant la même formule brute mais avec un agencement tridimensionnel différent.} \autocite{amt-14-133-2021} \footnote{si un mémoire de master permettait la science fiction, j'aurais évidemment développé quelques idées à propos de capteurs de champs électromagnétiques ou de spectromètres optiques à la place des capteurs MS actuels.}. Par exemple, cela permettrait de séparer les différents monoterpènes omniprésents dans les émissions végétales et qui nous concernent particulièrement en Ecologie. Actuellement, ce désavantage est combler par le couplage de la PTR-ToF-MS avec une seconde technique d'analyse chimique. Ce court historique montre toutefois que la collaboration entre physiciens, chimistes, biologistes et mathématiciens est fructueuse et promis à un bel avenir.
 
 \hypertarget{instrumentation-guxe9nuxe9rale}{%
 \section{Instrumentation générale}\label{instrumentation-guxe9nuxe9rale}}
 
-Comme nous l'avons vu précédemment, le PTR-TOF-MS est conçu pour analyser finement la masse moléculaire des échantillons. Pour cela l'instrument aspire un débit d'air constant de 100 ml/min\footnote{ou sccm, pour \emph{standard cubic centimeters per minute}}. Cet \emph{air in} sur la figure \ref{schemavocus} peut être diluée par un gaz propre (pour éviter la saturation) ou étalon (pour la calibration) puis est injecté dans le réacteur (\emph{FIMR} pour \emph{focusing ion-molecule reactor}). Dans cette chambre, des ions H\textsuperscript{+} sont également injecté à débit constant afin d'ionizer les molécules de l'échantillons (\emph{Proton-Transfer-Reaction}).
+Comme nous l'avons vu précédemment, le PTR-ToF-MS est conçu pour analyser finement la masse moléculaire des échantillons. Pour cela l'instrument aspire un débit d'air constant de 100 ml/min\footnote{ou sccm, pour \emph{standard cubic centimeters per minute}}. Cet \emph{air in} sur la figure \ref{schemavocus} peut être connecté à un gaz zéro pour diluer un échantillon trop concentré (pour éviter la saturation) ou à un gaz étalon pour l'étalonnage de l'instrument. Le flux d'air est ensuite injecté dans le réacteur (\emph{FIMR} pour \emph{focusing ion-molecule reactor}). Dans cette chambre, des ions H\textsuperscript{+} issus d'eau ultra pure sont également injecté à débit constant afin d'ioniser les molécules de l'échantillons (\emph{Proton-Transfer-Reaction}).
 
 \begin{figure}
 \hypertarget{schemavocus}{%
@@ -651,22 +688,22 @@ Comme nous l'avons vu précédemment, le PTR-TOF-MS est conçu pour analyser fin
 }
 \end{figure}
 
-Il est important de comprendre que, contrairement à une ionization par électron\footnote{comme c'est la cas avec la GC-MS}, il n'y a quasiment pas de fragmentation moléculaire. En revanche les ions ont ``une masse molaire de plus''(un proton) que les molécules initiales. Par exemple, le linalol, un COV fortement produit par la lavande, a une masse molaire de 154,249 g/mol mais sera detecté à 155,256 g/mol. Par ailleurs, le nombre d'ions MH\textsuperscript{+} dépend du taux de protonation de la molécule M. Sous forme d'ions, l'échantillon peut être focalisé par un champ électromagnétique généré par un quadripole et envoyé dans la partie TOF.
+Il est important de comprendre que, contrairement à une ionisation par électron\footnote{comme c'est le cas en ionisation électronique fréquement utilisée en GC-MS.}, il n'y a quasiment pas de fragmentation moléculaire. C'est une ionisation douce, comme en ESI fréquemment utilisée en LC-MS. En revanche les ions ont ``une unité de masse molaire de plus''(un proton) que les molécules initiales. Par exemple, le linalol, un COV fortement produit par la lavande, a une masse molaire de 154,249 g/mol mais sera detecté à 155,256 g/mol. Par ailleurs, le nombre d'ions MH\textsuperscript{+} dépend du taux de protonation de la molécule M. Sous forme d'ions, l'échantillon peut être focalisé par un champ électromagnétique généré par un quadripole et envoyé dans la partie ToF.
 
-Une fois dans la colonne, l'énergie potentiel d'un pulse électrique à 25kHz est convertie en énergie cinétique par les ions propulsés. À énergie constante, la masse fait la différence lors de la mesure du temps de vol (TOF, figure \ref{schemaTOF}). Ainsi les ions les moins lourds arrivent en premiers sur le détecteur. Après calibration, une simple conversion temps de vol/ masse permet de connaître l'intensité de chaque masse d'un échantillon.
+Une fois dans la colonne, l'énergie potentiel d'un pulse électromagnétique à 25kHz est convertie en énergie cinétique par les ions propulsés. À énergie constante, la masse fait la différence lors de la mesure du temps de vol (ToF, figure \ref{schemaToF}). Ainsi les ions les moins lourds arrivent en premiers sur le détecteur. Le comptage du nombre de coups sur le détecteur donne l'intensité par unité de temps. Après étalonnage, une conversion \emph{temps de vol} en \emph{masse} permet de connaître l'intensité de chaque masse d'un échantillon.
 
 \begin{figure}
-\hypertarget{schemaTOF}{%
+\hypertarget{schemaToF}{%
 \centering
 \includegraphics{images/schema_TOF.jpg}
-\caption{Schéma de la colonne TOF et du détecteur MS (Reproduit de l'article \textcite{graus_2010}, consulatable ici : \url{https://www.sciencedirect.com/science/article/pii/S1044030510001005\#fig1}}\label{schemaTOF}
+\caption{Schéma de la colonne ToF et du détecteur MS (Reproduit de l'article \textcite{graus_2010}, consulatable ici : \url{https://www.sciencedirect.com/science/article/pii/S1044030510001005\#fig1}}\label{schemaToF}
 }
 \end{figure}
 
-Pour une compréhension plus exhaustive, je recommande la lecture des articles de \textcite{hansel_1995} pour la partie PTR-MS, de \textcite{graus_2010} pour la partie TOF et de \textcite{krechmer_2018} spécifique à l'instrument utilisé au CEFE.
+Pour une compréhension plus exhaustive, je recommande la lecture des articles de \textcite{hansel_1995} pour la partie PTR-MS, de \textcite{graus_2010} pour la partie ToF et de \textcite{krechmer_2018} spécifique à l'instrument utilisé au CEFE.
 
 \hypertarget{pruxe9sentation-des-spectres}{%
-\subsection{présentation des spectres}\label{pruxe9sentation-des-spectres}}
+\section{Présentation des spectres}\label{pruxe9sentation-des-spectres}}
 
 \begin{figure}
 \hypertarget{lavMS}{%
@@ -676,22 +713,22 @@ Pour une compréhension plus exhaustive, je recommande la lecture des articles d
 }
 \end{figure}
 
-Nous pouvons à présent nous intéresser aux spectres à analyser. J'ai représenté sur la figure \ref{lavMS} un spectre de trois plants de lavandes acquis autour de 8h du matin fin juin. Une figure identique mais dynamique peut se télécharger \href{https://mycore.core-cloud.net/index.php/s/qBZ4IkVWguXQiDB}{ici}\footnote{il faut télécharger le fichier puis l'ouvrir, par exemple avec un explorateur internet.}. Cette figure dynamique permet d'effectuer des zoom afin d'avoir une compréhension plus précise qu'avec la simple figure \ref{lavMS}.
+Nous pouvons à présent nous intéresser aux spectres à analyser. J'ai représenté sur la figure \ref{lavMS} un spectre de trois plants de lavandes acquis autour de 8h du matin fin juin. Une figure identique mais dynamique peut se télécharger \href{https://mycore.core-cloud.net/index.php/s/qBZ4IkVWguXQiDB}{ici}\footnote{il faut télécharger le fichier puis l'ouvrir avec un navigateur internet.}. Cette figure dynamique permet d'effectuer des zoom afin d'avoir une compréhension plus précise qu'avec la simple figure \ref{lavMS}.
 
-Les pics sont extrêmement fins et centrés autour des masses unitaires. Cela s'explique facilement au regard de la masse des atomes composants les VOC (H, C, O pour l'essentiel) sur le \href{https://fr.wikipedia.org/wiki/Tableau_p\%C3\%A9riodique_des_\%C3\%A9l\%C3\%A9ments\#/media/Fichier:Tableau_p\%C3\%A9riodique_des_\%C3\%A9l\%C3\%A9ments.svg}{tableau de Mendeleiev}\footnote{\url{https://www.youtube.com/watch?v=0lNuTSz6KVM}}. Il y a un plusieurs ordres de grandeur\footnote{entre 10 et 10\textsuperscript{6}} entre les pics très intenses et ceux faibles. Cette intensité ne présage rien quand à l'importance de ce pic dans l'analyse.
+Les pics sont extrêmement fins et centrés sur les masses exactes des ions. Les pics issus des ions isotopes se regroupent autour des masses unitaires, soumis à une loi central limite locale. Cela s'explique facilement au regard de la masse exacte des atomes composants les COV (H, C, O pour l'essentiel) sur le \href{https://fr.wikipedia.org/wiki/Tableau_p\%C3\%A9riodique_des_\%C3\%A9l\%C3\%A9ments\#/media/Fichier:Tableau_p\%C3\%A9riodique_des_\%C3\%A9l\%C3\%A9ments.svg}{tableau de Mendeleiev}\footnote{\url{https://www.youtube.com/watch?v=0lNuTSz6KVM}}. Il y a un plusieurs ordres de grandeur\footnote{entre 10 et 10\textsuperscript{6}} entre les pics très intenses et ceux faibles. Cette intensité ne présage rien quand à l'importance de ce pic dans l'analyse.
 
-La plage spectral de l'instrument est de 70 à 500 g/mol. Cela est fixé par le constructeur pour des raisons techniques alors qu'il y a de nombreuses molécules d'intérêts de masses inférieurs à 70g/mol et peu de molécules naturelles dépassant les 250 g/mol. Ces considérations prises en compte, nous obtenons pour chaque spectre un vecteur brute de 158 768 points. Ces spectres sont réduits, après alignement (voir section \ref{ExplicationGen} et \ref{alignmnt} ) à une taille inférieur à 50 000 points tout en gardant une résolution de 10\textsuperscript{-3} g/mol. De plus, la PTR-TOF-MS a été développée afin d'analyser des cinétiques d'émissions. Dans nos cas, nous enregistrons des spectres de quelques secondes consécutivement durant plusieurs minutes à plusieurs jours. Pour une expériences, nous générons ainsi des dizaines, voir des milliers, de spectres. Ceci étant, nous pouvons dés à présent percevoir les problèmes liés aux temps de calculs que nous allons rencontrer et la nécessité de développer des outils optimisés pour analyser de tels objets.
+La plage spectral de l'instrument est de 70 à 500 g/mol. Cela est limité pour des raisons techniques alors qu'il y a de nombreuses molécules d'intérêts de masses inférieurs à 70g/mol. En revanche la limite fixée pour les molécules volatiles et de 300 g/mol. Ces considérations prises en compte, nous obtenons pour chaque spectre un vecteur brute de 158 768 points. Ces spectres sont réduits, après alignement (voir section \ref{ExplicationGen} et \ref{alignmnt} ) à une taille inférieur à 50 000 points tout en gardant une résolution de 10\textsuperscript{-3} g/mol. De plus, la PTR-ToF-MS a été développée afin d'analyser des cinétiques d'émissions. Dans nos cas, nous enregistrons des spectres de quelques secondes consécutivement durant plusieurs minutes à plusieurs jours. Pour une expériences, nous générons ainsi des dizaines, voir des milliers, de spectres. Ceci étant, nous pouvons dés à présent percevoir les problèmes liés aux temps de calculs que nous allons rencontrer et la nécessité de développer des outils optimisés pour analyser de tels objets.
 
 \hypertarget{technique-rivale-ou-alliuxe9e-de-la-gc-ms}{%
 \section{Technique rivale ou alliée de la GC-MS ?}\label{technique-rivale-ou-alliuxe9e-de-la-gc-ms}}
 
-La métabolomique est dernier maillon de la chaîne -omic. Il se concentre sur l'analyse des petites molécules produites par un système biologique. Les deux domaines d'analyses sont la résonance magnétique nucléaire (NMR) et la spectroscopie de masse (MS). Pour l'analyse des VOC en spectroscopie de masse, la technique de GC-MS est clairement la plus utilisée à l'heure actuelle. La GC-MS, utilisé depuis des décennies, est largement implanté dans le paysage scientifique international. De plus, de nombreux logiciels performant\footnote{MZmine pour n'en citer qu'un} existent. Il est légitime de se poser la question de la nécessité d'utilisation des deux techniques\footnote{ou de façon moins prosaïque : pourquoi diable les physiciens ne restent pas sagement avec leurs bosons et viennent régulièrement embêter leurs collègues avec des idées nouvelles ?}.
+La métabolomique est le maillon le plus exaustif de la chaîne -omic. Il se concentre sur l'analyse des petites molécules, les \emph{métabolites}, produites par un système biologique. Les deux domaines d'analyses sont la résonance magnétique nucléaire (NMR) et la spectroscopie de masse (MS). Pour l'analyse des VOC en spectroscopie de masse en écologie chimique, la technique de GC-MS est la plus utilisée à l'heure actuelle. La GC-MS, utilisé depuis des décennies, est largement implanté dans le paysage scientifique international. De plus, de nombreux logiciels performant\footnote{MZmine pour n'en citer qu'un} existent. Il est légitime de se poser la question de la nécessité d'utilisation des deux techniques\footnote{ou de façon moins prosaïque : pourquoi diable les physiciens ne restent pas sagement avec leurs bosons et viennent régulièrement embêter leurs collègues avec des idées nouvelles ?}.
 
-Premièrement, la GC-MS accumule les VOC dans des pièges chimiques\footnote{qui se présentent sous différentes formes en fonction des utilisation} puis les analyses dans un second temps La durée d'accumulation dans le piège est de l'ordre de la dizaine de minute. La PTR-TOF-MS a une sensibilité accru permettant l'acquisition de spectres à une cadence de 25kHz. Afin d'augmenter le ratio signal sur bruit et de drastiquement réduire la quantité de data généré, ces spectres sont additionnés les uns aux autres sur des durées d'acquisitions plus longues\footnote{typiquement de l'ordre d'une à trente secondes}. En répétant ces acquisitions, la PTR-TOF-MS permet l'analyse cinétique d'un phénomène. Analyse statique contre analyse dynamique. Le prix de cette sensibilité est comme bien souvent une sélectivité dégradée. Ainsi la GC-MS, \emph{a contrario} de la PTR-TOF-MS, peut discriminer les isomères. Cela est permis grâce à la fragmentation des molécules lors de l'étape d'ionisation par un électron qui intervient après la phase de chromatographie.
+Premièrement, la GC-MS accumule les VOC dans des pièges chimiques\footnote{qui se présentent sous différentes formes en fonction des utilisation} puis les analyses dans un second temps La durée d'accumulation dans le piège est de l'ordre de la dizaine de minute jusqu'à 24h. La PTR-ToF-MS a une sensibilité accru permettant l'acquisition de spectres à une cadence de 25kHz. Afin d'augmenter le ratio signal sur bruit et de drastiquement réduire la quantité de data généré, ces spectres sont additionnés les uns aux autres sur des durées d'acquisitions plus longues\footnote{typiquement de l'ordre d'une à trente secondes}. En répétant ces acquisitions, la PTR-ToF-MS permet l'analyse cinétique d'un phénomène grâce à un pas de temps d'accumulation très court. Analyse statique contre analyse quasi-dynamique. Le prix de cette sensibilité est comme bien souvent une sélectivité dégradée. Ainsi la GC-MS, \emph{a contrario} de la PTR-ToF-MS, peut discriminer certains isomères. Cela est permis grâce à la fragmentation des molécules lors de l'étape d'ionisation par un électron qui intervient après la phase de chromatographie.
 
-Bien que les molécules analysées soient les même, les approches et résultats sont donc bien différents. De plus, il est souvent intelligent de croiser ces deux techniques \autocite{majchrzak_2018}. De façon empirique, le PTR-TOF-MS analyse séquentiellement plusieurs échantillons. Il est aisé de collecté les VOC pour le GC-MS juste avant ou après une séquence dédiée au PTR-TOF-MS. Nous pouvons ainsi, par exemple, obtenir deux ou trois analyses ponctuelles de GC-MS lors d'une journée entière d'analyse PTR-TOF-MS. Nous combinons la sensibilité et la spécificité des deux techniques.
+Bien que les molécules analysées soient les même, les approches et résultats sont donc bien différents. De plus, il est souvent intelligent de croiser ces deux techniques \autocite{majchrzak_2018}. De façon empirique, le PTR-ToF-MS analyse séquentiellement plusieurs échantillons. Il est aisé de collecté les VOC pour le GC-MS juste avant ou après une séquence dédiée au PTR-ToF-MS. Nous pouvons ainsi, par exemple, obtenir deux ou trois analyses ponctuelles de GC-MS lors d'une journée entière d'analyse PTR-ToF-MS. Nous combinons la sensibilité et la spécificité des deux techniques.
 
-Les données obtenues en GC-MS sont donc plus complexes qu'en PTR-TOF-MS. Chaque échantillon est représenté par une matrice ayant une dimension pour le temps de rétention et une dimension pour le spectre de masse. Il n'est donc pas possible de réutiliser tels quels les outils numériques de la GC-MS. Cependant, il serait dommage de ne pas piquer les idées déjà existantes. J'ai donc créer un package R spécifique à l'analyse des données du PTR-TOF-MS mais en m'inspirant largement de ce qui se fait sur d'autres techniques : workflow (idée piquée à MZmine), bucketing (pratique courante dans la RMN), chimiomètrie (largement utilisée pour l'analyse des spectres optiques) ; ou en utilisant des packages destinés à d'autres méthodes (MALDIquant dont la transparence du nom laisse peu de doute sur la méthode ciblée par ce package)
+Les données obtenues en GC-MS sont donc plus complexes qu'en PTR-ToF-MS. Chaque échantillon est représenté par une matrice ayant une dimension pour le temps de rétention et une dimension pour le spectre de masse. Il n'est donc pas possible de réutiliser tels quels les outils numériques de la GC-MS. Cependant, il serait dommage de ne pas piquer les idées déjà existantes. J'ai donc créer un package R spécifique à l'analyse des données du PTR-ToF-MS mais en m'inspirant largement de ce qui se fait sur d'autres techniques : workflow (idée piquée à MZmine), bucketing (pratique courante dans la RMN), chimiomètrie (largement utilisée pour l'analyse des spectres optiques) ; ou en utilisant des packages destinés à d'autres méthodes (MALDIquant conçu pour le traitement des spectres MALDI-ToF)
 
 \hypertarget{package-provoc}{%
 \section{package proVOC}\label{package-provoc}}
@@ -701,9 +738,9 @@ Comme expliqué dans la section sur la science ouverte ( \ref{opensci}), ce pack
 \hypertarget{ExplicationGen}{%
 \subsection{Explication général}\label{ExplicationGen}}
 
-L'objectif de proVOC est de permettre une vue d'ensemble rapide\footnote{proVOC : \textbf{P}erform a \textbf{R}apid \textbf{O}verview of the \textbf{V}olatil \textbf{O}rganic \textbf{C}ompound} pour les utilisateurs pressés d'analyser \emph{leurs} données sous R sans avoir besoin d'avoir une grande connaissance de ce langage. La fonction \emph{import\_sp()} constitue la première étape de l'analyse. Les données contenues dans des fichiers \emph{.h5} générés par notre instrument sont importées dans l'espace de travail \autocite{fischer_2021}. Après cette étape, les spectres sont automatiquement alignés puis réduit. Les détails à propos de l'alignement des spectres sont données dans la section \ref{alignmnt}. Pour l'étape de réduction, j'ai défini empiriquement de supprimer chaque colonne (masse) qui ne possédait aucune ligne (intensité) supérieur à un seuil. Ce seuil est calculé pour chaque jeu de donnée comme égale à 20 fois l'écart-type médian de chaque masse\footnote{\emph{cf.} ``calculation of threshold'' dans la fonction \emph{reduction2()}}. Il est probable que cette étape de réduction peut être optimisé d'avantage mais je reviens sur les perspectives d'améliorations du package dans la section dédiée, \ref{perspec}.
+L'objectif de proVOC est de permettre une vue d'ensemble rapide\footnote{proVOC : \textbf{P}erform a \textbf{R}apid \textbf{O}verview of the \textbf{V}olatil \textbf{O}rganic \textbf{C}ompound} pour les utilisateurs pressés d'analyser \emph{leurs} données sous R sans avoir besoin d'avoir une grande connaissance de ce langage. La fonction \emph{import\_sp()} constitue la première étape de l'analyse. Les données contenues dans des fichiers au format \emph{hdf5} générés par notre instrument sont importées dans l'espace de travail \autocite{fischer_2021}. Après cette étape, les spectres sont automatiquement alignés puis réduit. Les détails à propos de l'alignement des spectres sont données dans la section \ref{alignmnt}. Pour l'étape de réduction, j'ai défini empiriquement de supprimer chaque colonne (masse) qui ne possédait aucune ligne (intensité) supérieur à un seuil. Ce seuil est calculé pour chaque jeu de donnée comme égale à 20 fois l'écart-type médian de chaque masse\footnote{\emph{cf.} ``calculation of threshold'' dans la fonction \emph{reduction2()}}. Il est probable que cette étape de réduction peut être optimisé d'avantage mais je reviens sur les perspectives d'améliorations du package dans la section dédiée, \ref{perspec}.
 
-Passé ces étapes, la fonction met en forme les données dans un objet \emph{list}, récupère les metadata (date et heure d'acquisition) puis détecte les pics grâce à la fonction \emph{detectPeaks()} du package \textbf{MALDIquant} et calcule les AUC grâce à la function \emph{AUC()} du package \textbf{DescTools}. Enfin, cet liste nommé ``sp'' est sauvegardé en .Rdata. Ce travail préliminaire peut être long.
+Passé ces étapes, la fonction met en forme les données dans un objet \emph{list}, récupère les metadata (date et heure d'acquisition) puis détecte les pics grâce à la fonction \emph{detectPeaks()} du package \textbf{MALDIquant} et calcule les \emph{Area Under the Curve}(AUC) grâce à la function \emph{AUC()} du package \textbf{DescTools}. Enfin, cet liste nommé ``sp'' est sauvegardé en .Rdata. Ce travail préliminaire peut être long.
 
 Une fois effectué, l'import permet à l'utilisateur de lancer facilement une série d'analyse pour explorer rapidement son jeu de donnée. Pour cela, il lui suffit de modifier des options dans un workflow :
 
@@ -809,8 +846,8 @@ Nous pouvons observer que le début de chaque cycle d'enregistrement est systém
 
 Ce bloc d'options est vraiment très simple d'utilisation. En jouant sur les masses et les modalités incluses dans le graphe, les utilisateur arrivent facilement à appréhender l'évolution des VOC de leur système. Pour autant, nous reviendrons en \ref{perspec} sur l'utilisation de l'AUC et sa méthode de calcule qui impact grandement ce module.
 
-\hypertarget{calibration-regression-linuxe9aire-et-rapport-automatisuxe9}{%
-\subsection{Calibration, regression linéaire et rapport automatisé}\label{calibration-regression-linuxe9aire-et-rapport-automatisuxe9}}
+\hypertarget{uxe9talonnage-regression-linuxe9aire-et-rapport-automatisuxe9}{%
+\subsection{Étalonnage, regression linéaire et rapport automatisé}\label{uxe9talonnage-regression-linuxe9aire-et-rapport-automatisuxe9}}
 
 \scriptsize
 
@@ -830,14 +867,14 @@ Ce bloc d'options est vraiment très simple d'utilisation. En jouant sur les mas
 
 \normalsize
 
-Afin de vérifier la calibration de l'appareil, j'utilise un gaz étalon que je dilue avec un gaz pure lors des mesures de calibration. J'ai développé un script pour analyser cette calibration. La sortie de ce script se fait sous forme de \href{https://mycore.core-cloud.net/index.php/s/ztNMJqgnfvQG44Z}{rapports automatisés} basé sur des régressions linéaires simples. J'ai eu pour projet de développer cela en combinant les différentes masses et en proposant des tests de validation. La base de ce script peut également être reprise pour mesurer la concentration de différentes molécules. Ceci étant, le manque de temps et le côté monovariable ont largement freiné ce projet. D'autant que nous allons le voir, le travail ne manque pas.
+Afin de vérifier l'étalonnage de l'appareil, j'utilise un gaz étalon que je dilue avec un gaz zéro lors des mesures. J'ai développé un script pour analyser cet étalonnage. La sortie de ce script se fait sous forme de \href{https://mycore.core-cloud.net/index.php/s/ztNMJqgnfvQG44Z}{rapports automatisés} basés sur des régressions linéaires simples. J'ai eu pour projet de développer cela en combinant les différentes masses et en proposant des tests de validation. La base de ce script peut également être reprise pour mesurer la concentration de différentes molécules. Ceci étant, le manque de temps et le côté monovariable ont largement freiné ce projet. D'autant que nous allons le voir, le travail ne manque pas.
 
 \hypertarget{perspec}{%
 \subsection{Perspective}\label{perspec}}
 
-Dans cette partie, je n'ai pas développé les analyses plus poussés (alignement et chimiométrie) qui sont expliqués dans le chapitre suivant. Nous avons simplement vu le principe de base de la PTR-TOF-MS ainsi que les modules de base de l'analyse : obtenir le graphe des spectres de masses, le suivi des AUC et le calcul de concentration. Le package proVOC permet d'effectuer ces opérations de façon simple et sans rien coder. De plus, il met à disposition les jeux de données pour que les utilisateurs puissent soit appliquer leur propre traitement soit utiliser des modules avancés.
+Dans cette partie, je n'ai pas développé les analyses plus poussés (alignement et chimiométrie) qui sont expliqués dans le chapitre suivant. Nous avons simplement vu le principe de base de la PTR-ToF-MS ainsi que les modules de base de l'analyse : obtenir le graphe des spectres de masses, le suivi des AUC et le calcul de concentration. Le package proVOC permet d'effectuer ces opérations de façon simple et sans rien coder. De plus, il met à disposition les jeux de données pour que les utilisateurs puissent soit appliquer leur propre traitement soit utiliser des modules avancés.
 
-Le package a été conçu pour assurer une reproductibilité des analyses. Lors de la conception de la structure du package, nous avions peu de recule sur l'utilisation du PTR-TOF-MS. Désormais, je suis convaincu qu'il me faut développer la version 2 très prochainement. Trois grosses modifications vont être effectuées.
+Le package a été conçu pour assurer une reproductibilité des analyses. Lors de la conception de la structure du package, nous avions peu de recule sur l'utilisation du PTR-ToF-MS. Désormais, je suis convaincu qu'il me faut développer la version 2 très prochainement. Trois grosses modifications vont être effectuées.
 
 La première est assez technique et concerne l'importation de donnée :
 
@@ -864,9 +901,9 @@ La première est assez technique et concerne l'importation de donnée :
 
 \normalsize
 
-Les fonctions \emph{H5open()} et \emph{H5close()} du package \textbf{rhdf5} permettent d'ouvrir les fichiers h5 afin de les importer puis de les fermer. La fonction \emph{sp\_red()}, que j'ai écrite, est une meta fonction qui permet d'importer les spectres, les meta data, d'aligner les spectres, de supprimer les données inutiles et des détecter les peaks. Comme nous pouvons le voir, elle se trouve en sandwitch entre l'ouverture de toutes les datas et la fermeture des données. Cette maladresse occupe de la RAM inutilement et ralentie beaucoup cette étape. Pour autant, toucher à la fonction qui importe les données et les mets en forme est une opération risquée qui met en péril la fonctionnalité des fonctions ultérieures.
+Les fonctions \emph{H5open()} et \emph{H5close()} du package \textbf{rhdf5} permettent d'ouvrir les formats hdf5 afin de les importer puis de les fermer. La fonction \emph{sp\_red()}, que j'ai écrite, est une meta fonction qui permet d'importer les spectres, les meta data, d'aligner les spectres, de supprimer les données inutiles et des détecter les peaks. Comme nous pouvons le voir, elle se trouve en sandwitch entre l'ouverture de toutes les datas et la fermeture des données. Cette maladresse occupe de la RAM inutilement et ralentie beaucoup cette étape. Pour autant, toucher à la fonction qui importe les données et les mets en forme est une opération risquée qui met en péril la fonctionnalité des fonctions ultérieures.
 
-La seconde modification sera sur le calcul de l'AUC. Initialement, je voulais trouver un moyen simple d'exprimer les 50 000 points des spectres en une valeur plus acceptable pour de l'analyse chimiométrique. J'avais donc piqué l'idée du bucketing des communautés de RMN en calculant l'AUC par masse unitaire (de M-0.5 à M+0.5). Cela permet d'obtenir une matrice de seulement 400 colonnes environ. En réalité, cela masque les cinétiques des molécules isobares. De plus, j'ai découvert après coup une fonction très performante pour détecter les pics (\ref{ExplicationGen}). Je peux donc remplacer les AUC unitaires par l'intensité des pics. Il n'y aura alors plus qu'une confusion sur les isomères mais qui correspond aux limites techniques de l'instrument. J'aimerais également travailler sur l'AUC des pics et leur déconvolution afin de savoir si de l'information y est cachée.
+La seconde modification sera sur le calcul de l'AUC. Initialement, je voulais trouver un moyen simple d'exprimer les 50 000 points des spectres en une valeur plus acceptable pour de l'analyse chimiométrique. J'avais donc piqué l'idée du bucketing des communautés de RMN en calculant l'AUC par masse unitaire (de M-0.5 à M+0.5). Cela permet d'obtenir une matrice de seulement 400 colonnes environ. En réalité, cela masque les cinétiques des molécules isobares qui est un des points forts de la technique PTR-\textbf{ToF}-MS. De plus, j'ai découvert après coup une fonction très performante pour détecter les pics (\ref{ExplicationGen}). Je peux donc remplacer les AUC unitaires par l'intensité des pics. Il n'y aura alors plus qu'une confusion sur les isomères mais qui correspond aux limites techniques de l'instrument. J'aimerais également travailler sur l'AUC des pics et leur déconvolution afin de savoir si de l'information y est cachée.
 
 La dernière modification se fera sur la structure :
 
@@ -894,22 +931,29 @@ Une seule fonction permet de lancer la série d'analyses précisé dans le workf
 
 \normalsize
 
-Cette forme franchement plus digeste permettra d'inclure plus simplement une analyse PTR-TOF-MS dans un script ou un rapport Rmarkdown.
+Cette forme franchement plus digeste permettra d'inclure plus simplement une analyse PTR-ToF-MS dans un script ou un rapport Rmarkdown.
 
 J'espère avec ces modifications importantes rendre l'analyse plus optimisée en temps et répondre mieux aux attentes des utilisateurs. Ce package est sur GitHub depuis septembre 2020. J'ai fait peu de pub car je connais ses limites et je souhaiterais corriger ses principales défauts avant de le proposer aux collègues des autres centres de recherche avec qui nous avons des contacts. Les retours sur les quelques démonstrations effectuées sont très positives et proVOC permettra (je l'espère) de répondre positivement à un réel besoin. De plus proVOC est complètement cohérent avec les principes de l'open science développés au chapitre \ref{chap1} et intègre des analyses chimiométriques qui sont détaillées au chapitre \ref{chap3}.
 
 \hypertarget{chap3}{%
 \chapter{Méthodes Multivariées}\label{chap3}}
 
-Nous allons à présent nous intéresser aux algorithmes utilisés pour traiter les jeux de données générés par le PTR-TOF-MS. Ce chapitre est divisé en deux parties. Lors de l'écriture du package, j'avais travailler sur différentes méthodes d'alignement avant de m'arrêter sur l'une d'elle. Le début de ce stage m'a permis de reprendre ce travail avec des idées nouvelles que je présenterais dans une première partie. La deuxième partie présente l'utilisation de la chimiométrie pour l'analyse de donnée, d'abords avec la PCA puis avec deux méthodes moins populaires, l'ICA et la MCR qui ont l'avantage chacune d'essayer de décomposer les données en produits pures.
+Nous allons à présent nous intéresser aux algorithmes utilisés pour traiter les jeux de données générés par le PTR-ToF-MS. Ce chapitre est divisé en deux parties. Lors de l'écriture du package, j'avais travailler sur différentes méthodes d'alignement avant de m'arrêter sur l'une d'elle. Le début de ce stage m'a permis de reprendre ce travail avec des idées nouvelles que je présenterais dans une première partie. La deuxième partie présente l'utilisation de la chimiométrie pour l'analyse de donnée, d'abords avec la PCA puis avec deux méthodes moins connues, l'ICA et la MCR qui ont l'avantage chacune d'essayer de décomposer les données en produits pures.
 
 \hypertarget{alignmnt}{%
 \section{Alignement et sélection de variable}\label{alignmnt}}
 
 Actuellement, le package utilise la fonction \emph{alignSpectra()} du package \textbf{MALDIquant}. L'alignement est fortement lié à la détection de pic. Soit le modèle utilisé n'est pas optimum et ajoute ou supprime des pics. Soit il crée un décalage trop important en alignant mal les pics se qui créer de la confusion lors de l'étape d'identification.
 
+\emph{alignSpectra()} est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure \ref{lav}. Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.
+
+\begin{figure}
+\hypertarget{lav}{%
+\centering
 \includegraphics{images/lav_align.png}
-\emph{alignSpectra()} est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure \ref{lavAlign}. Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.
+\caption{Alignement pics}\label{lav}
+}
+\end{figure}
 
 J'ai trouvé un article très intéressant de \textcite{picaud_2018} qui propose un algorithme pour supprimer la ligne de base, aligner les pics et les détecter. L'article explique les problèmes de faire ces trois étapes successivement et propose donc une alternative. Nous avons discuté avec l'auteur de sa solution. Malheureusement, le script est écrit en C++. Il est possible d'utiliser ce langage sous R, via Rcpp par exemple, mais cela aurait demandé un peu trop de temps. Pour l'instant, cette solution a été mise de côté mais pourra être exploré plus tard.
 
@@ -927,9 +971,9 @@ Finalement, nous avons fait le choix de garder la fonction \emph{alignSpectra()}
   les pics (\textasciitilde300 pics, qui peuvent être des isobares). \emph{(Mj)}
 \end{itemize}
 
-Pour une étude chimiométrique, nous pouvons discuter de la pertinence des jeux de données. Avec une matrice alignée \emph{Mi}, on peut estimé que les algorithmes puissants des chimiomètriciens vont détecter de petites variations négligées par les méthodes de détection de pics. Les \emph{Mi} peuvent donc détecter les traces de VOC. Cependant les matrices \emph{Mj} (AUC ou pics) possèdent un nombre de colonnes réduit de presque deux ordres de grandeur. De plus, le grand avantage du PTR-TOF-MS est d'obtenir des spectres ayant une excellente résolution de masse (10\textsuperscript{-3}Dalton). Nous pouvons donc utiliser une matrice \emph{Mj} pour les analyses chimiométriques.
+Pour une étude chimiométrique, nous pouvons discuter de la pertinence des jeux de données. Avec une matrice alignée \emph{Mi}, on peut estimé que les algorithmes puissants des chimiomètriciens vont détecter de petites variations négligées par les méthodes de détection de pics. Les \emph{Mi} peuvent donc détecter les traces de VOC. Cependant les matrices \emph{Mj} (AUC ou pics) possèdent un nombre de colonnes réduit de presque deux ordres de grandeur. De plus, le grand avantage du PTR-ToF-MS est d'obtenir des spectres ayant une excellente résolution de masse (10\textsuperscript{-3}Dalton). Nous pouvons donc utiliser une matrice \emph{Mj} pour les analyses chimiométriques.
 
-Maintenant que les outils pour détecter les pics et les outils d'analyses sont fonctionnelles pour les jeu de données du PTR-TOF-MS, il serait très intéressant d'analyser (via une MCR par exemple) comment la modification des paramètres de la fonction \emph{detectPeaks()} (de MALDIquant) influe sur les résultats de chimiométrie.
+Maintenant que les outils pour détecter les pics et les outils d'analyses sont fonctionnelles pour les jeu de données du PTR-ToF-MS, il serait très intéressant d'analyser (via une MCR par exemple) comment la modification des paramètres de la fonction \emph{detectPeaks()} (de \textbf{MALDIquant}) influe sur les résultats de chimiométrie.
 
 \hypertarget{analyses-chimiomuxe9triques}{%
 \section{Analyses Chimiométriques}\label{analyses-chimiomuxe9triques}}
@@ -952,7 +996,7 @@ Cependant, le résultat de l'ACP est un pur objet mathématique qui est souvent 
 }
 \end{figure}
 
-La MCR est une famille de méthodes qui cherche à décomposer l'ensemble des spectres en plusieurs sous-ensembles de produits pures. La figure \ref{schMCR} issue de l'article de \textcite{dejuan_2014} permet de bien comprendre l'objectif d'une MCR. La matrice D, obtenue par l'expérience, est l'expression de de deux produits pures S\textsubscript{A}\textsuperscript{T} et S\textsubscript{B}\textsuperscript{T} (deux bouquets de VOC pour notre PTR-TOF-MS) de concentration C\textsubscript{A} et C\textsubscript{B}, qui sont les quatre vecteurs que nous cherchons à connaître\footnote{et dont nous ne connaissons rien.}. Les étapes de l'équation sont décrites dans l'article précédemment citée.
+La MCR est une famille de méthodes qui cherche à décomposer l'ensemble des spectres en plusieurs sous-ensembles de produits pures. La figure \ref{schMCR} issue de l'article de \textcite{dejuan_2014} permet de bien comprendre l'objectif d'une MCR. La matrice D, obtenue par l'expérience, est l'expression de deux produits pures S\textsubscript{A}\textsuperscript{T} et S\textsubscript{B}\textsuperscript{T} (deux bouquets de VOC pour notre PTR-ToF-MS) de concentration C\textsubscript{A} et C\textsubscript{B}, qui sont les quatre vecteurs que nous cherchons à connaître\footnote{et dont nous ne connaissons rien.}. Les étapes de l'équation sont décrites dans l'article précédemment citée.
 
 De plus, la MCR permet l'ajout de contraintes telles que la ``non-négativité'' qui permet de ne pas avoir de composantes négatives dans les S\textsubscript{i}\textsuperscript{T} (fréquent en ACP) ou la contrainte ``d'égalité'' qui permet par exemple de renseigner un spectre pure de référence.
 
@@ -984,41 +1028,94 @@ Un excellent complément d'information se trouve dans le livre
 L'objectif principale de l'ICA est de retrouver les \emph{signal sources} mélangés à l'intérieur du jeu de données et la proportion de chacun d'eux. Pour cela, l'ICA s'interresse à la distribution de l'intensité du signal sur un histogramme (\emph{cf.} Fig2 de \textcite{rutledge_2016}). Selon la loi central limite, plus l'histogramme tend vers une répartition gaussienne, plus il y a de chances que ce signal soit du bruit. Inversement, moins la répartition est gaussienne, plus le signal correspond à un signal source. De plus, comme pour une ACP, l'ICA cherche à obtenir des signals sources indépendant, et donc orthogonaux. Contrairement à la MCR, L'ICA n'impose pas de contrainte. La phrase de \autocite{rutledge_2016} permet de bien comprendre la différence entre les deux méthodes : \emph{This is because while MCR aims to extract the signals of pure compounds, ICA extracts signals reflecting underlying \textbf{independent phenomena}, which may in fact be combinations of the signals of several pure compounds}.\footnote{En effet, alors que la MCR vise à extraire les composés purs, l'ICA extrait les signaux reflétant des \textbf{phénomènes indépendants} sous-jacents, qui peuvent en fait être des combinaisons des signaux de plusieurs composés purs.}\\
 Il existe plusieurs algorithmes qui utilise l'ICA, \autocite{wang_2008} et \autocite{al-saegh_2015}. Cependant, l'agorithme JADE \autocite{cardoso_1993} est probablement le plus utilisé pour l'ICA, \autocite{rutledge_2013} et \autocite{rutledge_2015}. Un package \href{https://cran.r-project.org/web/packages/JADE/JADE.pdf}{JADE} pour R est déposé et maintenu sur le CRAN. Le principe de JADE est de décomposé la matrice \textbf{X} (le jeu de donnée expérimentale) en utilisant les loadings d'une ACP. Ces loadings sont centrés et normés puis arrangés pour former un tenseur d'ordre 4. De façon itérative, JADE va ensuite optimiser ces loadings pour les rendre indépendants.
 
-Cette description succincte permet très vite de comprendre que réaliser un tenseur d'ordre 4 à base de vecteur de 55000 points risque d'être problématique. L'ICA ne peut se faire que sur une matrice réduite comme l'AUC ou les pics détectés.
+Cette description succincte permet très vite de comprendre que réaliser un tenseur d'ordre 4 à base de vecteur de 55000 points risque d'être problématique. L'ICA ne peut se faire que sur une matrice réduite comme l'AUC ou les pics détectés dans l'optique d'une utilisation avec un ordinateur de bureau.
 
 \hypertarget{applications}{%
 \section{Applications}\label{applications}}
 
-\ldots{}
+J'ai testé les packages \href{https://www.bioconductor.org/packages/devel/bioc/vignettes/alsace/inst/doc/alsace.pdf}{\textbf{alsace}} \autocite{wehrens_2015}, \textbf{ChemometricsWithR} et \textbf{ALS} anfin d'utiliser la MCR-ALS avec R. Les packages \textbf{alsace} et \textbf{ChemometricsWithR} sont du même auteur mais le premier est encore soutenu. \textbf{alsace} utilise le package \textbf{ALS} pour le calcul et le rend compatible directement avec le format ``liste'' donné en sortie de la fonction \emph{detectPeaks()}. Le package \textbf{alsace} applique par défaut uniquement la contrainte de non-negativité.
+
+Pour la partie ICA, j'ai utilisé le package \href{https://github.com/mlesnoff/rnirs}{\textbf{rnirs}}\footnote{écrit par Mathieu Lesnoff du Cirad de Montpellier} dans le package proVOC. Ce module ``ICA'' est implémenter mais peu fonctionnel et ne travaille qu'avec les AUC. De plus, le package \textbf{rnirs} est en cours de transformation et sera bientôt soutenu par la communauté ChemHouse à laquelle je contribue modestement. Toutefois, j'ai échangé avec D.Rutledge qui m'a envoyé un \href{https://mycore.core-cloud.net/index.php/s/zNxcxNhgdUIonFu}{rapport} en utilisant les spectres entiers de l'expérience de lavandes (\emph{cf} ci-dessous). Ces résultats sont difficiles à interpréter à cause du format de présentation. Les acquisition des 12 spectres ayant été concatener. Cependant, on remarque des formes relativement similaires à celles produites par les spectres pures de la MCR que nous allons voir par la suite.
+
+\hypertarget{duxe9termination-du-nombre-de-composantes}{%
+\subsection{Détermination du nombre de composantes}\label{duxe9termination-du-nombre-de-composantes}}
+
+Je n'ai pas trouvé de méthode théorique pour définir le nombre de composante. Une méthode proposée\footnote{mais dont je n'ai pas la source.} pour ajuster le nombre de composés est de procéder comme avec une ACP, c'est à dire, déduire en fonction du pourcentage exprimé de chaque CP la séparation entre le ``signal'' et le ``bruit''. La package \textbf{alsace} propose la fonction \emph{smallComps()} pour aider à fixer ce nombre. Je pense qu'on se trouve dans la limite mathématique de l'exercice et qu'il est bon de discuter avec le praticien. J'effectue alors plusieurs cycle en incrémentant le nombre de composantes. En interprétant les résultats, nous arrivons à déterminer une limite entre ce qui reflète un phénomène probable et ce qui est probablement du bruit.
 
 \hypertarget{anaalm}{%
-\subsection{bourgeon}\label{anaalm}}
+\subsection{Suivi de la floraison}\label{anaalm}}
 
-blabla voir le détail section \ref{expalm}
+\begin{figure}
+\hypertarget{mcrSalm}{%
+\centering
+\includegraphics{images/bourgeon_S_MCR.png}
+\caption{Résultats MCR bourgeons}\label{mcrSalm}
+}
+\end{figure}
+
+Cette expérience est expliqué plus en détail dans la section \ref{expalm}. Les données ont ensuite été traité avec proVOC puis analysées par MCR. La figure \ref{mcrSalm} représente les composés pures de l'expérience. Pour qui a l'habitude des analyses ACP, il paraît évident que l'interprétation de ce genre de résultat est plus intuitifs.
+
+\begin{figure}
+\hypertarget{mcrCalm}{%
+\centering
+\includegraphics{images/bourgeon_C_MCR.png}
+\caption{Résultats MCR bourgeons suivi}\label{mcrCalm}
+}
+\end{figure}
+
+La figure \ref{mcrCalm} et permet de voir l'évolution des cinq composantes au cours du week-end d'analyse. Il y a deux artefacts sur ces résultats. Premièrement, nous observons des oscillations très régulières. Bien que nous n'en n'avons pas compris la nature exact, cela vient du système de climatisation. Secondement, nous avons effectué une mesure ``blanche'' durant 30 minutes chaque 4h. Cela se remarque très facilement, par exemple sur la composante n°2, nous pouvons voir un pic un peu avant 22h suivi d'un autre un peu avant 2h du matin.
+
+Passé ces artefacts, nous pouvons interpréter les phénomènes. La composante n°2 (en bleu nuit) est monotone décroissante. Ces composés sont ceux de la pollution extérieur à notre système biologique et chassés par le flux d'air zéro en quelques heures. Les composés n°5 et 4 (jaune et vert) sont ceux du bourgeons avec l'alternance phase de nuit/phase de jour (levé du soleil : 07h24). La floraison a très probablement eu lieu au alentour de 14h. Nous avons deux indices qui laisse penser ça. Premièrement, les cinétiques de composés 4 et 5 sont perturbées entre 14 et 18h. Secondement, le bouquet d'odeurs de la fleur d'amande, traduit par la composante n°3 augmente à partir de ce moment. En outre, la composante n°1 montre des phénomènes très ponctuelles que nous n'avons pas identifiés.
+
+Ces hypothèses d'interprétation nécessitent encore une analyse fine d'identification des composantes mais ces résultats ont été un moteur d'intérêt à la fois pour la PTR-ToF-MS et pour la MCR-ALS.
 
 \hypertarget{analav}{%
-\subsection{lavande}\label{analav}}
+\subsection{Analyse de l'émission journalière des lavandes}\label{analav}}
 
-blabla voir le détail section \ref{explav}
+\begin{figure}
+\hypertarget{mcrSlav}{%
+\centering
+\includegraphics{images/lavandes_S_MCR.png}
+\caption{Résultats MCR lavandes composantes}\label{mcrSlav}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{mcrClav}{%
+\centering
+\includegraphics{images/lavandes_C_MCR.png}
+\caption{Résultats MCR lavandes suivi}\label{mcrClav}
+}
+\end{figure}
+
+L'expérience est décrite dans la section \ref{explav}. Pour analyser cette expérience, j'ai procédé de la même façon que pour l'analyse de la floraison de l'amandier. Après discussion avec la doctorante expérimentatrice, nous avons conclu que cinq composantes était un nombre optimum pour interpréter les résultats. Ces composantes sont représentées sur la figure \ref{mcrSlav}. J'ai rendu plus visible les composantes n°2 (bleu nuit) et 4 (vert) qui sont les plus intéressante pour notre cas. La figure \ref{mcrClav} permet l'interprétation de ces résultats. Pour faciliter la lecture, j'ai placé sur une même colonne les unités expérimentales enregistrées le même jour et sur une même ligne les unités expérimentales enregistrées dans une même chambre. Les lignes 1 à 4 correspondent aux chambres 1 à 4. Les colonnes 1 à 3 correspondent aux jours 1, 3 et 5. Les abréviations ``lv'' et ``bl'' désignent respectivement les unités expérimentales où se trouvent une lavande et celles servant de blanc.
+
+La composante n°1 (violet) est un artefact qui se produit principalement dans les unités ``blanches'' avec un fort pic à 11h. Quelques fluctuations se retrouvent dans les autres unités, principalement lors du jour 1. La composante n°3 (turquoise) est un bruit de fond que l'on retrouve dans toutes les analyses\footnote{contrairement à l'expérience précédente, ces échantillons sont mal isolés du reste de la serre. De plus la serre sert de stockage des autres plants de lavandes et de figuiers}. La composante n°5 (jaune) est plus compliqué interpréter. Elle se retrouve dans les unités ``lavandes'' mais pas dans les unités ``blanches''.
+
+Une fois ces trois composantes analysées, nous pouvons nous attardés sur les composantes n°2 et 4. Les expériences ayant été effectuées en juin, j'ai placé deux lignes verticales pour marquer le lever (en jaune) et le couché (en bleu) du soleil. Le lever du jour est parfaitement synchronisé avec l'émission des COV n°2 et 4. La composante 2 est émise durant toute la journée. La plante arrive en quelques heures à un plateau d'émission puis anticipe la diminution avec le déclin du jour. Il est très intéressant de comparer les profils d'un même jour. Par exemple, nous observons un creux dans les trois profils du jour 1 au alentour de 15h. La composante suit un profil d'émission différent de la composante 2. L'émission des COV arrive en 2h à un maximal puis décroit très rapidement par la suite pour retrouver une émission quasi nulle à midi.
+
+Le système circadien de la lavande est bien connu, tout comme le faite que sa production de COV dépende des facteurs extérieurs comme l'ensoleillement \autocite{guitton_2010}. Cependant, le résultat d'une double émission au sein d'une même journée n'a jamais, au meilleur de notre connaissance, été mis si distinctement en valeur. De plus, ce résultat se retrouvent sur 9 unités expérimentales répartis en 3 jours et 3 chambres et contrôlé avec un blanc. Si l'expérience de la floraison n'était qu'un test, cette expérience est très concluante.
+
+\hypertarget{discussions}{%
+\section{Discussions}\label{discussions}}
+
+Les analyses MCR sont satisfaisantes mais nécessitent encore d'être complétées par un travail d'indexations des pics. Cela permettra de consolider d'un point de vue biologique l'hypothèse du double cycle d'émission des lavandes. De mon côté, je peux renforcer l'analyse par plusieurs façon. D'une part, nous avons vu que les \href{https://mycore.core-cloud.net/index.php/s/WlN1djlyneKgCdL}{rapports automatisés de l'ACP} effectués par \textbf{proVOC} sont assez sommaires. Le changement de structure du package permettra d'appliquer plus facilement des pré-traitements et des sélections de variables à l'ACP. Cet outil reste un excellent moyen d'exploration à l'aveugle des jeu de données, notamment pour détecter les outliers.\\
+Ensuite, il reste un travail, probablement à effectuer en commun avec les membres de Chemhouse, pour optimiser les analyses MCR et \href{https://mycore.core-cloud.net/index.php/s/zNxcxNhgdUIonFu}{ICA}\footnote{ici le rapport de l'analyse effectuée par Douglas Rutledge.} puis en croissant les résultats de l'analyses biolgiques avec les spectres pures(MCR) et les signals sources(ICA) afin de définir au plus juste quel algorithme décrit le mieux les lois naturelles.
 
 \hypertarget{conclusion}{%
 \chapter{Conclusion}\label{conclusion}}
 
-c'était chouette
+Cette période de ce stage un peu particulier s'achève et ce rapport essaie de rendre compte au plus juste possible le travail effectué durant ces mois de printemps et d'été. Nous avons pu voir qu'en amont du traitement de la data, il y a l'acquisition de celle-ci et que cette tâche était au moins aussi importante. J'ai passé sous silence une grosses parties des problèmes techniques rencontrés et autres pannes\footnote{mention spéciale à la climatisation des serres, H-S plusieurs semaines à partir de mi-juillet.} Pour autant, ces contraintes font partis du métier et l'analyste doit savoir si plier en ne maudissant que modérément l'expérimentateur, lorsque ce n'est pas lui-même. Il doit être présent dans le projet dés le début et participer à l'élaboration théorique de l'expérience.
 
-\hypertarget{glossaire}{%
-\chapter*{Glossaire}\label{glossaire}}
-\addcontentsline{toc}{chapter}{Glossaire}
+Il est aussi cruciale de maîtrise la technique de l'instrument de mesure. Par exemple, en spectrométrie optique les pics peuvent avoir un décalage en longueur d'ondes qui traduit un effet de contrainte sur l'échantillon. Ce décalage ne peut pas exister en spectrométrie de masse, où alors de façon discrète modulo 1,007 Da qui correspond à la masse d'un proton.
 
-CEFE (UMR 5175) : Centre d'Écologie Fonctionnelle et Évolutive. Laboratoire d'accueil situé sur le site de la DR13 du CNRS, route de Mende à Montpellier.
+Une fois cela acquis et mis en œuvre, les outils numériques ne manquent pas pour décortiquer les données. Je pourrais en ajouter à l'arsenal de proVOC, comme par exemple la PLS (et ses variantes) pour effectuer des régressions. Je me suis attardé pour l'instant à la découverte de la MCR et de l'ICA qui sont moins connus des utilisateurs et qui, de fait, demandent un plus grand travail d'accompagnement pour leur utilisation. Nous avons pu voir les avantages de telles méthodes.
 
-COV (ou VOC) : Composé Organique Volatile. Molécules produites par des systèmes biologique et analyse par le PTR-ToF-MS.
+\break
 
-GC-MS : Gaz Chromatographie Mass Spectroscopy. Autre méthode d'analyse des VOC, moins sensible mais plus discriminante que la PTR-TOF-MS.
+Avant cette année de master, je connaissais très peu de choses sur ``les modèles linéaires généralisés'', les ``séries temporelles et spatiales'', les ``plans d'expériences''. Bien qu'il me faudra quelques contorsions du cortex pour intégrer ces connaissances théoriques obtenues à ma pratique quotidienne, je ne doute pas qu'elles me seront utiles dans un futur proche.
 
-PACE : Plateforme d'Analyse Chimique en Écologie. Plateforme situé au sein de l'UMR 5175.
-
-PTR-ToF-MS : Proton Transfert Reaction Time of Flight Mass Spectroscopy. Acronyme utilisé pour l'instrument de mesure (le PTR-ToF-MS) et pour la méthode d'analyse (la PTR-ToF-MS). Par abus de langage, l'acronyme PTR-MS est réguliérement utilisé.
+À travers ce rapport, j'espère avoir synthétisé correctement six mois de travaux effectués par un physicien dans un contexte à la frontière entre les mathématiques, l'environnement et la chimie. Cette interdisciplinarité, que je recherche depuis la fin de mon master 2 de photonicien, demande un apprentissage lent mais constant et une volonté permanente de vouloir sortir de sa zone de confort. C'est avant tout un goût pour la découverte et des aventures scientifiques que je recommande à chacun.
 
 
 % Bibliography
