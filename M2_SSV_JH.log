@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  30 AUG 2021 15:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 01:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2885,13 +2885,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
 [16]
 File: images/fig_AUC.PNG Graphic file (type bmp)
 <images/fig_AUC.PNG>
-[17]
-Underfull \hbox (badness 1242) in paragraph at lines 875--876
-[]\TU/lmr/m/n/12 Dans cette partie, je n’ai pas développé les analyses plus pou
-ssés (alignement et
- []
-
-[18] [19] [20
+[17] [18] [19] [20
 
 ]
 File: images/lav_align.png Graphic file (type bmp)
@@ -2944,10 +2938,9 @@ File: images/lavandes_C_MCR.png Graphic file (type bmp)
 <images/lavandes_C_MCR.png>
 [27] [28] [29] [30
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+] [31] [32
 
-[31] [32]
+]
 
 ******************************************************
 Stock height and width: 845.04684pt by 597.50787pt
@@ -3073,7 +3066,6 @@ ng=tex-text;!
 [33
 
 
-
 ]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
@@ -3100,7 +3092,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 3179) in paragraph at lines 1128--1128
+Underfull \hbox (badness 3179) in paragraph at lines 1126--1126
 []\TU/lmr/m/n/12 M. []\TU/lmr/m/sc/12 Graus[]​\TU/lmr/m/n/12 , M. []\TU/lmr/m/s
 c/12 Müller[]​ \TU/lmr/m/n/12 et A. []\TU/lmr/m/sc/12 Hansel[]​\TU/lmr/m/n/12 .
  «  High resolution PTR-TOF :
@@ -3141,7 +3133,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Overfull \hbox (188.58412pt too wide) in paragraph at lines 1128--1128
+Overfull \hbox (188.58412pt too wide) in paragraph at lines 1126--1126
 \TU/lmr/m/it/12 Spectrometry \TU/lmr/m/n/12 20.6 (2006). _eprint : https ://ana
 lyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/rcm.2405,
  []
@@ -3166,7 +3158,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 2277) in paragraph at lines 1128--1128
+Underfull \hbox (badness 2277) in paragraph at lines 1126--1126
 []\TU/lmr/m/n/12 A. []\TU/lmr/m/sc/12 Jordan[]​\TU/lmr/m/n/12 , S. []\TU/lmr/m/
 sc/12 Haidacher[]​\TU/lmr/m/n/12 , G. []\TU/lmr/m/sc/12 Hanel[]​\TU/lmr/m/n/12 
 , E. []\TU/lmr/m/sc/12 Hartungen[]​\TU/lmr/m/n/12 , L. []\TU/lmr/m/sc/12 Märk[]
@@ -3174,7 +3166,7 @@ sc/12 Haidacher[]​\TU/lmr/m/n/12 , G. []\TU/lmr/m/sc/12 Hanel[]​\TU/lmr/m/n/
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 1128--1128
+Underfull \hbox (badness 1067) in paragraph at lines 1126--1126
 \TU/lmr/m/n/12 and high sensitivity proton-transfer-reaction time-of-flight mas
 s spectrometer
  []
@@ -3309,7 +3301,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 4634) in paragraph at lines 1128--1128
+Underfull \hbox (badness 4634) in paragraph at lines 1126--1126
 []\TU/lmr/m/n/12 D. []\TU/lmr/m/sc/12 Rutledge[]​ \TU/lmr/m/n/12 et D. []\TU/lm
 r/m/sc/12 Jouan-Rimbaud Bouveresse[]​\TU/lmr/m/n/12 . «  Corrigendum to
  []
@@ -3327,7 +3319,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 2237) in paragraph at lines 1128--1128
+Underfull \hbox (badness 2237) in paragraph at lines 1126--1126
 []\TU/lmr/m/n/12 H. []\TU/lmr/m/sc/12 Tanimoto[]​\TU/lmr/m/n/12 , N. []\TU/lmr/
 m/sc/12 Aoki[]​\TU/lmr/m/n/12 , S. []\TU/lmr/m/sc/12 Inomata[]​\TU/lmr/m/n/12 ,
  J. []\TU/lmr/m/sc/12 Hirokawa[]​ \TU/lmr/m/n/12 et Y. []\TU/lmr/m/sc/12 Sadana
@@ -3428,26 +3420,26 @@ Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-LaTeX Info: Redefining \rmfamily on input line 1158.
-LaTeX Info: Redefining \sffamily on input line 1158.
-LaTeX Info: Redefining \ttfamily on input line 1158.
-LaTeX Info: Redefining \rmfamily on input line 1165.
-LaTeX Info: Redefining \sffamily on input line 1165.
-LaTeX Info: Redefining \ttfamily on input line 1165.
+LaTeX Info: Redefining \rmfamily on input line 1156.
+LaTeX Info: Redefining \sffamily on input line 1156.
+LaTeX Info: Redefining \ttfamily on input line 1156.
+LaTeX Info: Redefining \rmfamily on input line 1162.
+LaTeX Info: Redefining \sffamily on input line 1162.
+LaTeX Info: Redefining \ttfamily on input line 1162.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1169--1171
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1168
 
  []
 
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 1172.
-LaTeX Info: Redefining \sffamily on input line 1172.
-LaTeX Info: Redefining \ttfamily on input line 1172.
+LaTeX Info: Redefining \rmfamily on input line 1169.
+LaTeX Info: Redefining \sffamily on input line 1169.
+LaTeX Info: Redefining \ttfamily on input line 1169.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 1172.
-LaTeX Info: Redefining \sffamily on input line 1172.
-LaTeX Info: Redefining \ttfamily on input line 1172.
+LaTeX Info: Redefining \rmfamily on input line 1169.
+LaTeX Info: Redefining \sffamily on input line 1169.
+LaTeX Info: Redefining \ttfamily on input line 1169.
 Package polyglossia Info: Option: French, variant=french.
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
@@ -3560,7 +3552,7 @@ Package polyglossia Info: Option: French, variant=french.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `M2_SSV_JH.out' has not changed.
-(rerunfilecheck)             Checksum: 3DC5777B8C57CE479C36A352D28E74A6;6959.
+(rerunfilecheck)             Checksum: 7524107119CE09EE2651226FB00C21FB;6969.
 Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 \openout1 = `M2_SSV_JH.run.xml'.
 
@@ -3568,7 +3560,7 @@ Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 Here is how much of TeX's memory you used:
  44910 strings out of 478532
  878686 string characters out of 5861061
- 1869608 words of memory out of 5000000
+ 1869615 words of memory out of 5000000
  64368 multiletter control sequences out of 15000+600000
  421302 words of font info for 108 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
