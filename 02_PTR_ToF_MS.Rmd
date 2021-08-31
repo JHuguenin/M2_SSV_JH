@@ -6,7 +6,7 @@ De très nombreux projets de recherches issus du CeMEB nécessitent l'analyse de
 -   le PTR-ToF-MS possède une excellente résolution en masse qui facilite l'identification des molécules. Un spectre est composé de plus de 140 000 mesures de masses couvrant une large gamme des masses des COV biologiques (de 70 à 500 m/z). L'appareil possède donc une résolution environ mille fois supérieure par rapport à un simple quadripôle (PTR-MS) qui fournit des m/z à l'unité de masse atomique (uma ou Dalton Da);\
 -   le seuil de détection extrêmement bas, de l'ordre du ppt (part per trillion), permet une sensibilité adaptée à la mesure de trace.
 
-## Une bréve histoire de la PTR-ToF-MS
+## Une brève histoire de la PTR-ToF-MS
 
 Durant la décennie 1990, l'*Institut für Ionenphysik der Leopold-Franzens-Universität* d'Innsbruck en Autriche développe un nouvel instrument pour l'analyse chimique des gaz. En travaillant avec la *Universitiitsklinik fiir Innere Medizin*, l'équipe menée par Lindinger développe un spectromètre en phase gazeuse qui ionise les molécules grâce à un gaz neutre ([@lindinger_1991] et [@lindinger_1993]). Ils comprennent rapidement l'avantage d'utiliser un proton (apporté à la réaction sous la forme H~3~O^+^) par rapport aux ions Kr^+^ et Xe^+^. Ils publient une sorte de preuve de concept en 1994 [@lagg_1994] et détaillent plus finement l'instrumentation et les réactions chimiques [@hansel_1995][^ptr_tof_ms-1]. En 1998 sort l'article qui fait désormais référence, [@lindinger_1998a], signé par le trio Lindinger, Hansel et Jordan (et sa version courte [@lindinger_1998]).
 
@@ -44,7 +44,7 @@ Pour une compréhension plus exhaustive, je recommande la lecture des articles d
 
 ## Présentation des spectres
 
-![spectre MS](images/3lavandes_8h.png){#lavMS}  
+![Spectres de masse de trois lavandes acquis à 8h le 29 juin.](images/3lavandes_8h.png){#lavMS}  
 
 Nous pouvons à présent nous intéresser aux spectres à analyser. J'ai représenté sur la figure \@ref(lavMS) un spectre de trois plants de lavandes acquis autour de 8h du matin fin juin. Une figure identique mais dynamique peut se télécharger [ici](https://mycore.core-cloud.net/index.php/s/qBZ4IkVWguXQiDB)^[il faut télécharger le fichier puis l'ouvrir avec un navigateur internet.]. Cette figure dynamique permet d'effectuer des zooms afin d'avoir une compréhension plus précise qu'avec la simple figure \@ref(lavMS).  
 
@@ -136,7 +136,7 @@ L'objet *mt* peut être sauvegardé pour se souvenir des paramètres utilisés l
 ```
 
 
-![spaghettis plot](images/fig_AUC.PNG){#AUCplot}  
+![Cinétique d'émission des AUC à 137 Da de trois figuiers.](images/fig_AUC.PNG){#AUCplot}  
 
 La figure \@ref(AUCplot) montre l'évolution quotidienne de l'émission des molécules de masse 137 (de 136.5 à 137.5) de trois plants de figuiers dont le cadre expérimentale est décrit section \@ref(explav). Chaque plante est analysée par cycle de 384 secondes composé de 24 acquisitions de 16 secondes (regroupées en trois parties pour des raisons techniques). Vous pouvez télécharger cette figure [ici](https://mycore.core-cloud.net/index.php/s/9DMytdUSXYtYJ4U) afin de zoomer plus facilement. 
 

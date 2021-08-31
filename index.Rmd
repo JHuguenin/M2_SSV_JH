@@ -186,13 +186,13 @@ Pour continuer sur la chimiométrie, je remercie la team de Chemhouse et en part
 
 Je salue également les autres membres de la PACE : Anne-Genevieve, Raphaelle, Bruno, Patrick et Benoit ; pour la sympathie au quotidien. Il en va de même pour tous les membres du CEFE^[et de Boris qui doit se contenter d'une note de bas de page.] avec qui je travaille régulièrement ou avec qui je partage des moments chaleureux. Mes pensées vont plus précisément vers Magalie, Candice, Cao Li et Anjélica. 
 
-Ce rapport conclu un semestre de stage mais également une année de formation continue. Avant septembre 2020, mes dernières heures de cours en tant qu'étudiant dataient de décembre 2011. Depuis cette date, j'ai moi-même enseigné en tant que vacataire à l'IUT durant mes années de thèses. Puis après d'autres contrats, j'ai été embauché à l'Université de Montpellier comme ingénieur. Ainsi en septembre 2020, j'étais tout à la fois néo et ancien étudiant, camarade et collègue. Pour moi qui n'était que de passage, la difficulté des cours à distance m'ont affecté mais ne remettait pas en cause ni mon métier principal ni mon cursus universitaire. Pour autant je félicite l'effort des professeurs qui ont su s'adapter avec le peu de moyen mis à leur disposition. Je salue tout autant les étudiants en formation initiale qui jouent leur avenir professionnel.   
+Ce rapport conclu un semestre de stage mais également une année de formation continue. Avant septembre 2020, mes dernières heures de cours en tant qu'étudiant dataient de décembre 2011. Depuis cette date, j'ai moi-même enseigné en tant que vacataire à l'IUT durant mes années de thèses. Puis après d'autres contrats, j'ai été embauché à l'Université de Montpellier comme ingénieur. Ainsi en septembre 2020, j'étais tout à la fois néo et ancien étudiant, camarade et collègue. Pour moi qui n'était que de passage, la difficulté des cours à distance m'a affecté mais ne remettait pas en cause ni mon métier principal ni mon cursus universitaire. Pour autant je félicite l'effort des professeurs qui ont su s'adapter avec le peu de moyen mis à leur disposition. Je salue tout autant les étudiants en formation initiale qui jouent leur avenir professionnel.   
 
 Enfin, je remercie les copains qui m'ont soutenu pendant l'année. Je déconseille vivement d'accumuler reprise d'étude + travail + confinement/couvre feu + concours de la fonction publique + travaux de rénovation. C'est trop. En particuliers, merci à Ryad, Jean-Michel et Nicolas (encore eux) pour leur aide lors des concours et à Bruce Dickinson, Steve Harris et les autres pour m'avoir accompagné durant l'écriture des multiples rapports.   
 
 Merci aussi à ceux qui m'ont ajouté du travail durant cette année : Ngoc qui fut une brillante élève de conduite supervisée et qui n'a failli nous tuer que deux fois, à Batro pour avoir eu la brillante idée de synchroniser la date de sortie de notre jeu[@artho_2020] avec la date du deuxième confinement, et aux créatures de la nuit qu'il faut nourrir d'idées nouvelles chaque semaine.   
 
-Enfin merci à Hélène pour me supporter depuis tout ce temps, pour son soutient et pour son aide.
+Enfin merci à Hélène pour me supporter depuis tout ce temps, pour son soutien et pour son aide.
 
 # Glossaire {-}
 
@@ -200,7 +200,7 @@ AUC : Area Under the Curve. Calcul de l'air sous la courbe.
 
 CEFE (UMR 5175) : Centre d'Écologie Fonctionnelle et Évolutive. Laboratoire d'accueil situé sur le site de la DR13 du CNRS, route de Mende à Montpellier.  
 
-COV (ou VOC) : Composé Organique Volatil. Molécule produite par des systèmes biologique et analysée par le PTR-ToF-MS.  
+COV (ou VOC) : Composé Organique Volatil. Molécule produite par des systèmes biologiques et analysée par le PTR-ToF-MS.  
 
 Gaz zéro : gaz purifié grâce à un filtre à charbon.  
 
@@ -214,7 +214,7 @@ MCR-ALS : Multivariate Curve Resolution - Alternating Least Squares. Méthode de
 
 PACE : Plateforme d'Analyse Chimique en Écologie. Plateforme située au sein de l'UMR 5175.  
 
-PCA : Principal Component Analysis (ou ACP). Algorithme utilisé pour faire resortir la variabilité entre les échantillons.
+PCA : Principal Component Analysis (ou ACP). Algorithme utilisé pour faire ressortir la variabilité entre les échantillons.
 
 PTR-ToF-MS : Proton Transfert Reaction Time of Flight Mass Spectroscopy. Acronyme utilisé pour l'instrument de mesure (l**e** PTR-ToF-M**Spectrometer**) et pour la méthode d'analyse (l**a** PTR-ToF-M**Spectroscopy**). Par abus de langage, l'acronyme PTR-MS est régulièrement utilisé à l'oral.  
 

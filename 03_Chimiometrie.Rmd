@@ -8,7 +8,7 @@ Actuellement, le package utilise la fonction *alignSpectra()* du package **MALDI
 
 *alignSpectra()* est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure \@ref(lav). Le bruit intensifie l'effet vaguelette et génère de l'ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l'AUC.  
 
-![Alignement pics](images/lav_align.png){#lav}  
+![Zoom sur une série de pics très peu intenses émis par les lavandes. Des vaguelletes et des pics négatifs apparaissent.](images/lav_align.png){#lav}  
 
 J'ai trouvé un article très intéressant de @picaud_2018 qui propose un algorithme pour supprimer la ligne de base, aligner les pics et les détecter. L'article explique les problèmes de faire ces trois étapes successivement et propose donc une alternative. Nous avons discuté avec l'auteur de sa solution. Malheureusement, le script est écrit en C++. Il est possible d'utiliser ce langage sous R, via Rcpp par exemple, mais cela aurait demandé un peu trop de temps. Pour l'instant, cette solution a été mise de côté mais pourra être explorée plus tard.  
 
@@ -75,11 +75,11 @@ Pour la partie ICA, j'ai utilisé le package [**rnirs**](https://github.com/mles
 
 ### Suivi de la floraison {#anaalm}  
 
-![Résultats MCR bourgeons](images/bourgeon_S_MCR.png){#mcrSalm}
+![Spectres pures de la matrice S^i^ issues de la MCR effectuée sur les données du bourgeon. Les spectres ont été décalés de 0.25 u.a. pour une meilleure compréhension.](images/bourgeon_S_MCR.png){#mcrSalm}
 
 Cette expérience est expliquée plus en détail dans la section \@ref(expalm). Les données ont ensuite été traitées avec proVOC puis analysées par MCR. La figure \@ref(mcrSalm) représente les composés purs de l'expérience. Pour qui a l'habitude des analyses ACP, il paraît évident que l'interprétation de ce genre de résultat est plus intuitive.  
 
-![Résultats MCR bourgeons suivi](images/bourgeon_C_MCR.png){#mcrCalm}
+![Cinétique de la matrice des concentrations C^i^ issues de la MCR effectuée sur les données du bourgeon.](images/bourgeon_C_MCR.png){#mcrCalm}
 
 La figure \@ref(mcrCalm) permet de voir l'évolution des cinq composantes au cours du week-end d'analyse. Il y a deux artefacts sur ces résultats. Premièrement, nous observons des oscillations très régulières. Bien que nous n'en n'avons pas compris la nature exacte, cela vient du système de climatisation. Secondement, nous avons effectué une mesure "blanche" durant 30 minutes chaque 4h. Cela se remarque très facilement, par exemple sur la composante n°2, nous pouvons voir un pic un peu avant 22h suivi d'un autre un peu avant 2h du matin.   
 
@@ -89,9 +89,9 @@ Ces hypothèses d'interprétation nécessitent encore une analyse fine d'identif
 
 ### Analyse de l'émission journalière des lavandes {#analav}
 
-![Résultats MCR lavandes composantes](images/lavandes_S_MCR.png){#mcrSlav}
+![Spectres pures de la matrice S^i^ issues de la MCR effectuée sur les données des lavandes. Les spectres ont été décalés de 0.25 u.a. pour une meilleure compréhension.](images/lavandes_S_MCR.png){#mcrSlav}
 
-![Résultats MCR lavandes suivi](images/lavandes_C_MCR.png){#mcrClav}
+![Cinétique de la matrice des concentrations C^i^ issues de la MCR effectuée sur les données des lavandes.](images/lavandes_C_MCR.png){#mcrClav}
 
 L'expérience est décrite dans la section \@ref(explav). Pour analyser cette expérience, j'ai procédé de la même façon que pour l'analyse de la floraison de l'amandier. Après discussion avec la doctorante expérimentatrice, nous avons conclu que cinq composantes était un nombre optimum pour interpréter les résultats. Ces composantes sont représentées sur la figure \@ref(mcrSlav). J'ai rendu plus visible les composantes n°2 (bleu nuit) et 4 (vert) qui sont les plus intéressantes pour notre cas. La figure \@ref(mcrClav) permet l'interprétation de ces résultats. Pour faciliter la lecture, j'ai placé sur une même colonne les unités expérimentales enregistrées le même jour et sur une même ligne les unités expérimentales enregistrées dans une même chambre. Les lignes 1 à 4 correspondent aux chambres 1 à 4. Les colonnes 1 à 3 correspondent aux jours 1, 3 et 5. Les abréviations "lv" et "bl" désignent respectivement les unités expérimentales où se trouvent une lavande et celles servant de blanc.  
 

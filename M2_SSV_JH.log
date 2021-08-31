@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 01:30
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2898,7 +2898,10 @@ Underfull \hbox (badness 1325) in paragraph at lines 960--961
 0000x150000 points,
  []
 
-[21] [22]
+[21]
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
+[22]
 File: images/mcr.jpg Graphic file (type bmp)
 <images/mcr.jpg>
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -2931,14 +2934,14 @@ File: images/bourgeon_S_MCR.png Graphic file (type bmp)
 <images/bourgeon_S_MCR.png>
 File: images/bourgeon_C_MCR.png Graphic file (type bmp)
 <images/bourgeon_C_MCR.png>
-[25] [26]
+[25]
 File: images/lavandes_S_MCR.png Graphic file (type bmp)
 <images/lavandes_S_MCR.png>
 File: images/lavandes_C_MCR.png Graphic file (type bmp)
 <images/lavandes_C_MCR.png>
-[27] [28] [29] [30
+[26] [27] [28] [29] [30] [31
 
-] [31] [32
+] [32
 
 ]
 
@@ -3552,7 +3555,7 @@ Package polyglossia Info: Option: French, variant=french.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `M2_SSV_JH.out' has not changed.
-(rerunfilecheck)             Checksum: 7524107119CE09EE2651226FB00C21FB;6969.
+(rerunfilecheck)             Checksum: CCC26033F8E46B80D8482D3EF82B0103;6969.
 Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 \openout1 = `M2_SSV_JH.run.xml'.
 
@@ -3560,7 +3563,7 @@ Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 Here is how much of TeX's memory you used:
  44910 strings out of 478532
  878686 string characters out of 5861061
- 1869615 words of memory out of 5000000
+ 1871851 words of memory out of 5000000
  64368 multiletter control sequences out of 15000+600000
  421302 words of font info for 108 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
