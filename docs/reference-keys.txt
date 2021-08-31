@@ -14,7 +14,7 @@ technique-rivale-ou-alliée-de-la-gc-ms
 package-provoc
 ExplicationGen
 analyseAUC
-étalonnage-regression-linéaire-et-rapport-automatisé
+étalonnage-régression-linéaire-et-rapport-automatisé
 perspec
 chap3
 alignmnt

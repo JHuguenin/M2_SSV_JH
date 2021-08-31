@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 11:51
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3555,15 +3555,15 @@ Package polyglossia Info: Option: French, variant=french.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `M2_SSV_JH.out' has not changed.
-(rerunfilecheck)             Checksum: CCC26033F8E46B80D8482D3EF82B0103;6969.
+(rerunfilecheck)             Checksum: 7016B18EC5815B148BB76C00F7F396C6;6977.
 Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 \openout1 = `M2_SSV_JH.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  44910 strings out of 478532
- 878686 string characters out of 5861061
- 1870851 words of memory out of 5000000
+ 878689 string characters out of 5861061
+ 1871853 words of memory out of 5000000
  64368 multiletter control sequences out of 15000+600000
  421302 words of font info for 108 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191

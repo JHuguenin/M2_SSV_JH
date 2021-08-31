@@ -183,14 +183,14 @@ div.csl-indent {
 <li class="chapter" data-level="2.5" data-path="chap2.html"><a href="chap2.html#package-provoc"><i class="fa fa-check"></i><b>2.5</b> package proVOC</a>
 <ul>
 <li class="chapter" data-level="2.5.1" data-path="chap2.html"><a href="chap2.html#ExplicationGen"><i class="fa fa-check"></i><b>2.5.1</b> Explication générale</a></li>
-<li class="chapter" data-level="2.5.2" data-path="chap2.html"><a href="chap2.html#analyseAUC"><i class="fa fa-check"></i><b>2.5.2</b> analyse AUC</a></li>
-<li class="chapter" data-level="2.5.3" data-path="chap2.html"><a href="chap2.html#étalonnage-regression-linéaire-et-rapport-automatisé"><i class="fa fa-check"></i><b>2.5.3</b> Étalonnage, regression linéaire et rapport automatisé</a></li>
+<li class="chapter" data-level="2.5.2" data-path="chap2.html"><a href="chap2.html#analyseAUC"><i class="fa fa-check"></i><b>2.5.2</b> Analyse AUC</a></li>
+<li class="chapter" data-level="2.5.3" data-path="chap2.html"><a href="chap2.html#étalonnage-régression-linéaire-et-rapport-automatisé"><i class="fa fa-check"></i><b>2.5.3</b> Étalonnage, régression linéaire et rapport automatisé</a></li>
 <li class="chapter" data-level="2.5.4" data-path="chap2.html"><a href="chap2.html#perspec"><i class="fa fa-check"></i><b>2.5.4</b> Perspectives</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="chap3.html"><a href="chap3.html"><i class="fa fa-check"></i><b>3</b> Méthodes Multivariées</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="chap3.html"><a href="chap3.html#alignmnt"><i class="fa fa-check"></i><b>3.1</b> Alignement et sélection de variable</a></li>
+<li class="chapter" data-level="3.1" data-path="chap3.html"><a href="chap3.html#alignmnt"><i class="fa fa-check"></i><b>3.1</b> Alignement et sélection de variables</a></li>
 <li class="chapter" data-level="3.2" data-path="chap3.html"><a href="chap3.html#analyses-chimiométriques"><i class="fa fa-check"></i><b>3.2</b> Analyses Chimiométriques</a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="chap3.html"><a href="chap3.html#analyse-en-composante-principale-acp"><i class="fa fa-check"></i><b>3.2.1</b> Analyse en Composante Principale (ACP)</a></li>
@@ -231,7 +231,7 @@ div.csl-indent {
 <h1><span class="header-section-number">3</span> Méthodes Multivariées</h1>
 <p>Nous allons à présent nous intéresser aux algorithmes utilisés pour traiter les jeux de données générés par le PTR-ToF-MS. Ce chapitre est divisé en deux parties. Lors de l’écriture du package, j’avais travaillé sur différentes méthodes d’alignement avant de m’arrêter sur l’une d’elle. Le début de ce stage m’a permis de reprendre ce travail avec des idées nouvelles que je présenterais dans une première partie. La deuxième partie présente l’utilisation de la chimiométrie pour l’analyse de donnée, d’abords avec la PCA puis avec deux méthodes moins connues, l’ICA et la MCR qui ont l’avantage chacune d’essayer de décomposer les données en produits pures.</p>
 <div id="alignmnt" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Alignement et sélection de variable</h2>
+<h2><span class="header-section-number">3.1</span> Alignement et sélection de variables</h2>
 <p>Actuellement, le package utilise la fonction <em>alignSpectra()</em> du package <strong>MALDIquant</strong>. L’alignement est fortement lié à la détection de pic. Soit le modèle utilisé n’est pas optimum et ajoute ou supprime des pics. Soit il crée un décalage trop important en alignant mal les pics ce qui génére de la confusion lors de l’étape d’identification.</p>
 <p><em>alignSpectra()</em> est performant mais rencontre des limites sur les pics de faible ratio signal sur bruit, comme nous pouvons le voir sur la figure <a href="chap3.html#lav"><strong>??</strong></a>. Le bruit intensifie l’effet vaguelette et génère de l’ambiguïté sur le nombre de pics présent. Par ailleurs, la fonction créé des pics négatifs qui faussent le calcul de l’AUC.</p>
 <div class="figure">

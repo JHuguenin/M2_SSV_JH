@@ -2,7 +2,7 @@
 
 Nous allons à présent nous intéresser aux algorithmes utilisés pour traiter les jeux de données générés par le PTR-ToF-MS. Ce chapitre est divisé en deux parties. Lors de l'écriture du package, j'avais travaillé sur différentes méthodes d'alignement avant de m'arrêter sur l'une d'elle. Le début de ce stage m'a permis de reprendre ce travail avec des idées nouvelles que je présenterais dans une première partie. La deuxième partie présente l'utilisation de la chimiométrie pour l'analyse de donnée, d'abords avec la PCA   puis avec deux méthodes moins connues, l'ICA et la MCR qui ont l'avantage chacune d'essayer de décomposer les données en produits pures.
 
-## Alignement et sélection de variable {#alignmnt}
+## Alignement et sélection de variables {#alignmnt}
 
 Actuellement, le package utilise la fonction *alignSpectra()* du package **MALDIquant**. L'alignement est fortement lié à la détection de pic. Soit le modèle utilisé n'est pas optimum et ajoute ou supprime des pics. Soit il crée un décalage trop important en alignant mal les pics ce qui génére de la confusion lors de l'étape d'identification.   
 
