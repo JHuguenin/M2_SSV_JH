@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 14:45
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2191,24 +2191,24 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 359.
-LaTeX Info: Redefining \sffamily on input line 359.
-LaTeX Info: Redefining \ttfamily on input line 359.
-LaTeX Info: Redefining \rmfamily on input line 363.
-LaTeX Info: Redefining \sffamily on input line 363.
-LaTeX Info: Redefining \ttfamily on input line 363.
+LaTeX Info: Redefining \rmfamily on input line 357.
+LaTeX Info: Redefining \sffamily on input line 357.
+LaTeX Info: Redefining \ttfamily on input line 357.
+LaTeX Info: Redefining \rmfamily on input line 361.
+LaTeX Info: Redefining \sffamily on input line 361.
+LaTeX Info: Redefining \ttfamily on input line 361.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 367.
-LaTeX Info: Redefining \sffamily on input line 367.
-LaTeX Info: Redefining \ttfamily on input line 367.
+LaTeX Info: Redefining \rmfamily on input line 365.
+LaTeX Info: Redefining \sffamily on input line 365.
+LaTeX Info: Redefining \ttfamily on input line 365.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 371.
-LaTeX Info: Redefining \sffamily on input line 371.
-LaTeX Info: Redefining \ttfamily on input line 371.
+LaTeX Info: Redefining \rmfamily on input line 369.
+LaTeX Info: Redefining \sffamily on input line 369.
+LaTeX Info: Redefining \ttfamily on input line 369.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 )
@@ -2846,31 +2846,31 @@ Overfull \vbox (0.71004pt too high) has occurred while \output is active []
 File: images/poule1.jpg Graphic file (type bmp)
 <images/poule1.jpg>
 [6]
-File: images/poule2.jpg Graphic file (type bmp)
-<images/poule2.jpg>
+Underfull \vbox (badness 1584) has occurred while \output is active []
+
 
 Overfull \vbox (0.71004pt too high) has occurred while \output is active []
 
-[7] [8] [9] [10
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 652--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--656
+
+ []
+
+[9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 660--662
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--664
-
- []
-
-[11]
 File: images/schema_vocus.PNG Graphic file (type bmp)
 <images/schema_vocus.PNG>
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[12]
+[10]
 File: images/schema_TOF.jpg Graphic file (type bmp)
 <images/schema_TOF.jpg>
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -2878,7 +2878,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 1831) in paragraph at lines 700--700
+Underfull \hbox (badness 1831) in paragraph at lines 692--692
 []\TU/lmr/m/sc/12 Fig. \TU/lmr/m/n/12 2.2 : []Schéma de la colonne ToF et du dé
 tecteur MS (Reproduit de l’article
  []
@@ -2891,13 +2891,13 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 File: images/3lavandes_8h.png Graphic file (type bmp)
 <images/3lavandes_8h.png>
-[13] [14] [15]
+[11] [12] [13]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 798.
-[16]
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 790.
+[14]
 File: images/fig_AUC.PNG Graphic file (type bmp)
 <images/fig_AUC.PNG>
-[17] [18] [19] [20
+[15] [16] [17] [18
 
 ]
 File: images/lav_align.png Graphic file (type bmp)
@@ -2905,15 +2905,15 @@ File: images/lav_align.png Graphic file (type bmp)
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 1325) in paragraph at lines 960--961
+Underfull \hbox (badness 1325) in paragraph at lines 952--953
 \TU/lmr/m/n/12 4 et 5) que l’on va devoir diagonaliser une matrice d’environ 15
 0000x150000 points,
  []
 
-[21]
+[19]
 Underfull \vbox (badness 1609) has occurred while \output is active []
 
-[22]
+[20]
 File: images/mcr.jpg Graphic file (type bmp)
 <images/mcr.jpg>
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -2922,18 +2922,18 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1010
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1010--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1004
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1005
 
  []
 
@@ -2941,19 +2941,19 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[24]
+[22]
 File: images/bourgeon_S_MCR.png Graphic file (type bmp)
 <images/bourgeon_S_MCR.png>
 File: images/bourgeon_C_MCR.png Graphic file (type bmp)
 <images/bourgeon_C_MCR.png>
-[25]
+[23]
 File: images/lavandes_S_MCR.png Graphic file (type bmp)
 <images/lavandes_S_MCR.png>
 File: images/lavandes_C_MCR.png Graphic file (type bmp)
 <images/lavandes_C_MCR.png>
-[26] [27] [28] [29] [30] [31
+[24] [25] [26] [27] [28] [29
 
-] [32
+] [30
 
 ]
 
@@ -3078,7 +3078,7 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[33
+[31
 
 
 ]
@@ -3107,7 +3107,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 3179) in paragraph at lines 1126--1126
+Underfull \hbox (badness 3179) in paragraph at lines 1118--1118
 []\TU/lmr/m/n/12 M. []\TU/lmr/m/sc/12 Graus[]​\TU/lmr/m/n/12 , M. []\TU/lmr/m/s
 c/12 Müller[]​ \TU/lmr/m/n/12 et A. []\TU/lmr/m/sc/12 Hansel[]​\TU/lmr/m/n/12 .
  «  High resolution PTR-TOF :
@@ -3148,12 +3148,12 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Overfull \hbox (188.58412pt too wide) in paragraph at lines 1126--1126
+Overfull \hbox (188.58412pt too wide) in paragraph at lines 1118--1118
 \TU/lmr/m/it/12 Spectrometry \TU/lmr/m/n/12 20.6 (2006). _eprint : https ://ana
 lyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/rcm.2405,
  []
 
-[34]
+[32]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -3173,7 +3173,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 2277) in paragraph at lines 1126--1126
+Underfull \hbox (badness 2277) in paragraph at lines 1118--1118
 []\TU/lmr/m/n/12 A. []\TU/lmr/m/sc/12 Jordan[]​\TU/lmr/m/n/12 , S. []\TU/lmr/m/
 sc/12 Haidacher[]​\TU/lmr/m/n/12 , G. []\TU/lmr/m/sc/12 Hanel[]​\TU/lmr/m/n/12 
 , E. []\TU/lmr/m/sc/12 Hartungen[]​\TU/lmr/m/n/12 , L. []\TU/lmr/m/sc/12 Märk[]
@@ -3181,7 +3181,7 @@ sc/12 Haidacher[]​\TU/lmr/m/n/12 , G. []\TU/lmr/m/sc/12 Hanel[]​\TU/lmr/m/n/
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 1126--1126
+Underfull \hbox (badness 1067) in paragraph at lines 1118--1118
 \TU/lmr/m/n/12 and high sensitivity proton-transfer-reaction time-of-flight mas
 s spectrometer
  []
@@ -3260,7 +3260,7 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[35]
+[33]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -3316,7 +3316,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 4634) in paragraph at lines 1126--1126
+Underfull \hbox (badness 4634) in paragraph at lines 1118--1118
 []\TU/lmr/m/n/12 D. []\TU/lmr/m/sc/12 Rutledge[]​ \TU/lmr/m/n/12 et D. []\TU/lm
 r/m/sc/12 Jouan-Rimbaud Bouveresse[]​\TU/lmr/m/n/12 . «  Corrigendum to
  []
@@ -3334,14 +3334,14 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 2237) in paragraph at lines 1126--1126
+Underfull \hbox (badness 2237) in paragraph at lines 1118--1118
 []\TU/lmr/m/n/12 H. []\TU/lmr/m/sc/12 Tanimoto[]​\TU/lmr/m/n/12 , N. []\TU/lmr/
 m/sc/12 Aoki[]​\TU/lmr/m/n/12 , S. []\TU/lmr/m/sc/12 Inomata[]​\TU/lmr/m/n/12 ,
  J. []\TU/lmr/m/sc/12 Hirokawa[]​ \TU/lmr/m/n/12 et Y. []\TU/lmr/m/sc/12 Sadana
 ga[]​\TU/lmr/m/n/12 .
  []
 
-[36]
+[34]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -3354,7 +3354,7 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[37] [38
+[35] [36
 
 
 ]
@@ -3392,12 +3392,19 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
+LaTeX Info: Redefining \rmfamily on input line 35.
+LaTeX Info: Redefining \sffamily on input line 35.
+LaTeX Info: Redefining \ttfamily on input line 35.
 LaTeX Info: Redefining \rmfamily on input line 37.
 LaTeX Info: Redefining \sffamily on input line 37.
 LaTeX Info: Redefining \ttfamily on input line 37.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 39.
 LaTeX Info: Redefining \sffamily on input line 39.
 LaTeX Info: Redefining \ttfamily on input line 39.
+Package polyglossia Info: Option: French, variant=french.
+Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 LaTeX Info: Redefining \rmfamily on input line 41.
@@ -3405,14 +3412,7 @@ LaTeX Info: Redefining \sffamily on input line 41.
 LaTeX Info: Redefining \ttfamily on input line 41.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 43.
-LaTeX Info: Redefining \sffamily on input line 43.
-LaTeX Info: Redefining \ttfamily on input line 43.
-Package polyglossia Info: Option: French, variant=french.
-Package polyglossia Info: Option: French, variant=french.
-) [39
+) [37
 
 ]
 
@@ -3435,26 +3435,32 @@ Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-LaTeX Info: Redefining \rmfamily on input line 1156.
-LaTeX Info: Redefining \sffamily on input line 1156.
-LaTeX Info: Redefining \ttfamily on input line 1156.
-LaTeX Info: Redefining \rmfamily on input line 1162.
-LaTeX Info: Redefining \sffamily on input line 1162.
-LaTeX Info: Redefining \ttfamily on input line 1162.
+LaTeX Info: Redefining \rmfamily on input line 1148.
+LaTeX Info: Redefining \sffamily on input line 1148.
+LaTeX Info: Redefining \ttfamily on input line 1148.
+LaTeX Info: Redefining \rmfamily on input line 1154.
+LaTeX Info: Redefining \sffamily on input line 1154.
+LaTeX Info: Redefining \ttfamily on input line 1154.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1166--1168
+Underfull \hbox (badness 2653) in paragraph at lines 1156--1157
+[]\TU/lmr/m/n/12 La PTR-ToF-MS permet d’analyser la cinétique d’émission des CO
+Vs. Le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1160
 
  []
 
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 1169.
-LaTeX Info: Redefining \sffamily on input line 1169.
-LaTeX Info: Redefining \ttfamily on input line 1169.
+LaTeX Info: Redefining \rmfamily on input line 1161.
+LaTeX Info: Redefining \sffamily on input line 1161.
+LaTeX Info: Redefining \ttfamily on input line 1161.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 1169.
-LaTeX Info: Redefining \sffamily on input line 1169.
-LaTeX Info: Redefining \ttfamily on input line 1169.
+LaTeX Info: Redefining \rmfamily on input line 1161.
+LaTeX Info: Redefining \sffamily on input line 1161.
+LaTeX Info: Redefining \ttfamily on input line 1161.
 Package polyglossia Info: Option: French, variant=french.
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
@@ -3462,7 +3468,7 @@ File: images/logo.pdf Graphic file (type pdf)
 Class memoir Warning: The material used in the headers is too large
 (15.21004pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 1175.
+(in both cases you will find help in the memoir manual). on input line 1167.
 
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -3530,7 +3536,7 @@ braces):
 >  {italian/babelname}  =>  {italian}
 >  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[40
+[38
 
 
 ]
@@ -3548,24 +3554,24 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 360.
-LaTeX Info: Redefining \sffamily on input line 360.
-LaTeX Info: Redefining \ttfamily on input line 360.
-LaTeX Info: Redefining \rmfamily on input line 364.
-LaTeX Info: Redefining \sffamily on input line 364.
-LaTeX Info: Redefining \ttfamily on input line 364.
+LaTeX Info: Redefining \rmfamily on input line 358.
+LaTeX Info: Redefining \sffamily on input line 358.
+LaTeX Info: Redefining \ttfamily on input line 358.
+LaTeX Info: Redefining \rmfamily on input line 362.
+LaTeX Info: Redefining \sffamily on input line 362.
+LaTeX Info: Redefining \ttfamily on input line 362.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 368.
-LaTeX Info: Redefining \sffamily on input line 368.
-LaTeX Info: Redefining \ttfamily on input line 368.
+LaTeX Info: Redefining \rmfamily on input line 366.
+LaTeX Info: Redefining \sffamily on input line 366.
+LaTeX Info: Redefining \ttfamily on input line 366.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-LaTeX Info: Redefining \rmfamily on input line 372.
-LaTeX Info: Redefining \sffamily on input line 372.
-LaTeX Info: Redefining \ttfamily on input line 372.
+LaTeX Info: Redefining \rmfamily on input line 370.
+LaTeX Info: Redefining \sffamily on input line 370.
+LaTeX Info: Redefining \ttfamily on input line 370.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 )
@@ -3579,12 +3585,12 @@ Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44911 strings out of 478532
- 878706 string characters out of 5861061
- 1870855 words of memory out of 5000000
- 64369 multiletter control sequences out of 15000+600000
+ 44902 strings out of 478532
+ 878534 string characters out of 5861061
+ 1871750 words of memory out of 5000000
+ 64361 multiletter control sequences out of 15000+600000
  421302 words of font info for 108 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  99i,17n,120p,2031b,7084s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on M2_SSV_JH.pdf (50 pages).
+Output written on M2_SSV_JH.pdf (48 pages).

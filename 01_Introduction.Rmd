@@ -81,7 +81,7 @@ Sur ce type d'instrument, un des problèmes principal est dû à la contaminatio
 
 ### Détection des traces d'un complément alimentaire
 
-Cette expérience avait pour objectif de mesurer la diffusion de l'odeur de nourriture (pour des poules) dans quatre sites d'un mésocosme constitué de deux compartiments. La figure \@ref(poule1) illustre cette prise de mesure. Les sites étaient localisés dans la mangeoire (s1, compartiment 1, figure \@ref(poule2)), au centre du compartiment 1 (s2), à la jonction des deux compartiments (s3, côté compartiment 2) et au fond du compartiment 2 (s4). La nourriture au sein de la mangeoire était soit de la nourriture témoin (T) soit dopée par de l'huile essentielle (A et B). Il y avait 5 mésocosmes pour chaque modalité.
+Cette expérience avait pour objectif de mesurer la diffusion de l'odeur de nourriture (pour des poules) dans quatre sites d'un mésocosme constitué de deux compartiments. La figure \@ref(poule1) illustre cette prise de mesure. Les sites étaient localisés dans la mangeoire (s1, compartiment 1), au centre du compartiment 1 (s2), à la jonction des deux compartiments (s3, côté compartiment 2) et au fond du compartiment 2 (s4). La nourriture au sein de la mangeoire était soit de la nourriture témoin (T) soit dopée par de l'huile essentielle (A et B). Il y avait 5 mésocosmes pour chaque modalité.
 
 ![PTR-ToF-MS relié à l'un des quatre sites de mesure d'un mésocosme.](images/poule1.jpg){#poule1}
 
@@ -90,8 +90,6 @@ Dans la théorie d'une expérience totalement randomisée, il aurait fallu défi
 [^introduction-7]: 5 (mésocosmes) x 3 (modalité) x 4 (site d'acquisition) = 60
 
 Il aurait été juste de tirer au hasard l'ordre de passage des sites. Pour autant, nous avons opté pour une hypothèse forte de commencer par le site le plus éloigné de la mangeoire (s4, s3, s2, s1) et de remonter le gradient de diffusion. Dans les faits, nous laissions assez de temps entre deux mesures pour renouveler plusieurs fois le volume d'analyse à l'intérieur de l'instrument ce qui permettait d'isoler les mesures. Après coup, je pense qu'il aurait été bon de procéder malgré tout à une randomisation de l'ordre des sites au sein d'un mésocosme.
-
-![Sonde à proximité de la mangeoire.](images/poule2.jpg){#poule2}
 
 Nous avions également une seule journée pour effectuer l'ensemble des acquistions, ce qui a été juste suffisant. Nous n'avons pas pu effectuer de répétition sur un même échantillon ce qui aurait augmenté la puissance statistique de l'expérience. L'analyse des data a été effectuée par le post-doc en charge de l'expérience. Je n'ai pas de retour sur des potentielles contaminations intra et inter échantillons.
 

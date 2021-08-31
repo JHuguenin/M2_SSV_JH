@@ -71,23 +71,23 @@ chaptersummary: In a Nutshell
 backcover:
   - language: english
     abstract: |
-      The PTR-ToF-MS is used to analyze the emission kinetics of VOCs. The CEFE laboratory is equipped with such an instrument in 2019. This memoir deals with the exploitation of datasets in the context of chemical ecology. Several experiments are presented as well as the theory of PTR-ToF-MS. The numerical tools are grouped in the R package: proVOC. A particular focus is made on the use of MCR.
+      The PTR-ToF-MS is used to analyze the emission kinetics of VOCs. The CEFE laboratory is equipped with such an instrument since 2019. This memoir deals with the exploitation of datasets in the context of chemical ecology. Several experiments are presented as well as the theory of PTR-ToF-MS. The numerical tools are grouped in the R package: proVOC. A particular focus is made on the use of MCR.
     keywords:
-      - Chimiometrie
+      - Chimiometry
       - Open Science
       - PTR-ToF-MS
-      - Spectroscopy
-      - Environnent
+      - Spectrometry
+      - Environment
     abstractlabel: Abstract
     keywordlabel: Keywords
   - language: french
     abstract: |
-      La PTR-ToF-MS permet d'analyser la cinétique d'émission des COV. Le laboratoire CEFE c'est doté d'un tel instrument en fin d'année 2019. Ce mémoire traite de l'exploitation de jeu de donnée dans le cadre de l'écologie chimique. Plusieurs expériences sont présentés ainsi que la théorie de la PTR-ToF-MS. Les outils numériques sont regroupés dans le package R : proVOC. Un focus particulier est fait sur l'utilisation de la MCR.
+      La PTR-ToF-MS permet d'analyser la cinétique d'émission des COVs. Le laboratoire CEFE s'est doté d'un tel instrument en fin d'année 2019. Ce mémoire traite de l'exploitation de jeu de données dans le cadre de l'écologie chimique. Plusieurs expériences sont présentées ainsi que la théorie de la PTR-ToF-MS. Les outils numériques sont regroupés dans le package R : proVOC. Un focus particulier est fait sur l'utilisation de la MCR.
     keywords:
       - Chimiométrie
       - PTR-ToF-MS
       - Science ouverte
-      - Spectroscopie
+      - Spectrométrie
       - Environnement
     abstractlabel: Résumé
     keywordlabel: Mots-Clés
