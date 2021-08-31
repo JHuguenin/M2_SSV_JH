@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 12:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2833,12 +2833,24 @@ Underfull \hbox (badness 1303) in paragraph at lines 590--591
 tique d’émission des
  []
 
+
+Class memoir Warning: The material used in the headers is too large
+(15.21004pt) for the given head height (14.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 592.
+
+
+Overfull \vbox (0.71004pt too high) has occurred while \output is active []
+
 [5]
 File: images/poule1.jpg Graphic file (type bmp)
 <images/poule1.jpg>
 [6]
 File: images/poule2.jpg Graphic file (type bmp)
 <images/poule2.jpg>
+
+Overfull \vbox (0.71004pt too high) has occurred while \output is active []
+
 [7] [8] [9] [10
 
 ]
@@ -3446,6 +3458,12 @@ LaTeX Info: Redefining \ttfamily on input line 1169.
 Package polyglossia Info: Option: French, variant=french.
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
+
+Class memoir Warning: The material used in the headers is too large
+(15.21004pt) for the given head height (14.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 1175.
+
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -3555,16 +3573,16 @@ Package polyglossia Info: Option: French, variant=french.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `M2_SSV_JH.out' has not changed.
-(rerunfilecheck)             Checksum: 7016B18EC5815B148BB76C00F7F396C6;6977.
+(rerunfilecheck)             Checksum: 751DB8596983D87D6ED4A68674ED1C09;6977.
 Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 \openout1 = `M2_SSV_JH.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44910 strings out of 478532
- 878689 string characters out of 5861061
- 1871853 words of memory out of 5000000
- 64368 multiletter control sequences out of 15000+600000
+ 44911 strings out of 478532
+ 878706 string characters out of 5861061
+ 1870855 words of memory out of 5000000
+ 64369 multiletter control sequences out of 15000+600000
  421302 words of font info for 108 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  99i,17n,120p,2031b,7084s stack positions out of 5000i,500n,10000p,200000b,80000s
