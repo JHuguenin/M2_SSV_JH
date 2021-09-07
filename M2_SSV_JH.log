@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  31 AUG 2021 15:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  7 SEP 2021 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2780,47 +2780,44 @@ Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-[6]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 447.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 447.
-[7
+[6] [7
 
 
 ] [8
-
-] [9] [10
 
 ] [1
 
 ] [2
 
 ] [3]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 510.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 510.
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 1253) in paragraph at lines 541--541
+Underfull \hbox (badness 1253) in paragraph at lines 523--523
 [][] [][][]\TU/lmr/m/it/10 «Découvrir l’étrangeté d’une pensée en langue étrang
 ère constitue une expérience herméneutique
  []
 
 [4]
-Underfull \hbox (badness 5741) in paragraph at lines 575--577
+Underfull \hbox (badness 5741) in paragraph at lines 557--559
 \TU/lmr/m/n/12 l’évaluation des chercheurs et enseignants-chercheurs, des proje
 ts et des
  []
@@ -2828,7 +2825,7 @@ ts et des
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 1303) in paragraph at lines 590--591
+Underfull \hbox (badness 1303) in paragraph at lines 572--573
 \TU/lmr/m/n/12 avons juste besoin de savoir que cette technique analyse la ciné
 tique d’émission des
  []
@@ -2837,7 +2834,7 @@ tique d’émission des
 Class memoir Warning: The material used in the headers is too large
 (15.21004pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 592.
+(in both cases you will find help in the memoir manual). on input line 574.
 
 
 Overfull \vbox (0.71004pt too high) has occurred while \output is active []
@@ -2852,12 +2849,12 @@ Underfull \vbox (badness 1584) has occurred while \output is active []
 Overfull \vbox (0.71004pt too high) has occurred while \output is active []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 652--654
+Underfull \hbox (badness 10000) in paragraph at lines 634--636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--656
+Underfull \hbox (badness 10000) in paragraph at lines 636--638
 
  []
 
@@ -2878,7 +2875,7 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 1831) in paragraph at lines 692--692
+Underfull \hbox (badness 1831) in paragraph at lines 674--674
 []\TU/lmr/m/sc/12 Fig. \TU/lmr/m/n/12 2.2 : []Schéma de la colonne ToF et du dé
 tecteur MS (Reproduit de l’article
  []
@@ -2893,7 +2890,7 @@ File: images/3lavandes_8h.png Graphic file (type bmp)
 <images/3lavandes_8h.png>
 [11] [12] [13]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 790.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 772.
 [14]
 File: images/fig_AUC.PNG Graphic file (type bmp)
 <images/fig_AUC.PNG>
@@ -2905,7 +2902,7 @@ File: images/lav_align.png Graphic file (type bmp)
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 
-Underfull \hbox (badness 1325) in paragraph at lines 952--953
+Underfull \hbox (badness 1325) in paragraph at lines 934--935
 \TU/lmr/m/n/12 4 et 5) que l’on va devoir diagonaliser une matrice d’environ 15
 0000x150000 points,
  []
@@ -2923,17 +2920,17 @@ ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1002
+Underfull \hbox (badness 10000) in paragraph at lines 982--984
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1002--1004
+Underfull \hbox (badness 10000) in paragraph at lines 984--986
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1005
+Underfull \hbox (badness 10000) in paragraph at lines 986--987
 
  []
 
@@ -2954,6 +2951,8 @@ File: images/lavandes_C_MCR.png Graphic file (type bmp)
 [24] [25] [26] [27] [28] [29
 
 ] [30
+
+] [31] [32
 
 ]
 
@@ -3078,7 +3077,7 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[31
+[33
 
 
 ]
@@ -3153,7 +3152,7 @@ Overfull \hbox (188.58412pt too wide) in paragraph at lines 1118--1118
 lyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/rcm.2405,
  []
 
-[32]
+[34]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -3260,7 +3259,7 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[33]
+[35]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -3341,7 +3340,7 @@ m/sc/12 Aoki[]​\TU/lmr/m/n/12 , S. []\TU/lmr/m/sc/12 Inomata[]​\TU/lmr/m/n/1
 ga[]​\TU/lmr/m/n/12 .
  []
 
-[34]
+[36]
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
@@ -3354,7 +3353,7 @@ Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mapp
 ng=tex-text;!
 Missing character: There is no ​ (U+200B) in font [lmromancaps10-regular]:mappi
 ng=tex-text;!
-[35] [36
+[37] [38
 
 
 ]
@@ -3412,7 +3411,7 @@ LaTeX Info: Redefining \sffamily on input line 41.
 LaTeX Info: Redefining \ttfamily on input line 41.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-) [37
+) [39
 
 ]
 
@@ -3536,7 +3535,7 @@ braces):
 >  {italian/babelname}  =>  {italian}
 >  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[38
+[40
 
 
 ]
@@ -3579,7 +3578,7 @@ Package polyglossia Info: Option: French, variant=french.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `M2_SSV_JH.out' has not changed.
-(rerunfilecheck)             Checksum: 751DB8596983D87D6ED4A68674ED1C09;6977.
+(rerunfilecheck)             Checksum: 88E4849627A2B53C21B1D13BFFD1D092;6977.
 Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 \openout1 = `M2_SSV_JH.run.xml'.
 
@@ -3587,7 +3586,7 @@ Package logreq Info: Writing requests to 'M2_SSV_JH.run.xml'.
 Here is how much of TeX's memory you used:
  44902 strings out of 478532
  878534 string characters out of 5861061
- 1871750 words of memory out of 5000000
+ 1870749 words of memory out of 5000000
  64361 multiletter control sequences out of 15000+600000
  421302 words of font info for 108 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
